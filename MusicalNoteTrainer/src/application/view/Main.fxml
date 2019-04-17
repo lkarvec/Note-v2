@@ -22,7 +22,7 @@
         <Font name="System Bold" size="20.0" fx:id="x2" />
       </font>
     </Button>
-    <Button font="$x2" layoutX="53.0" layoutY="462.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Piano" />
+    <Button font="$x2" layoutX="53.0" layoutY="462.0" mnemonicParsing="false" onAction="#handlePiano" prefHeight="99.0" prefWidth="143.0" text="Piano" />
     <Button font="$x2" layoutX="403.0" layoutY="462.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Kalimba" />
     <ImageView fitHeight="142.63523864746094" fitWidth="121.65946359084349" layoutX="64.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
       <image>
