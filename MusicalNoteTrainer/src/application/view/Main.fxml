@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
+  <children>
+    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="297.0" layoutX="14.0" layoutY="289.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
+    <Label alignment="CENTER" contentDisplay="CENTER" disable="false" layoutX="1.0" layoutY="80.0" prefHeight="67.0" prefWidth="600.0" text="Welcome!" textAlignment="CENTER" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="25.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" disable="false" font="$x1" layoutX="1.0" layoutY="140.0" prefHeight="67.0" prefWidth="600.0" text="Please select an instrument:" textAlignment="CENTER" underline="false" wrapText="false" />
+    <Button layoutX="229.0" layoutY="463.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Xylophone">
+      <font>
+        <Font name="System Bold" size="20.0" fx:id="x2" />
+      </font>
+    </Button>
+    <Button font="$x2" layoutX="53.0" layoutY="462.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Piano" />
+    <Button font="$x2" layoutX="403.0" layoutY="462.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Kalimba" />
+    <ImageView fitHeight="142.63523864746094" fitWidth="121.65946359084349" layoutX="64.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
+      <image>
+        <Image url="@../../../data/keyboard_template_mini.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="142.63523864746094" fitWidth="121.65946359084349" layoutX="239.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
+      <image>
+        <Image url="@../../../data/xylophone_template_mini.png" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="142.63523864746094" fitWidth="121.65946359084349" layoutX="414.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
+      <image>
+        <Image url="@../../../data/kalimba_template_mini.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>
