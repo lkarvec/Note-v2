@@ -20,6 +20,8 @@ public class Main extends Application { //Main stage execution
 	
 	public static Stage stage;
 	
+	public static String currentStage;
+	
 	/**
 	 * [GUI Start, get frame information and read from Main.fxml, set scene.]
 	 */
