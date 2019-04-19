@@ -12,6 +12,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 import application.Main;
+import application.model.Multithreadxylo;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,6 +20,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.media.AudioClip;
 
 public class XylophoneController {
@@ -91,10 +94,17 @@ public class XylophoneController {
 	@FXML
 	public ImageView Fs2; // Fs2
 	
+	public static String lastPressed= "A0";
 	
-	
+	public void initialize() {
+		Main.currentStage= "Xylophone";
+		
+		
+	}
 	
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
+		
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Xylophone") ) { System.out.println("C1"); lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); } }); //C1
 		
 		try {
 			
@@ -118,139 +128,77 @@ public class XylophoneController {
 		
 	}
 	
-	@FXML private void handleC() {
-		 playClip("C1");
-	}
+	@FXML private void handleC() throws ClassNotFoundException { lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+		
+	
 	
 	
 
 	
-	@FXML private void handleD() {
-		 playClip(" D1");
-	}
-	@FXML private void handleE() {
-		 playClip(" E1");
-	}
+	@FXML private void handleD() throws ClassNotFoundException { lastPressed = "D1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE() throws ClassNotFoundException { lastPressed = "E1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleF() {
-		 playClip(" F1");
-	}
-	@FXML private void handleG() {
-		 playClip(" G1");
-	}
-	@FXML private void handleA() {
-		 playClip(" A1");
-	}
-	@FXML private void handleB() {
-		 playClip(" B1");
-	}
+	@FXML private void handleF() throws ClassNotFoundException { lastPressed = "F1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleG() throws ClassNotFoundException { lastPressed = "G1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleA() throws ClassNotFoundException { lastPressed = "A1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleB() throws ClassNotFoundException { lastPressed = "B1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 	
 	
-	@FXML private void handleC1() {
-		 playClip(" C2");
-	}
+	@FXML private void handleC1() throws ClassNotFoundException { lastPressed = "C2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 
 	
-	@FXML private void handleD1() {
-		 playClip(" D2");
-	}
-	@FXML private void handleE1() {
-		 playClip(" E2");
-	}
+	@FXML private void handleD1() throws ClassNotFoundException { lastPressed = "D2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE1() throws ClassNotFoundException { lastPressed = "E2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleF1() {
-		 playClip(" F2");
-	}
-	@FXML private void handleG1() {
-		 playClip(" G2");
-	}
-	@FXML private void handleA1() {
-		 playClip(" A2");
-	}
-	@FXML private void handleB1() {
-		 playClip(" B2");
-	}
+	@FXML private void handleF1() throws ClassNotFoundException { lastPressed = "F2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleG1() throws ClassNotFoundException { lastPressed = "G2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleA1() throws ClassNotFoundException { lastPressed = "A2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleB1() throws ClassNotFoundException { lastPressed = "B2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 	
 	
 	
-	@FXML private void handleC2() {
-		 playClip(" C3");
-	}
+	@FXML private void handleC2() throws ClassNotFoundException { lastPressed = "C3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 
 	
-	@FXML private void handleD2() {
-		 playClip(" D3");
-	}
-	@FXML private void handleE2() {
-		 playClip(" E3");
-	}
+	@FXML private void handleD2()throws ClassNotFoundException { lastPressed = "D3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE2() throws ClassNotFoundException { lastPressed = "E3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleF2() {
-		 playClip(" F3");
-	}
-	@FXML private void handleG2() {
-		 playClip(" G3");
-	}
+	@FXML private void handleF2() throws ClassNotFoundException { lastPressed = "F3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleG2() throws ClassNotFoundException { lastPressed = "G3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 
 	
-	@FXML private void handleCs1() {
-		 playClip(" C#2");
-	}
+	@FXML private void handleCs1() throws ClassNotFoundException { lastPressed = "C#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 
 	
-	@FXML private void handleDs1() {
-		 playClip(" D#2");
-	}
+	@FXML private void handleDs1() throws ClassNotFoundException { lastPressed = "D#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleFs1() {
-		 playClip(" F#2");
-	}
-	@FXML private void handleGs1() {
-		 playClip(" G#2");
-	}
-	@FXML private void handleAs1() {
-		 playClip(" A#2");
-	}
+	@FXML private void handleFs1() throws ClassNotFoundException { lastPressed = "F#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleGs1() throws ClassNotFoundException { lastPressed = "G#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleAs1() throws ClassNotFoundException { lastPressed = "A#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleCs() {
-		 playClip(" C#1");
-	}
+	@FXML private void handleCs()throws ClassNotFoundException { lastPressed = "C#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 
 	
-	@FXML private void handleDs() {
-		 playClip(" D#1");
-	}
+	@FXML private void handleDs()throws ClassNotFoundException { lastPressed = "D#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleFs() {
-		 playClip(" F#1");
-	}
-	@FXML private void handleGs() {
-		 playClip(" G#1");
-	}
-	@FXML private void handleAs() {
-		 playClip(" A#1");
-	}
+	@FXML private void handleFs() throws ClassNotFoundException { lastPressed = "F#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleGs() throws ClassNotFoundException { lastPressed = "G#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleAs() throws ClassNotFoundException { lastPressed = "A#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 	
-	@FXML private void handleCs2() {
-		 playClip(" C#3");
-	}
+	@FXML private void handleCs2() throws ClassNotFoundException { lastPressed = "C#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
 
 	
-	@FXML private void handleDs2() {
-		 playClip(" D#3");
-	}
+	@FXML private void handleDs2() throws ClassNotFoundException { lastPressed = "D#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	
-	@FXML private void handleFs3() {
-		 playClip(" F#3");
-	}
+	@FXML private void handleFs3() throws ClassNotFoundException { lastPressed = "F#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 
 	
 }
