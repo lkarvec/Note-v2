@@ -4,9 +4,9 @@
 package application.controller;
 
 import java.io.IOException;
-
 import application.Main;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -27,5 +27,12 @@ public class MainController {
 		}
 		
 	}
+	
+    @FXML
+    public void initialize() {
+    	try { Main.currentStage = "Main"; } 
+    	catch (Exception e) { System.out.println ("Exception is caught"); 
+} 
+    }
 	
 }
