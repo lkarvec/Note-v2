@@ -4,8 +4,6 @@ Spring 2019 - Team 6
 
 Christopher Tyler [christophergtyler, MagicShmagic]
 
-Alexander Mains []
+Alexander Mains [lkarvec, rta149]
 
-Jose Chapa []
-
-Mark Dziuk []
+Mark Dziuk [mdziuk37,kvf069]
