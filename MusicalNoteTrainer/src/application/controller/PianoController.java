@@ -3,8 +3,9 @@
  */
 package application.controller;
 
-import java.io.IOException;
 import application.Main;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +13,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import application.model.MultithreadingInstance;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 
 public class PianoController {
 	
@@ -80,6 +85,19 @@ public class PianoController {
 	//Finally going to have to play with Multi-threading
 	
 	//If recording == true, then handle should add key to string to be saved to file later.
+	
+    @FXML
+    public void initialize() throws FileNotFoundException{
+    	Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A) { System.out.println("You pressed A"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S) { System.out.println("You pressed S"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.D) { System.out.println("You pressed D"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.F) { System.out.println("You pressed F"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.G) { System.out.println("You pressed G"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.H) { System.out.println("You pressed H"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.J) { System.out.println("You pressed J"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.K) { System.out.println("You pressed K"); } });
+		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.L) { System.out.println("You pressed L"); } });
+    }
 	
 	@FXML private void handleC3_entered() throws ClassNotFoundException { imgPianoC1.setImage(new Image("keys/piano_left2.png")); }
 	@FXML private void handleC3_exited() throws ClassNotFoundException { imgPianoC1.setImage(new Image("keys/piano_left.png")); }
@@ -150,6 +168,5 @@ public class PianoController {
 	@FXML private void handleB4_entered() throws ClassNotFoundException { imgPianoB2.setImage(new Image("keys/piano_left2.png")); }
 	@FXML private void handleB4_exited() throws ClassNotFoundException { imgPianoB2.setImage(new Image("keys/piano_left.png")); }
 	@FXML private void handleB4_clicked() throws ClassNotFoundException { lastPressed = "B4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
-	
 	
 }

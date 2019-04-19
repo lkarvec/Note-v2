@@ -10,13 +10,14 @@ public class MultithreadingInstance implements Runnable {
     public void run() { 
         
     	try { 
-    		// Displaying the thread that is running 
-    		System.out.println ("Thread " + Thread.currentThread().getId() + " is running"); 
+    		// Displaying the thread that is running .
+    		// System.out.println ("Thread " + Thread.currentThread().getId() + " is running"); 
     		
-    		//Extra testing for Audio
     		Clip clip = AudioSystem.getClip();
     		clip.open(AudioSystem.getAudioInputStream(new File("src/wav/" + PianoController.lastPressed + ".wav")));
     		clip.start();
+    		
+    		// Need to figure thread closing later.
         
     	} catch (Exception e) { 
             // Throwing an exception 
