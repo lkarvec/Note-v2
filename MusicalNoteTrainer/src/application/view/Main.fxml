@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
   <children>
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="297.0" layoutX="14.0" layoutY="289.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.32965087890625" layoutX="137.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="324.659645898435" />
@@ -17,7 +17,7 @@
         <Font name="System Bold" size="25.0" fx:id="x1" />
       </font>
     </Label>
-    <Button layoutX="229.0" layoutY="463.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="143.0" text="Xylophone">
+    <Button layoutX="229.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleXylophone" prefHeight="99.0" prefWidth="143.0" text="Xylophone">
       <font>
         <Font name="System Bold" size="20.0" fx:id="x2" />
       </font>

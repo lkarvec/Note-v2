@@ -25,6 +25,20 @@ public class MainController {
 			System.out.println( "Error loading the file - please check its location." ); //output if file null
 			e.printStackTrace();
 		}
+	}
+		
+	public void handleXylophone(ActionEvent event) { //Initialize Piano.fxml
+			
+			try {
+				
+				Parent root = FXMLLoader.load(getClass().getResource("../view/xlophone.fxml"));
+				Main.stage.setScene(new Scene(root, 600, 600));
+				Main.stage.show();
+				
+			}catch( IOException e ) {
+				System.out.println( "Error loading the file - please check its location." ); //output if file null
+				e.printStackTrace();
+			}
 		
 	}
 	
