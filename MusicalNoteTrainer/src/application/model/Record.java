@@ -23,10 +23,7 @@ public class Record implements Runnable{
 					count++;
 			e+= XylophoneController.lastPressed + "," + System.currentTimeMillis()+"\n";
 				}}
-			/*for(Zone key : Park.map.keySet()) {
-				//String hi=key.getCode();
-				for(i=0;i<map.get(key).size();i++) {
-				e+=map.get(key).get(i).getName()+","+map.get(key).get(i).gettype()+","+map.get(key).get(i).getveg()+","+key.getCode()+"\n";*/
+			
 
 			writer.write( e.toString());
 			// close the file
