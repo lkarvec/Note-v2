@@ -13,6 +13,7 @@ import javax.sound.sampled.Clip;
 
 import application.Main;
 import application.model.Multithreadxylo;
+import application.model.PlayRecording;
 import application.model.Record;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -143,6 +144,16 @@ public class XylophoneController {
 		}
 		
 	}
+	
+	@FXML private void handlePlay() throws ClassNotFoundException {
+		
+		System.out.println("play");
+		
+		Thread play = new Thread(new PlayRecording()); play.start();
+			System.out.println("Rec start");
+		}
+		
+	
 	
 	@FXML private void handleC() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 		
