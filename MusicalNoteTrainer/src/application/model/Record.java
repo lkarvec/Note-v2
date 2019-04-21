@@ -9,21 +9,50 @@ import application.controller.XylophoneController;
 public class Record implements Runnable{
 	
 	public void run(){
+		String fileName="saves/";
+		 fileName+=XylophoneController.finame;
+		
+		 File file = new File(fileName);
+
+	        try {
+				if (file.createNewFile()) {
+				    
+				    System.out.println("File has been created.");
+				} else {
+				
+				    System.out.println("File already exists.");
+				}
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+	    
+	
+		
 		try {
-			FileWriter writer = new FileWriter( new File("data/try.csv"),false );
+			
+			
+			FileWriter writer = new FileWriter( new File(fileName),false );
 			int count = 0;
+			int i=0;
+			long start= 0;
+			long keep=0;
 			// open the file for writing
 			System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
 			String e = "";
 			while (XylophoneController.rec==true) {
+				if (i==0) {
+					start = System.currentTimeMillis();
+					i++;
+				}
 				System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
 				if (XylophoneController.notesRec == count+1 ) {
 					System.out.println(count + " xylo: " +XylophoneController.notesRec );
-				
+				keep=System.currentTimeMillis()-start;
 					count++;
-			e+= XylophoneController.lastPressed + "," + System.currentTimeMillis()+"\n";
+			e+= XylophoneController.lastPressed + "," +keep +"\n";
 				}}
-			
+			start=keep;
 
 			writer.write( e.toString());
 			// close the file
@@ -36,8 +65,12 @@ public class Record implements Runnable{
 		}catch( IOException e ) {
 			e.printStackTrace();
 		}
-		System.out.println("successfully closed");
-	}
+	
+	}}
+		
+		  
+	
+	
 				
 	
-}
+

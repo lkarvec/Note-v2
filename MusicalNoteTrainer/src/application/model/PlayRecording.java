@@ -2,19 +2,26 @@ package application.model;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 import application.controller.XylophoneController;
 
 public class PlayRecording implements Runnable {
-	
+	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {
+		long i = 0;
+		long tt = 0;
+		long maxTime = 0;
+		String fileName="saves/";
+		fileName+=XylophoneController.finame;
 		
 		try {
 			// open the file for reading
-			Scanner scan = new Scanner( new File("data/try.csv") );
+			Scanner scan = new Scanner( new File(fileName) );
 			long start =0;
-			int i=0;
+			
 			while( scan.hasNextLine() ) {
 				String line = scan.nextLine();
 				String[] tokens = line.split(",");
@@ -38,5 +45,5 @@ public class PlayRecording implements Runnable {
 		}
 		
 	}
-
 }
+

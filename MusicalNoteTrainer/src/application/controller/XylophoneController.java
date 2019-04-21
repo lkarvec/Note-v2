@@ -21,6 +21,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -96,12 +98,28 @@ public class XylophoneController {
 	@FXML
 	public ImageView Fs2; // Fs2
 	@FXML public Button record;
+	@FXML public  TextField playName;
+	@FXML public  TextField recordName;
+	@FXML public  TextArea listOfSaves;
 	
+	public static String finame="";
 	public static Boolean rec = false;
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
 	public void initialize() {
+		
+		
 		Main.currentStage= "Xylophone";
+		File folder = new File("saves");
+		File[] list = folder.listFiles();
+        String listf="";
+		for (int i = 0; i < list.length; i++) {
+		  if (list[i].isFile()) {
+		    listf+=list[i].getName()+"\n";
+		  } 
+		listOfSaves.setText(listf);
+		  
+		}
 		
 		
 	}
@@ -136,17 +154,32 @@ public class XylophoneController {
 	@FXML private void handleRec() throws ClassNotFoundException {
 		notesRec=0;
 		rec ^= true;
-		System.out.println(rec);
 		
+		System.out.println(rec);
+		System.out.println(finame);
 		if(rec == true) {
+			finame = recordName.getText();
 			Thread re = new Thread(new Record()); re.start();
 			System.out.println("Rec start");
+			
+		}
+		else if (rec == false) {
+			File folder = new File("saves");
+			File[] list = folder.listFiles();
+	        String listf="";
+			for (int i = 0; i < list.length; i++) {
+			  if (list[i].isFile()) {
+			    listf+=list[i].getName()+"\n";
+			  } 
+			listOfSaves.setText(listf);
+			  
+			}
 		}
 		
 	}
 	
 	@FXML private void handlePlay() throws ClassNotFoundException {
-		
+		finame = playName.getText();
 		System.out.println("play");
 		
 		Thread play = new Thread(new PlayRecording()); play.start();
