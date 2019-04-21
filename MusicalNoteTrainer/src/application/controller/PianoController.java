@@ -115,6 +115,7 @@ public class PianoController {
     		
     		Main.currentStage = "Piano";
     		
+
     		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { System.out.println("C3"); lastPressed = "C3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //C3
     		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Piano") ) { System.out.println("D3"); lastPressed = "D3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //D3
     		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.D && Main.currentStage.equals("Piano") ) { System.out.println("E3"); lastPressed = "E3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //E3

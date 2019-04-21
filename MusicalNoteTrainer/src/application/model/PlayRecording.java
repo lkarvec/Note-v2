@@ -29,9 +29,13 @@ public class PlayRecording implements Runnable {
 					start = Long.parseLong(tokens[1]);
 					i++;
 				}
+				if(XylophoneController.pla==true) {
+				 
 				Thread.sleep(Long.parseLong(tokens[1])-start);
 				XylophoneController.lastPressed = tokens[0]; Thread play = new Thread(new Multithreadxylo()); play.start();
 				start=Long.parseLong(tokens[1]);
+				
+				}
 				}
 				
 				

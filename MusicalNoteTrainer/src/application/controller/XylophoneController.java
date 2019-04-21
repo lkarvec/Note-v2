@@ -98,12 +98,14 @@ public class XylophoneController {
 	public ImageView Ds2; // Df2
 	@FXML
 	public ImageView Fs2; // Fs2
+	@FXML public  Button play;
 	@FXML public Button record;
 	@FXML public  TextField playName;
 	@FXML public  TextField recordName;
 	@FXML public  TextArea listOfSaves;
 	
 	public static String finame="";
+	public static Boolean pla = false;
 	public static Boolean rec = false;
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
@@ -188,7 +190,7 @@ public class XylophoneController {
 	@FXML private void handleRec() throws ClassNotFoundException {
 		notesRec=0;
 		rec ^= true;
-		
+		record.setText("Stop");
 		System.out.println(rec);
 		System.out.println(finame);
 		if(rec == true) {
@@ -198,6 +200,7 @@ public class XylophoneController {
 			
 		}
 		else if (rec == false) {
+			record.setText("Record");
 			File folder = new File("saves");
 			File[] list = folder.listFiles();
 	        String listf="";
@@ -213,13 +216,18 @@ public class XylophoneController {
 	}
 	
 	@FXML private void handlePlay() throws ClassNotFoundException {
+		pla ^= true;
+		if(pla==true) {
 		finame = playName.getText();
 		System.out.println("play");
-		
+		play.setText("Stop");
 		Thread play = new Thread(new PlayRecording()); play.start();
 			System.out.println("Play start");
 		}
-		
+		else if(pla==false) {
+			play.setText("Play");
+		}
+	}
 	
 	
 	@FXML private void handleC() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }

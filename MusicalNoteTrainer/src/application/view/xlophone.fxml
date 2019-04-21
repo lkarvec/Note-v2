@@ -173,7 +173,7 @@
                </image>
             </ImageView>
             <Button fx:id="ret" layoutX="482.0" layoutY="513.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
-            <Button layoutX="21.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleRec" text="Record" />
+            <Button fx:id="record" layoutX="34.0" layoutY="436.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRec" text="Record" />
             <Button fx:id="play" layoutX="37.0" layoutY="506.0" mnemonicParsing="false" onAction="#handlePlay" text="Play" />
             <TextField fx:id="recordName" layoutX="137.0" layoutY="436.0" />
             <TextField fx:id="playName" layoutX="136.0" layoutY="506.0" />
@@ -188,7 +188,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="61.0" layoutY="124.0" prefHeight="17.0" prefWidth="28.0" text="D#1">
+            <Label layoutX="61.0" layoutY="124.0" onMouseClicked="#handleDs" prefHeight="17.0" prefWidth="28.0" text="D#1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -229,7 +229,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="36.0" layoutY="90.0" prefHeight="17.0" prefWidth="16.0" text="Z">
+            <Label layoutX="36.0" layoutY="90.0" onMouseClicked="#handleCs" prefHeight="17.0" prefWidth="16.0" text="Z">
                <font>
                   <Font size="12.0" />
                </font>
@@ -239,12 +239,12 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="242.0" layoutY="124.0" prefHeight="17.0" prefWidth="22.0" text="C#2">
+            <Label layoutX="242.0" layoutY="124.0" onMouseClicked="#handleCs1" prefHeight="17.0" prefWidth="22.0" text="C#2">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="185.0" layoutY="124.0" prefHeight="17.0" prefWidth="22.0" text="A#1">
+            <Label layoutX="185.0" layoutY="124.0" onMouseClicked="#handleAs" prefHeight="17.0" prefWidth="22.0" text="A#1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -254,22 +254,22 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="280.0" layoutY="90.0" prefHeight="17.0" prefWidth="16.0" text="M">
+            <Label layoutX="280.0" layoutY="90.0" onMouseClicked="#handleDs1" prefHeight="17.0" prefWidth="16.0" text="M">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="273.0" layoutY="124.0" prefHeight="17.0" prefWidth="22.0" text="D#2">
+            <Label layoutX="273.0" layoutY="124.0" onMouseClicked="#handleDs1" prefHeight="17.0" prefWidth="22.0" text="D#2">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="154.0" layoutY="124.0" prefHeight="17.0" prefWidth="22.0" text="G#1">
+            <Label layoutX="154.0" layoutY="124.0" onMouseClicked="#handleGs" prefHeight="17.0" prefWidth="22.0" text="G#1">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="65.0" layoutY="90.0" prefHeight="17.0" prefWidth="16.0" text="X">
+            <Label layoutX="65.0" layoutY="90.0" onMouseClicked="#handleDs" prefHeight="17.0" prefWidth="16.0" text="X">
                <font>
                   <Font size="12.0" />
                </font>
@@ -334,12 +334,12 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="249.0" layoutY="91.0" prefHeight="17.0" prefWidth="14.0" text="N">
+            <Label layoutX="249.0" layoutY="91.0" onMouseClicked="#handleCs1" prefHeight="17.0" prefWidth="14.0" text="N">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="159.0" layoutY="89.0" prefHeight="17.0" prefWidth="16.0" text="V">
+            <Label layoutX="159.0" layoutY="89.0" onMouseClicked="#handleGs" prefHeight="17.0" prefWidth="16.0" text="V">
                <font>
                   <Font size="12.0" />
                </font>
@@ -349,7 +349,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="127.0" layoutY="91.0" prefHeight="17.0" prefWidth="16.0" text="C">
+            <Label layoutX="127.0" layoutY="91.0" onMouseClicked="#handleFs" prefHeight="17.0" prefWidth="16.0" text="C">
                <font>
                   <Font size="12.0" />
                </font>
@@ -369,12 +369,12 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="31.0" layoutY="124.0" prefHeight="17.0" prefWidth="28.0" text="C#1">
+            <Label layoutX="31.0" layoutY="124.0" onMouseClicked="#handleCs" prefHeight="17.0" prefWidth="28.0" text="C#1">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="340.0" layoutY="91.0" prefHeight="17.0" prefWidth="16.0" text=",">
+            <Label layoutX="340.0" layoutY="91.0" onMouseClicked="#handleFs1" prefHeight="17.0" prefWidth="16.0" text=",">
                <font>
                   <Font size="12.0" />
                </font>
@@ -409,7 +409,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="123.0" layoutY="124.0" prefHeight="17.0" prefWidth="21.0" text="F#1">
+            <Label layoutX="123.0" layoutY="124.0" onMouseClicked="#handleFs" prefHeight="17.0" prefWidth="21.0" text="F#1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -459,7 +459,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="190.0" layoutY="89.0" prefHeight="17.0" prefWidth="16.0" text="B">
+            <Label layoutX="190.0" layoutY="89.0" onMouseClicked="#handleAs" prefHeight="17.0" prefWidth="16.0" text="B">
                <font>
                   <Font size="12.0" />
                </font>

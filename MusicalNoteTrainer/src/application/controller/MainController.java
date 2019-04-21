@@ -27,7 +27,7 @@ public class MainController {
 		}
 	}
 		
-	public void handleXylophone(ActionEvent event) { //Initialize Piano.fxml
+	public void handleXylophone(ActionEvent event) { //Initialize Xylophone.fxml
 			
 			try {
 				
