@@ -42,6 +42,20 @@ public class MainController {
 		
 	}
 	
+	public void handleKalimba(ActionEvent event) { //Initialize Kalimba.fxml
+		
+		try {
+			
+			Parent root = FXMLLoader.load(getClass().getResource("../view/Kalimba.fxml"));
+			Main.stage.setScene(new Scene(root, 600, 600));
+			Main.stage.show();
+			
+		}catch( IOException e ) {
+			System.out.println( "Error loading the file - please check its location." ); //output if file null
+			e.printStackTrace();
+		}
+	
+}
     @FXML
     public void initialize() {
     	try { Main.currentStage = "Main"; } 
