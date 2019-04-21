@@ -31,7 +31,7 @@ public class MainController {
 			
 			try {
 				
-				Parent root = FXMLLoader.load(getClass().getResource("../view/xlophone.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("../view/Xylophone.fxml"));
 				Main.stage.setScene(new Scene(root, 600, 600));
 				Main.stage.show();
 				
