@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -11,7 +12,16 @@
 <AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
   <children>
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="297.0" layoutX="14.0" layoutY="289.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
-    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="162.32965087890625" layoutX="137.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="324.659645898435" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="131.0" layoutX="86.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="451.0">
+         <fill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.7" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#e3f1ff" offset="0.007662835249042145" />
+                  <Stop color="#679acf" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
     <Label alignment="CENTER" contentDisplay="CENTER" disable="false" layoutX="0.0" layoutY="212.0" prefHeight="67.0" prefWidth="600.0" text="Please select an instrument:" textAlignment="CENTER" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="25.0" fx:id="x1" />
@@ -39,18 +49,15 @@
         <Image url="@../../../data/kalimba_template_mini.png" />
       </image>
     </ImageView>
-    <ImageView fitHeight="162.3297576904297" fitWidth="324.6595153808594" layoutX="137.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
+    <ImageView fitHeight="229.0" fitWidth="531.0" layoutX="98.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
       <image>
-        <Image url="@../../../data/note_template_mini.png" />
+        <Image url="@../../../data/logo.png" />
       </image>
     </ImageView>
-    <Label layoutX="155.0" layoutY="39.0" prefHeight="40.0" prefWidth="114.0" text="Musical">
+    <Label layoutX="7.0" layoutY="200.0" prefHeight="40.0" prefWidth="114.0">
       <font>
         <Font name="System Bold" size="30.0" fx:id="x3" />
       </font>
     </Label>
-    <Label font="$x3" layoutX="262.0" layoutY="79.0" prefHeight="40.0" prefWidth="76.659423828125" text="Note" />
-    <Label font="$x3" layoutX="334.0" layoutY="119.0" prefHeight="40.0" prefWidth="114.0" text="Trainer" />
-    <Label layoutX="192.0" layoutY="170.0" prefWidth="215.0" text="(Someone please make a snazzy logo)" />
   </children>
 </AnchorPane>
