@@ -499,9 +499,9 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f6f6f" height="65.0" layoutX="26.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="548.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f6f6f" height="51.0" layoutX="26.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="548.0" />
             <Label layoutX="33.0" layoutY="25.0" prefHeight="35.0" prefWidth="175.0" text="Xylophone.view" textFill="WHITE" />
-            <Button fx:id="ret" layoutX="461.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleReturn" style="-fx-background-color: #1e90ff; -fx-border-color: black; -fx-border-width: 3;" text="Return" textFill="WHITE" />
+            <Button fx:id="ret" layoutX="474.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleReturn" style="-fx-background-color: #1e90ff; -fx-border-color: black; -fx-border-width: 3;" text="Return" textFill="WHITE" />
          </children>
       </AnchorPane>
    </children>
