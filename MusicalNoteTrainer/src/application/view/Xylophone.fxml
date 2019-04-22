@@ -128,7 +128,7 @@
                   <Image url="@../../xylokeys/xylokeys.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="E2" fitHeight="87.0" fitWidth="31.0" layoutX="497.0" layoutY="162.0" onMouseClicked="#handleE2" onMouseEntered="#handleE3_entered" onMouseExited="#handleE3_exited" pickOnBounds="true" style="-fx-effect: brown;">
+            <ImageView fx:id="E2" fitHeight="87.0" fitWidth="31.0" layoutX="497.0" layoutY="162.0" onMouseClicked="#handleE2" onMouseEntered="#handleE3_entered" onMouseExited="#handleE3_exited" pickOnBounds="true">
                <image>
                   <Image url="@../../xylokeys/xylokeys.png" />
                </image>

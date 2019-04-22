@@ -279,5 +279,6 @@
     <Label alignment="CENTER" layoutX="490.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
     <Label alignment="CENTER" layoutX="222.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="$x2" height="43.0" layoutX="130.0" layoutY="480.0" stroke="$x3" strokeType="INSIDE" width="457.0" />
+      <TextArea fx:id="listOfSaves" layoutX="127.0" layoutY="468.0" prefHeight="67.0" prefWidth="207.0" />
   </children>
 </AnchorPane>
