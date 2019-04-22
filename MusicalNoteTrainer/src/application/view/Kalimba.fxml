@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.PianoController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PianoController">
   <children>
     <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="79.0" layoutY="394.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
       <image>
@@ -140,87 +140,87 @@
         <Font name="System Bold" size="30.0" />
       </font>
     </Label>
-    <ImageView fx:id="imgPianoC1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="51.0" layoutY="79.0" onMouseClicked="#handleC3_clicked" onMouseEntered="#handleC3_entered" onMouseExited="#handleC3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoC1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="51.0" layoutY="108.0" onMouseClicked="#handleC3_clicked" onMouseEntered="#handleC3_entered" onMouseExited="#handleC3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
       <image>
         <Image url="@../../keys/piano_left.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoD1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="80.0" layoutY="90.0" onMouseClicked="#handleD3_clicked" onMouseEntered="#handleD3_entered" onMouseExited="#handleD3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoD1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="80.0" layoutY="112.0" onMouseClicked="#handleD3_clicked" onMouseEntered="#handleD3_entered" onMouseExited="#handleD3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoE1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="109.0" layoutY="101.0" onMouseClicked="#handleE3_clicked" onMouseEntered="#handleE3_entered" onMouseExited="#handleE3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoE1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="109.0" layoutY="115.0" onMouseClicked="#handleE3_clicked" onMouseEntered="#handleE3_entered" onMouseExited="#handleE3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoF1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="138.0" layoutY="113.0" onMouseClicked="#handleF3_clicked" onMouseEntered="#handleF3_entered" onMouseExited="#handleF3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoF1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="138.0" layoutY="119.0" onMouseClicked="#handleF3_clicked" onMouseEntered="#handleF3_entered" onMouseExited="#handleF3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoG1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="167.0" layoutY="124.0" onMouseClicked="#handleG3_clicked" onMouseEntered="#handleG3_entered" onMouseExited="#handleG3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoG1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="167.0" layoutY="122.0" onMouseClicked="#handleG3_clicked" onMouseEntered="#handleG3_entered" onMouseExited="#handleG3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoA1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="196.0" layoutY="136.0" onMouseClicked="#handleA3_clicked" onMouseEntered="#handleA3_entered" onMouseExited="#handleA3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoA1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="197.0" layoutY="126.0" onMouseClicked="#handleA3_clicked" onMouseEntered="#handleA3_entered" onMouseExited="#handleA3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoB1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="225.0" layoutY="147.0" onMouseClicked="#handleB3_clicked" onMouseEntered="#handleB3_entered" onMouseExited="#handleB3_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoB1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="226.0" layoutY="129.0" onMouseClicked="#handleB3_clicked" onMouseEntered="#handleB3_entered" onMouseExited="#handleB3_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoC2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="254.0" layoutY="158.0" onMouseClicked="#handleC4_clicked" onMouseEntered="#handleC4_entered" onMouseExited="#handleC4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoC2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="253.0" layoutY="133.0" onMouseClicked="#handleC4_clicked" onMouseEntered="#handleC4_entered" onMouseExited="#handleC4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoD2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="283.0" layoutY="171.0" onMouseClicked="#handleD4_clicked" onMouseEntered="#handleD4_entered" onMouseExited="#handleD4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoD2" fitHeight="142.0" fitWidth="30.0" layoutX="283.0" layoutY="136.0" onMouseClicked="#handleD4_clicked" onMouseEntered="#handleD4_entered" onMouseExited="#handleD4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.5" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="287.0" AnchorPane.topAnchor="136.0">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoF2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="312.0" layoutY="161.0" onMouseClicked="#handleF4_clicked" onMouseEntered="#handleF4_entered" onMouseExited="#handleF4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoF2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="313.0" layoutY="133.0" onMouseClicked="#handleF4_clicked" onMouseEntered="#handleF4_entered" onMouseExited="#handleF4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoG2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="341.0" layoutY="150.0" onMouseClicked="#handleG4_clicked" onMouseEntered="#handleG4_entered" onMouseExited="#handleG4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoG2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="343.0" layoutY="129.0" onMouseClicked="#handleG4_clicked" onMouseEntered="#handleG4_entered" onMouseExited="#handleG4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoA2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="370.0" layoutY="136.0" onMouseClicked="#handleA4_clicked" onMouseEntered="#handleA4_entered" onMouseExited="#handleA4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoA2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="373.0" layoutY="126.0" onMouseClicked="#handleA4_clicked" onMouseEntered="#handleA4_entered" onMouseExited="#handleA4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoB2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="399.0" layoutY="124.0" onMouseClicked="#handleB4_clicked" onMouseEntered="#handleB4_entered" onMouseExited="#handleB4_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoB2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="400.0" layoutY="122.0" onMouseClicked="#handleB4_clicked" onMouseEntered="#handleB4_entered" onMouseExited="#handleB4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoC3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="428.0" layoutY="113.0" onMouseClicked="#handleC5_clicked" onMouseEntered="#handleC5_entered" onMouseExited="#handleC5_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoC3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="428.0" layoutY="119.0" onMouseClicked="#handleC5_clicked" onMouseEntered="#handleC5_entered" onMouseExited="#handleC5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoD3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="456.0" layoutY="101.0" onMouseClicked="#handleD5_clicked" onMouseEntered="#handleD5_entered" onMouseExited="#handleD5_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoD3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="456.0" layoutY="115.0" onMouseClicked="#handleD5_clicked" onMouseEntered="#handleD5_entered" onMouseExited="#handleD5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoE3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="485.0" layoutY="90.0" onMouseClicked="#handleE5_clicked" onMouseEntered="#handleE5_entered" onMouseExited="#handleE5_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoE3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="485.0" layoutY="112.0" onMouseClicked="#handleE5_clicked" onMouseEntered="#handleE5_entered" onMouseExited="#handleE5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
       <image>
         <Image url="@../../keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgPianoG3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="514.0" layoutY="79.0" onMouseClicked="#handleG5_clicked" onMouseEntered="#handleG5_entered" onMouseExited="#handleG5_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgPianoG3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="514.0" layoutY="108.0" onMouseClicked="#handleG5_clicked" onMouseEntered="#handleG5_entered" onMouseExited="#handleG5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
       <image>
         <Image url="@../../keys/piano_right.png" />
       </image>
@@ -231,23 +231,23 @@
         <Font name="System Bold" size="12.0" fx:id="x5" />
       </font>
     </CheckBox>
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="47.0" layoutY="196.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="208.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="105.0" layoutY="219.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="134.0" layoutY="231.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="163.0" layoutY="241.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="192.0" layoutY="254.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="221.0" layoutY="265.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="47.0" layoutY="227.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="232.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="105.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="134.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="162.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="192.0" layoutY="261.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="222.0" layoutY="267.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
     <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="249.0" layoutY="276.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C5" />
     <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="279.0" layoutY="286.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D5" />
     <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="308.0" layoutY="277.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="338.0" layoutY="267.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="365.0" layoutY="252.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="393.0" layoutY="241.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="422.0" layoutY="231.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="451.0" layoutY="218.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="480.0" layoutY="206.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="510.0" layoutY="196.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="339.0" layoutY="273.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="368.0" layoutY="264.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="396.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="422.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="451.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="480.0" layoutY="233.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="510.0" layoutY="221.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E6" />
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="33.0" layoutX="23.0" layoutY="22.0" stroke="#9f9f9f" strokeType="INSIDE" width="200.0" />
     <Label layoutX="32.0" layoutY="29.0" prefWidth="178.0" text="Kalimba.view">
       <font>
