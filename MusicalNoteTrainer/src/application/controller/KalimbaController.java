@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.net.URL;
 
 import application.Main;
+import application.model.MultithreadingInstance;
 import application.model.Multithreadxylo;
 import application.model.PlayRecording;
 import application.model.Record;
@@ -19,6 +20,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -27,39 +29,77 @@ import javafx.scene.media.AudioClip;
 public class KalimbaController {
 
 	@FXML
-	public ImageView C4; // C
+	public ImageView imgKalimbaC4; // C
 	@FXML
-	public ImageView D4; // D
+	public ImageView imgKalimbaD4; // D
 	@FXML
-	public ImageView E4; // E
+	public ImageView imgKalimbaE4; // E
 	@FXML
-	public ImageView FS4; // F
+	public ImageView imgKalimbaFS4; // F
 	@FXML
-	public ImageView G4; // G
+	public ImageView imgKalimbaG4; // G
 	@FXML
-	public ImageView A4; // A
+	public ImageView imgKalimbaA4; // A
 	@FXML
-	public ImageView B4; // B
+	public ImageView imgKalimbaB4; // B
 	@FXML
-	public ImageView C5; // C
+	public ImageView imgKalimbaC5; // C
 	@FXML
-	public ImageView D5; // D
+	public ImageView imgKalimbaD5; // D
 	@FXML
-	public ImageView E5; // E
+	public ImageView imgKalimbaE5; // E
 	@FXML
-	public ImageView FS5; // F
+	public ImageView imgKalimbaFS5; // F
 	@FXML
-	public ImageView G5; // G
+	public ImageView imgKalimbaG5; // G
 	@FXML
-	public ImageView A5; // A
+	public ImageView imgKalimbaA5; // A
 	@FXML
-	public ImageView B5; // B
+	public ImageView imgKalimbaB5; // B
 	@FXML
-	public ImageView C6; // C
+	public ImageView imgKalimbaC6; // C
 	@FXML
-	public ImageView D6; // D
+	public ImageView imgKalimbaD6; // D
 	@FXML
-	public ImageView E6; // E
+	public ImageView imgKalimbaE6; // E
+	@FXML
+	public ImageView imgKeyboardA;
+	@FXML
+	public ImageView imgKeyboardS;
+	@FXML
+	public ImageView imgKeyboardD;
+	@FXML
+	public ImageView imgKeyboardF;
+	@FXML
+	public ImageView imgKeyboardG;
+	@FXML
+	public ImageView imgKeyboardH;
+	@FXML
+	public ImageView imgKeyboardJ;
+	@FXML
+	public ImageView imgKeyboardK;
+	@FXML
+	public ImageView imgKeyboardL;
+	@FXML
+	public ImageView imgKeyboardQ;
+	@FXML
+	public ImageView imgKeyboardW;
+	@FXML
+	public ImageView imgKeyboardE;
+	@FXML
+	public ImageView imgKeyboardR;
+	@FXML
+	public ImageView imgKeyboardT;
+	@FXML
+	public ImageView imgKeyboardY;
+	@FXML
+	public ImageView imgKeyboardU;
+	@FXML
+	public ImageView imgKeyboardI;
+	@FXML 
+	public ImageView imgKeyboardO;
+	@FXML
+	public ImageView imgKeyboardP;
 	@FXML public  Button play;
 	@FXML public Button record;
 	@FXML public  TextField playName;
@@ -209,4 +249,77 @@ public class KalimbaController {
 	@FXML private void handleD6() throws ClassNotFoundException { notesRec++; lastPressed = "D6"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 	@FXML private void handleE6() throws ClassNotFoundException { notesRec++; lastPressed = "E6"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 
+	@FXML private void handleA_entered() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("keys/color2.png")); imgKalimbaD6.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleA_exited() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("keys/color.png")); imgKalimbaD6.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleA_clicked() throws ClassNotFoundException { lastPressed = "D6"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleS_entered() throws ClassNotFoundException { imgKeyboardS.setImage(new Image("keys/color2.png")); imgKalimbaG5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleS_exited() throws ClassNotFoundException { imgKeyboardS.setImage(new Image("keys/color.png")); imgKalimbaG5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleS_clicked() throws ClassNotFoundException { lastPressed = "G5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleD_entered() throws ClassNotFoundException { imgKeyboardD.setImage(new Image("keys/color2.png")); imgKalimbaC5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleD_exited() throws ClassNotFoundException { imgKeyboardD.setImage(new Image("keys/color.png")); imgKalimbaC5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleD_clicked() throws ClassNotFoundException { lastPressed = "C5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleF_entered() throws ClassNotFoundException { imgKeyboardF.setImage(new Image("keys/color2.png")); imgKalimbaFS4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleF_exited() throws ClassNotFoundException { imgKeyboardF.setImage(new Image("keys/color.png")); imgKalimbaFS4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleF_clicked() throws ClassNotFoundException { lastPressed = "FS4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleG_entered() throws ClassNotFoundException { imgKeyboardG.setImage(new Image("keys/color2.png")); imgKalimbaC4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleG_exited() throws ClassNotFoundException { imgKeyboardG.setImage(new Image("keys/color.png")); imgKalimbaC4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleG_clicked() throws ClassNotFoundException { lastPressed = "C4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleH_entered() throws ClassNotFoundException { imgKeyboardH.setImage(new Image("keys/color2.png")); imgKalimbaG4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleH_exited() throws ClassNotFoundException { imgKeyboardH.setImage(new Image("keys/color.png")); imgKalimbaG4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleH_clicked() throws ClassNotFoundException { lastPressed = "G4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleJ_entered() throws ClassNotFoundException { imgKeyboardJ.setImage(new Image("keys/color2.png")); imgKalimbaD5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleJ_exited() throws ClassNotFoundException { imgKeyboardJ.setImage(new Image("keys/color.png")); imgKalimbaD5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleJ_clicked() throws ClassNotFoundException { lastPressed = "D5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleK_entered() throws ClassNotFoundException { imgKeyboardK.setImage(new Image("keys/color2.png")); imgKalimbaA5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleK_exited() throws ClassNotFoundException { imgKeyboardK.setImage(new Image("keys/color.png")); imgKalimbaA5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleK_clicked() throws ClassNotFoundException { lastPressed = "A5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleL_entered() throws ClassNotFoundException { imgKeyboardL.setImage(new Image("keys/color2.png")); imgKalimbaE6.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleL_exited() throws ClassNotFoundException { imgKeyboardL.setImage(new Image("keys/color.png")); imgKalimbaE6.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleL_clicked() throws ClassNotFoundException { lastPressed = "E6"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleQ_entered() throws ClassNotFoundException { imgKeyboardQ.setImage(new Image("keys/color2.png")); }
+	@FXML private void handleQ_exited() throws ClassNotFoundException { imgKeyboardQ.setImage(new Image("keys/color.png"));  }
+	
+	@FXML private void handleW_entered() throws ClassNotFoundException { imgKeyboardW.setImage(new Image("keys/color2.png")); imgKalimbaB5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleW_exited() throws ClassNotFoundException { imgKeyboardW.setImage(new Image("keys/color.png")); imgKalimbaB5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleW_clicked() throws ClassNotFoundException { lastPressed = "B5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleE_entered() throws ClassNotFoundException { imgKeyboardE.setImage(new Image("keys/color2.png")); imgKalimbaE5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleE_exited() throws ClassNotFoundException { imgKeyboardE.setImage(new Image("keys/color.png")); imgKalimbaE5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleE_clicked() throws ClassNotFoundException { lastPressed = "E5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleR_entered() throws ClassNotFoundException { imgKeyboardR.setImage(new Image("keys/color2.png")); imgKalimbaA4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleR_exited() throws ClassNotFoundException { imgKeyboardR.setImage(new Image("keys/color.png")); imgKalimbaA4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleR_clicked() throws ClassNotFoundException { lastPressed = "A4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleT_entered() throws ClassNotFoundException { imgKeyboardT.setImage(new Image("keys/color2.png")); imgKalimbaD4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleT_exited() throws ClassNotFoundException { imgKeyboardT.setImage(new Image("keys/color.png")); imgKalimbaD4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleT_clicked() throws ClassNotFoundException { lastPressed = "D4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleY_entered() throws ClassNotFoundException { imgKeyboardY.setImage(new Image("keys/color2.png")); imgKalimbaE4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleY_exited() throws ClassNotFoundException { imgKeyboardY.setImage(new Image("keys/color.png")); imgKalimbaE4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleY_clicked() throws ClassNotFoundException { lastPressed = "E4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleU_entered() throws ClassNotFoundException { imgKeyboardU.setImage(new Image("keys/color2.png")); imgKalimbaB4.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleU_exited() throws ClassNotFoundException { imgKeyboardU.setImage(new Image("keys/color.png")); imgKalimbaB4.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleU_clicked() throws ClassNotFoundException { lastPressed = "B4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleI_entered() throws ClassNotFoundException { imgKeyboardI.setImage(new Image("keys/color2.png")); imgKalimbaFS5.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleI_exited() throws ClassNotFoundException { imgKeyboardI.setImage(new Image("keys/color.png")); imgKalimbaFS5.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleI_clicked() throws ClassNotFoundException { lastPressed = "FS5"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleO_entered() throws ClassNotFoundException { imgKeyboardO.setImage(new Image("keys/color2.png")); imgKalimbaC6.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleO_exited() throws ClassNotFoundException { imgKeyboardO.setImage(new Image("keys/color.png")); imgKalimbaC6.setImage(new Image("keys/piano_left.png"));  }
+	@FXML private void handleO_clicked() throws ClassNotFoundException { lastPressed = "C6"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleP_entered() throws ClassNotFoundException { imgKeyboardP.setImage(new Image("keys/color2.png"));}
+	@FXML private void handleP_exited() throws ClassNotFoundException { imgKeyboardP.setImage(new Image("keys/color.png"));}
 }
