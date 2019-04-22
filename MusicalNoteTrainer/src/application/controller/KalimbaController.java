@@ -191,12 +191,22 @@ public class KalimbaController {
 		}
 	}
 	
-	@FXML private void handleC() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleD() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleE() throws ClassNotFoundException { notesRec++; lastPressed = "E1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleF() throws ClassNotFoundException { notesRec++; lastPressed = "F1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleG() throws ClassNotFoundException { notesRec++; lastPressed = "G1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleA() throws ClassNotFoundException { notesRec++; lastPressed = "A1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleB() throws ClassNotFoundException { notesRec++; lastPressed = "B1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleC4() throws ClassNotFoundException { notesRec++; lastPressed = "C4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleD4() throws ClassNotFoundException { notesRec++; lastPressed = "D4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE4() throws ClassNotFoundException { notesRec++; lastPressed = "E4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleF4() throws ClassNotFoundException { notesRec++; lastPressed = "F4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleG4() throws ClassNotFoundException { notesRec++; lastPressed = "G4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleA4() throws ClassNotFoundException { notesRec++; lastPressed = "A4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleB4() throws ClassNotFoundException { notesRec++; lastPressed = "B4"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleC5() throws ClassNotFoundException { notesRec++; lastPressed = "C5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleD5() throws ClassNotFoundException { notesRec++; lastPressed = "D5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE5() throws ClassNotFoundException { notesRec++; lastPressed = "E5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleF5() throws ClassNotFoundException { notesRec++; lastPressed = "F5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleG5() throws ClassNotFoundException { notesRec++; lastPressed = "G5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleA5() throws ClassNotFoundException { notesRec++; lastPressed = "A5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleB5() throws ClassNotFoundException { notesRec++; lastPressed = "B5"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleC6() throws ClassNotFoundException { notesRec++; lastPressed = "C6"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleD6() throws ClassNotFoundException { notesRec++; lastPressed = "D6"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
+	@FXML private void handleE6() throws ClassNotFoundException { notesRec++; lastPressed = "E6"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
 
 }
