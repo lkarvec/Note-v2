@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PianoController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.KalimbaController">
   <children>
     <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="79.0" layoutY="394.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
       <image>
@@ -231,22 +231,22 @@
         <Font name="System Bold" size="12.0" fx:id="x5" />
       </font>
     </CheckBox>
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="47.0" layoutY="227.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="232.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="105.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="134.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="162.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="47.0" layoutY="227.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="232.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="105.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="134.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="162.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C5" />
     <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="192.0" layoutY="261.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="222.0" layoutY="267.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="249.0" layoutY="276.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="279.0" layoutY="286.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="308.0" layoutY="277.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="339.0" layoutY="273.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="368.0" layoutY="264.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="396.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="422.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="451.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="480.0" layoutY="233.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="222.0" layoutY="267.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="249.0" layoutY="276.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="279.0" layoutY="286.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="308.0" layoutY="277.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="339.0" layoutY="273.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="368.0" layoutY="264.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="396.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="422.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="451.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="480.0" layoutY="233.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
     <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="510.0" layoutY="221.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E6" />
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="33.0" layoutX="23.0" layoutY="22.0" stroke="#9f9f9f" strokeType="INSIDE" width="200.0" />
     <Label layoutX="32.0" layoutY="29.0" prefWidth="178.0" text="Kalimba.view">
@@ -259,25 +259,25 @@
         <Image url="@../../keys/keyboard2.png" />
       </image>
     </ImageView>
-    <Label alignment="CENTER" layoutX="82.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="129.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="175.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="268.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="314.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="362.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="408.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="454.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
+    <Label alignment="CENTER" layoutX="82.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="D6" />
+    <Label alignment="CENTER" layoutX="129.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="G5" />
+    <Label alignment="CENTER" layoutX="175.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="C5" />
+    <Label alignment="CENTER" layoutX="268.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="C4" />
+    <Label alignment="CENTER" layoutX="314.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" layoutX="362.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="D5" />
+    <Label alignment="CENTER" layoutX="408.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="A5" />
+    <Label alignment="CENTER" layoutX="454.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="E6" />
     <Label alignment="CENTER" layoutX="70.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="117.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="163.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="210.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="256.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="303.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="349.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="396.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="443.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
+    <Label alignment="CENTER" layoutX="117.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="B5" />
+    <Label alignment="CENTER" layoutX="163.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="E5" />
+    <Label alignment="CENTER" layoutX="210.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="A4" />
+    <Label alignment="CENTER" layoutX="256.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="D4" />
+    <Label alignment="CENTER" layoutX="303.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="E4" />
+    <Label alignment="CENTER" layoutX="349.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="B4" />
+    <Label alignment="CENTER" layoutX="396.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="F#5" />
+    <Label alignment="CENTER" layoutX="443.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="C6" />
     <Label alignment="CENTER" layoutX="490.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="222.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="--" />
+    <Label alignment="CENTER" layoutX="222.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="$x2" height="43.0" layoutX="130.0" layoutY="480.0" stroke="$x3" strokeType="INSIDE" width="457.0" />
   </children>
 </AnchorPane>
