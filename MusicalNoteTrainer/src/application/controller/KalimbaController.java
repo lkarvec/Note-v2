@@ -115,7 +115,7 @@ public class KalimbaController {
 		
 		
 		Main.currentStage= "Kalimba";
-		File folder = new File("saves");
+		File folder = new File("data/kalim_saves");
 		File[] list = folder.listFiles();
         String listf="";
 		for (int i = 0; i < list.length; i++) {
@@ -203,7 +203,7 @@ public class KalimbaController {
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("saves");
+			File folder = new File("data/kalim_saves");
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {

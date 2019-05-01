@@ -129,7 +129,7 @@ public class PianoController {
     	try {
     		
     		Main.currentStage = "Piano";
-    		File folder = new File("pianoSaves");
+    		File folder = new File("data/piano_saves");
     		File[] list = folder.listFiles();
             String listf="";
     		for (int i = 0; i < list.length; i++) {
@@ -217,7 +217,7 @@ public class PianoController {
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("pianoSaves");
+			File folder = new File("data/piano_saves");
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {

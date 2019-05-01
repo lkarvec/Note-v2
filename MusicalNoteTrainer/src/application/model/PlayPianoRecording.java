@@ -14,7 +14,7 @@ public class PlayPianoRecording implements Runnable {
 		long i = 0;
 		long tt = 0;
 		long maxTime = 0;
-		String fileName="pianoSaves/";
+		String fileName="data/piano_saves/";
 		fileName+=PianoController.finame;
 		
 		try {

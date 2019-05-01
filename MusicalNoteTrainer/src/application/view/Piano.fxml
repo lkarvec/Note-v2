@@ -13,97 +13,97 @@
   <children>
     <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="80.0" layoutY="304.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardS" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="126.0" layoutY="304.0" onMouseClicked="#handleS_clicked" onMouseEntered="#handleS_entered" onMouseExited="#handleS_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardD" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="173.0" layoutY="304.0" onMouseClicked="#handleD_clicked" onMouseEntered="#handleD_entered" onMouseExited="#handleD_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardF" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="219.0" layoutY="304.0" onMouseClicked="#handleF_clicked" onMouseEntered="#handleF_entered" onMouseExited="#handleF_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardG" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="266.0" layoutY="304.0" onMouseClicked="#handleG_clicked" onMouseEntered="#handleG_entered" onMouseExited="#handleG_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardH" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="313.0" layoutY="304.0" onMouseClicked="#handleH_clicked" onMouseEntered="#handleH_entered" onMouseExited="#handleH_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardJ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="359.0" layoutY="304.0" onMouseClicked="#handleJ_clicked" onMouseEntered="#handleJ_entered" onMouseExited="#handleJ_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardK" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="405.0" layoutY="304.0" onMouseClicked="#handleK_clicked" onMouseEntered="#handleK_entered" onMouseExited="#handleK_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardL" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="452.0" layoutY="304.0" onMouseClicked="#handleL_clicked" onMouseEntered="#handleL_entered" onMouseExited="#handleL_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardQ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="67.0" layoutY="259.0" onMouseClicked="#handleQ_clicked" onMouseEntered="#handleQ_entered" onMouseExited="#handleQ_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardW" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="114.0" layoutY="259.0" onMouseClicked="#handleW_clicked" onMouseEntered="#handleW_entered" onMouseExited="#handleW_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardE" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="160.0" layoutY="259.0" onMouseClicked="#handleE_clicked" onMouseEntered="#handleE_entered" onMouseExited="#handleE_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardR" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="206.0" layoutY="259.0" onMouseClicked="#handleR_clicked" onMouseEntered="#handleR_entered" onMouseExited="#handleR_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardT" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="253.0" layoutY="259.0" onMouseClicked="#handleT_clicked" onMouseEntered="#handleT_entered" onMouseExited="#handleT_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardY" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="300.0" layoutY="259.0" onMouseClicked="#handleY_clicked" onMouseEntered="#handleY_entered" onMouseExited="#handleY_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardU" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="346.0" layoutY="259.0" onMouseClicked="#handleU_clicked" onMouseEntered="#handleU_entered" onMouseExited="#handleU_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardI" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="392.0" layoutY="259.0" onMouseClicked="#handleI_clicked" onMouseEntered="#handleI_entered" onMouseExited="#handleI_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardO" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="439.0" layoutY="259.0" onMouseClicked="#handleO_clicked" onMouseEntered="#handleO_entered" onMouseExited="#handleO_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <ImageView id="imgPianoE1" fx:id="imgKeyboardP" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="486.0" layoutY="259.0" onMouseClicked="#handleP_clicked" onMouseEntered="#handleP_entered" onMouseExited="#handleP_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/color.PNG" />
+        <Image url="@../../piano_keys/color.PNG" />
       </image>
     </ImageView>
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="14.0" layoutY="536.0" strokeType="INSIDE" width="572.0">
@@ -128,162 +128,162 @@
     </Button>
     <ImageView fx:id="imgPianoC1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="25.0" layoutY="79.0" onMouseClicked="#handleC3_clicked" onMouseEntered="#handleC3_entered" onMouseExited="#handleC3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_left.png" />
+        <Image url="@../../piano_keys/piano_left.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoD1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="54.0" layoutY="79.0" onMouseClicked="#handleD3_clicked" onMouseEntered="#handleD3_entered" onMouseExited="#handleD3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoE1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="83.0" layoutY="79.0" onMouseClicked="#handleE3_clicked" onMouseEntered="#handleE3_entered" onMouseExited="#handleE3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoF1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="112.0" layoutY="79.0" onMouseClicked="#handleF3_clicked" onMouseEntered="#handleF3_entered" onMouseExited="#handleF3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoG1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="141.0" layoutY="79.0" onMouseClicked="#handleG3_clicked" onMouseEntered="#handleG3_entered" onMouseExited="#handleG3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoA1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="170.0" layoutY="79.0" onMouseClicked="#handleA3_clicked" onMouseEntered="#handleA3_entered" onMouseExited="#handleA3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoB1" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="199.0" layoutY="79.0" onMouseClicked="#handleB3_clicked" onMouseEntered="#handleB3_entered" onMouseExited="#handleB3_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoC2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="228.0" layoutY="79.0" onMouseClicked="#handleC4_clicked" onMouseEntered="#handleC4_entered" onMouseExited="#handleC4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoD2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="257.0" layoutY="79.0" onMouseClicked="#handleD4_clicked" onMouseEntered="#handleD4_entered" onMouseExited="#handleD4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoE2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="286.0" layoutY="79.0" onMouseClicked="#handleE4_clicked" onMouseEntered="#handleE4_entered" onMouseExited="#handleE4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoF2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="315.0" layoutY="79.0" onMouseClicked="#handleF4_clicked" onMouseEntered="#handleF4_entered" onMouseExited="#handleF4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoG2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="344.0" layoutY="79.0" onMouseClicked="#handleG4_clicked" onMouseEntered="#handleG4_entered" onMouseExited="#handleG4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoA2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="373.0" layoutY="79.0" onMouseClicked="#handleA4_clicked" onMouseEntered="#handleA4_entered" onMouseExited="#handleA4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoB2" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="402.0" layoutY="79.0" onMouseClicked="#handleB4_clicked" onMouseEntered="#handleB4_entered" onMouseExited="#handleB4_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoC3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="431.0" layoutY="79.0" onMouseClicked="#handleC5_clicked" onMouseEntered="#handleC5_entered" onMouseExited="#handleC5_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoD3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="460.0" layoutY="79.0" onMouseClicked="#handleD5_clicked" onMouseEntered="#handleD5_entered" onMouseExited="#handleD5_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoE3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="489.0" layoutY="79.0" onMouseClicked="#handleE5_clicked" onMouseEntered="#handleE5_entered" onMouseExited="#handleE5_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoF3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="518.0" layoutY="79.0" onMouseClicked="#handleF5_clicked" onMouseEntered="#handleF5_entered" onMouseExited="#handleF5_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_middle.png" />
+        <Image url="@../../piano_keys/piano_middle.png" />
       </image>
     </ImageView>
     <ImageView fx:id="imgPianoG3" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="547.0" layoutY="79.0" onMouseClicked="#handleG5_clicked" onMouseEntered="#handleG5_entered" onMouseExited="#handleG5_exited" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_right.png" />
+        <Image url="@../../piano_keys/piano_right.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoCD1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="44.0" layoutY="79.0" onMouseClicked="#handleDb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoDE1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="73.0" layoutY="79.0" onMouseClicked="#handleEb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoFG1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="131.0" layoutY="79.0" onMouseClicked="#handleGb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoGA1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="160.0" layoutY="79.0" onMouseClicked="#handleAb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoAB1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="189.0" layoutY="79.0" onMouseClicked="#handleBb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoCD2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="247.0" layoutY="79.0" onMouseClicked="#handleDb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoDE2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="276.0" layoutY="79.0" onMouseClicked="#handleEb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoFG2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="334.0" layoutY="79.0" onMouseClicked="#handleGb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoGA2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="363.0" layoutY="79.0" onMouseClicked="#handleAb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoAB2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="392.0" layoutY="79.0" onMouseClicked="#handleBb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoCD3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="449.0" layoutY="79.0" onMouseClicked="#handleDb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoDE3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="478.0" layoutY="79.0" onMouseClicked="#handleEb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <ImageView id="imgPianoFG3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="537.0" layoutY="79.0" onMouseClicked="#handleGb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/piano_top.png" />
+        <Image url="@../../piano_keys/piano_top.png" />
       </image>
     </ImageView>
     <Label alignment="CENTER" focusTraversable="false" layoutX="20.0" layoutY="198.0" mouseTransparent="true" prefHeight="24.0" prefWidth="40.0" text="C3">
@@ -317,7 +317,7 @@
     </Label>
     <ImageView fitHeight="139.26666973920192" fitWidth="522.25" layoutX="39.0" layoutY="235.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../keys/keyboard2.png" />
+        <Image url="@../../piano_keys/keyboard2.png" />
       </image>
     </ImageView>
     <Label alignment="CENTER" layoutX="83.0" layoutY="349.0" prefHeight="24.0" prefWidth="40.0" text="C3" />
