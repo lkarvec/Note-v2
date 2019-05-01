@@ -221,67 +221,67 @@
         <Image url="@../../keys/piano_right.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoCD1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="44.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoCD1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="44.0" layoutY="79.0" onMouseClicked="#handleDb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoDE1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="73.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoDE1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="73.0" layoutY="79.0" onMouseClicked="#handleEb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoEF1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="102.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoFG1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="131.0" layoutY="79.0" onMouseClicked="#handleGb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoGA1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="160.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoGA1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="160.0" layoutY="79.0" onMouseClicked="#handleAb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoAB1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="189.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoAB1" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="189.0" layoutY="79.0" onMouseClicked="#handleBb1_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoCD2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="247.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoCD2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="247.0" layoutY="79.0" onMouseClicked="#handleDb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoDE2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="276.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoDE2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="276.0" layoutY="79.0" onMouseClicked="#handleEb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoEF2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="305.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoFG2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="334.0" layoutY="79.0" onMouseClicked="#handleGb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoGA2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="363.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoGA2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="363.0" layoutY="79.0" onMouseClicked="#handleAb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoAB2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="392.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoAB2" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="392.0" layoutY="79.0" onMouseClicked="#handleBb2_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoCD3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="449.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoCD3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="449.0" layoutY="79.0" onMouseClicked="#handleDb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoDE3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="478.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoDE3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="478.0" layoutY="79.0" onMouseClicked="#handleEb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoEF3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="507.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoFG3" fitHeight="89.1581802368164" fitWidth="20.978395349839154" layoutX="537.0" layoutY="79.0" onMouseClicked="#handleGb3_clicked" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../keys/piano_top.png" />
       </image>

@@ -14,7 +14,7 @@ public class MultithreadingInstance implements Runnable {
     		// System.out.println ("Thread " + Thread.currentThread().getId() + " is running"); 
     		
     		Clip clip = AudioSystem.getClip();
-    		clip.open(AudioSystem.getAudioInputStream(new File("src/wav/" + PianoController.lastPressed + ".wav")));
+    		clip.open(AudioSystem.getAudioInputStream(new File("src/piano_wav/" + PianoController.lastPressed + ".wav")));
     		clip.start();
     		
     		// Need to figure thread closing later.

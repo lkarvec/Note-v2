@@ -52,9 +52,9 @@ public class PianoController {
 	public ImageView imgPianoE2; // 8
 	public ImageView imgPianoE3; // 9
 	
-	public ImageView imgPianoEF1;
-	public ImageView imgPianoEF2;
-	public ImageView imgPianoEF3;
+	public ImageView imgPianoFG1;
+	public ImageView imgPianoFG2;
+	public ImageView imgPianoFG3;
 	
 	public ImageView imgPianoF1; // 10
 	public ImageView imgPianoF2; // 11
@@ -120,8 +120,6 @@ public class PianoController {
 	
 	public static String lastPressed = "A0";
 	
-	//Finally going to have to play with Multi-threading
-	
 	//If recording == true, then handle should add key to string to be saved to file later.
 	
     @FXML
@@ -141,25 +139,63 @@ public class PianoController {
     		  
     		}
 
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { System.out.println("C3"); notesRec++; lastPressed = "C3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //C3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Piano") ) { System.out.println("D3"); notesRec++; lastPressed = "D3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //D3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.D && Main.currentStage.equals("Piano") ) { System.out.println("E3"); notesRec++; lastPressed = "E3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //E3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.F && Main.currentStage.equals("Piano") ) { System.out.println("F3"); notesRec++; lastPressed = "F3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //F3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.G && Main.currentStage.equals("Piano") ) { System.out.println("G3"); notesRec++; lastPressed = "G3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //G3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.H && Main.currentStage.equals("Piano") ) { System.out.println("A3"); notesRec++; lastPressed = "A3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //A3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.J && Main.currentStage.equals("Piano") ) { System.out.println("B3"); notesRec++; lastPressed = "B3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //B3
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.K && Main.currentStage.equals("Piano") ) { System.out.println("C4"); notesRec++; lastPressed = "C4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //C4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.L && Main.currentStage.equals("Piano") ) { System.out.println("D4"); notesRec++; lastPressed = "D4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //D4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.Q && Main.currentStage.equals("Piano") ) { System.out.println("E4"); notesRec++; lastPressed = "E4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //E4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.W && Main.currentStage.equals("Piano") ) { System.out.println("F4"); notesRec++; lastPressed = "F4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //F4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.E && Main.currentStage.equals("Piano") ) { System.out.println("G4"); notesRec++; lastPressed = "G4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //G4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.R && Main.currentStage.equals("Piano") ) { System.out.println("A4"); notesRec++; lastPressed = "A4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //A4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.T && Main.currentStage.equals("Piano") ) { System.out.println("B4"); notesRec++; lastPressed = "B4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //B4
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.Y && Main.currentStage.equals("Piano") ) { System.out.println("C5"); notesRec++; lastPressed = "C5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //C5
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.U && Main.currentStage.equals("Piano") ) { System.out.println("D5"); notesRec++; lastPressed = "D5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //D5
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.I && Main.currentStage.equals("Piano") ) { System.out.println("E5"); notesRec++; lastPressed = "E5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //E5
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Piano") ) { System.out.println("F5"); notesRec++; lastPressed = "F5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //F5
-    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.P && Main.currentStage.equals("Piano") ) { System.out.println("G5"); notesRec++; lastPressed = "G5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); } }); //G5
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { System.out.println("C3"); notesRec++; lastPressed = "C3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardA.setImage(new Image("keys/color2.png")); imgPianoC1.setImage(new Image("keys/piano_left2.png")); } }); //C3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { imgPianoC1.setImage(new Image("keys/piano_left.png")); imgKeyboardA.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Piano") ) { System.out.println("D3"); notesRec++; lastPressed = "D3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardS.setImage(new Image("keys/color2.png")); imgPianoD1.setImage(new Image("keys/piano_left2.png")); } }); //D3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Piano") ) { imgPianoD1.setImage(new Image("keys/piano_left.png")); imgKeyboardS.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.D && Main.currentStage.equals("Piano") ) { System.out.println("E3"); notesRec++; lastPressed = "E3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardD.setImage(new Image("keys/color2.png")); imgPianoE1.setImage(new Image("keys/piano_left2.png")); } }); //E3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.D && Main.currentStage.equals("Piano") ) { imgPianoE1.setImage(new Image("keys/piano_left.png")); imgKeyboardD.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.F && Main.currentStage.equals("Piano") ) { System.out.println("F3"); notesRec++; lastPressed = "F3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardF.setImage(new Image("keys/color2.png")); imgPianoF1.setImage(new Image("keys/piano_left2.png")); } }); //F3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.F && Main.currentStage.equals("Piano") ) { imgPianoF1.setImage(new Image("keys/piano_left.png")); imgKeyboardF.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.G && Main.currentStage.equals("Piano") ) { System.out.println("G3"); notesRec++; lastPressed = "G3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardG.setImage(new Image("keys/color2.png")); imgPianoG1.setImage(new Image("keys/piano_left2.png")); } }); //G3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.G && Main.currentStage.equals("Piano") ) { imgPianoG1.setImage(new Image("keys/piano_left.png")); imgKeyboardG.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.H && Main.currentStage.equals("Piano") ) { System.out.println("A3"); notesRec++; lastPressed = "A3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardH.setImage(new Image("keys/color2.png")); imgPianoA1.setImage(new Image("keys/piano_left2.png")); } }); //A3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.H && Main.currentStage.equals("Piano") ) { imgPianoA1.setImage(new Image("keys/piano_left.png")); imgKeyboardH.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.J && Main.currentStage.equals("Piano") ) { System.out.println("B3"); notesRec++; lastPressed = "B3"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardJ.setImage(new Image("keys/color2.png")); imgPianoB1.setImage(new Image("keys/piano_left2.png")); } }); //B3
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.J && Main.currentStage.equals("Piano") ) { imgPianoB1.setImage(new Image("keys/piano_left.png")); imgKeyboardJ.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.K && Main.currentStage.equals("Piano") ) { System.out.println("C4"); notesRec++; lastPressed = "C4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardK.setImage(new Image("keys/color2.png")); imgPianoC2.setImage(new Image("keys/piano_left2.png")); } }); //C4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.K && Main.currentStage.equals("Piano") ) { imgPianoC2.setImage(new Image("keys/piano_left.png")); imgKeyboardK.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.L && Main.currentStage.equals("Piano") ) { System.out.println("D4"); notesRec++; lastPressed = "D4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardL.setImage(new Image("keys/color2.png")); imgPianoD2.setImage(new Image("keys/piano_left2.png")); } }); //D4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.L && Main.currentStage.equals("Piano") ) { imgPianoD2.setImage(new Image("keys/piano_left.png")); imgKeyboardL.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.Q && Main.currentStage.equals("Piano") ) { System.out.println("E4"); notesRec++; lastPressed = "E4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardQ.setImage(new Image("keys/color2.png")); imgPianoE2.setImage(new Image("keys/piano_left2.png")); } }); //E4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.Q && Main.currentStage.equals("Piano") ) { imgPianoE2.setImage(new Image("keys/piano_left.png")); imgKeyboardQ.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.W && Main.currentStage.equals("Piano") ) { System.out.println("F4"); notesRec++; lastPressed = "F4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardW.setImage(new Image("keys/color2.png")); imgPianoF2.setImage(new Image("keys/piano_left2.png")); } }); //F4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.W && Main.currentStage.equals("Piano") ) { imgPianoF2.setImage(new Image("keys/piano_left.png")); imgKeyboardW.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.E && Main.currentStage.equals("Piano") ) { System.out.println("G4"); notesRec++; lastPressed = "G4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardE.setImage(new Image("keys/color2.png")); imgPianoG2.setImage(new Image("keys/piano_left2.png")); } }); //G4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.E && Main.currentStage.equals("Piano") ) { imgPianoG2.setImage(new Image("keys/piano_left.png")); imgKeyboardE.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.R && Main.currentStage.equals("Piano") ) { System.out.println("A4"); notesRec++; lastPressed = "A4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardR.setImage(new Image("keys/color2.png")); imgPianoA2.setImage(new Image("keys/piano_left2.png")); } }); //A4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.R && Main.currentStage.equals("Piano") ) { imgPianoA2.setImage(new Image("keys/piano_left.png")); imgKeyboardR.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.T && Main.currentStage.equals("Piano") ) { System.out.println("B4"); notesRec++; lastPressed = "B4"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardT.setImage(new Image("keys/color2.png")); imgPianoB2.setImage(new Image("keys/piano_left2.png")); } }); //B4
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.T && Main.currentStage.equals("Piano") ) { imgPianoB2.setImage(new Image("keys/piano_left.png")); imgKeyboardT.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.Y && Main.currentStage.equals("Piano") ) { System.out.println("C5"); notesRec++; lastPressed = "C5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardY.setImage(new Image("keys/color2.png")); imgPianoC3.setImage(new Image("keys/piano_left2.png")); } }); //C5
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.Y && Main.currentStage.equals("Piano") ) { imgPianoC3.setImage(new Image("keys/piano_left.png")); imgKeyboardY.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.U && Main.currentStage.equals("Piano") ) { System.out.println("D5"); notesRec++; lastPressed = "D5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardU.setImage(new Image("keys/color2.png")); imgPianoD3.setImage(new Image("keys/piano_left2.png")); } }); //D5
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.U && Main.currentStage.equals("Piano") ) { imgPianoD3.setImage(new Image("keys/piano_left.png")); imgKeyboardU.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.I && Main.currentStage.equals("Piano") ) { System.out.println("E5"); notesRec++; lastPressed = "E5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardI.setImage(new Image("keys/color2.png")); imgPianoE3.setImage(new Image("keys/piano_left2.png")); } }); //E5
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.I && Main.currentStage.equals("Piano") ) { imgPianoE3.setImage(new Image("keys/piano_left.png")); imgKeyboardI.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Piano") ) { System.out.println("F5"); notesRec++; lastPressed = "F5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardO.setImage(new Image("keys/color2.png")); imgPianoF3.setImage(new Image("keys/piano_left2.png")); } }); //F5
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Piano") ) { imgPianoF3.setImage(new Image("keys/piano_left.png")); imgKeyboardO.setImage(new Image("keys/color.png")); } }); //C3
+    		
+    		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.P && Main.currentStage.equals("Piano") ) { System.out.println("G5"); notesRec++; lastPressed = "G5"; Thread object = new Thread(new MultithreadingInstance()); object.start(); imgKeyboardP.setImage(new Image("keys/color2.png")); imgPianoG3.setImage(new Image("keys/piano_left2.png")); } }); //G5
+    		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.P && Main.currentStage.equals("Piano") ) { imgPianoG3.setImage(new Image("keys/piano_left.png")); imgKeyboardP.setImage(new Image("keys/color.png")); } }); //C3
+    		
     		
     	} catch (Exception e) { 
             System.out.println ("Exception is caught"); 
@@ -279,6 +315,31 @@ public class PianoController {
 	@FXML private void handleB4_exited() throws ClassNotFoundException { imgPianoB2.setImage(new Image("keys/piano_left.png")); }
 	@FXML private void handleB4_clicked() throws ClassNotFoundException { lastPressed = "B4"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
 	
+	
+	@FXML private void handleBb1_clicked() throws ClassNotFoundException { lastPressed = "Bb1"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleBb2_clicked() throws ClassNotFoundException { lastPressed = "Bb2"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleBb3_clicked() throws ClassNotFoundException { lastPressed = "Bb3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleAb1_clicked() throws ClassNotFoundException { lastPressed = "Ab1"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleAb2_clicked() throws ClassNotFoundException { lastPressed = "Ab2"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleAb3_clicked() throws ClassNotFoundException { lastPressed = "Ab3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleGb1_clicked() throws ClassNotFoundException { lastPressed = "Gb1"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleGb2_clicked() throws ClassNotFoundException { lastPressed = "Gb2"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleGb3_clicked() throws ClassNotFoundException { lastPressed = "Gb3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleEb1_clicked() throws ClassNotFoundException { lastPressed = "Eb1"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleEb2_clicked() throws ClassNotFoundException { lastPressed = "Eb2"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleEb3_clicked() throws ClassNotFoundException { lastPressed = "Eb3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	@FXML private void handleDb1_clicked() throws ClassNotFoundException { lastPressed = "Db1"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleDb2_clicked() throws ClassNotFoundException { lastPressed = "Db2"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	@FXML private void handleDb3_clicked() throws ClassNotFoundException { lastPressed = "Db3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
+	
+	/**
+	 * Block for keyboard handlers.
+	 * @throws ClassNotFoundException
+	 */
 	@FXML private void handleA_entered() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("keys/color2.png")); imgPianoC1.setImage(new Image("keys/piano_left2.png")); }
 	@FXML private void handleA_exited() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("keys/color.png")); imgPianoC1.setImage(new Image("keys/piano_left.png"));  }
 	@FXML private void handleA_clicked() throws ClassNotFoundException { lastPressed = "C3"; notesRec++; Thread object = new Thread(new MultithreadingInstance()); object.start(); }
