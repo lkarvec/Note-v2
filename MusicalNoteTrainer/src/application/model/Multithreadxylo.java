@@ -18,7 +18,7 @@ public class Multithreadxylo implements Runnable {
 	    		
 	    		Clip clip = AudioSystem.getClip();
 	    		System.out.println(XylophoneController.lastPressed);
-	    		clip.open(AudioSystem.getAudioInputStream(new File("src/xyloNote/Mallet " + XylophoneController.lastPressed + ".wav")));
+	    		clip.open(AudioSystem.getAudioInputStream(new File("src/xylo_wav/Mallet " + XylophoneController.lastPressed + ".wav")));
 	    		
 	    		clip.start();
 	    		

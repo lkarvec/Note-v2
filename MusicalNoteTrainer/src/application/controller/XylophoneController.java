@@ -31,80 +31,47 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.media.AudioClip;
 
 public class XylophoneController {
-	@FXML
+	
 	public ImageView C; // C
-	@FXML
 	public ImageView D; // D
-	@FXML
 	public ImageView E; // E
-	@FXML
 	public ImageView F; // F
-	@FXML
 	public ImageView G; // G
-	@FXML
 	public ImageView A; // A
-	@FXML
 	public ImageView B; // B
-	@FXML
 	public ImageView C1; // C1
-	@FXML
 	public ImageView D1; // D1
-	@FXML
 	public ImageView E1; // E1
-	@FXML
 	public ImageView F1; // F1
-	@FXML
 	public ImageView G1; // G1
-	@FXML
 	public ImageView A1; // A1
-	@FXML
 	public ImageView B1; // B1
-	@FXML
 	public ImageView C2; // C2
-	@FXML
 	public ImageView D2; // D2
-	@FXML
 	public ImageView E2; // E2
-	@FXML
 	public ImageView F2; // F2
-	@FXML
 	public ImageView G2; // G2
-	@FXML
 	public ImageView A2; // A2
-	@FXML
 	public ImageView B2; // B2
-	@FXML
 	public ImageView Cs; // Cs
-	@FXML
 	public ImageView Ds; // Ds
-	@FXML
 	public ImageView Fs; // Fs
-	@FXML
 	public ImageView Gs; // Gs
-	@FXML
 	public ImageView As; // As
-	@FXML
 	public ImageView Cs1; // Cs1
-	@FXML
 	public ImageView Ds1; // Ds1
-	@FXML
 	public ImageView Fs1; // Fs1
-	@FXML
 	public ImageView Gs1; // Gs1
-	@FXML
 	public ImageView As1; // As1
-	@FXML
 	public ImageView Cs2; // Cs2
-	@FXML
 	public ImageView Ds2; // Df2
-	@FXML
 	public ImageView Fs3; // Fs2
 	
-	@FXML public  Button play;
-	@FXML public Button record;
-	@FXML public  TextField playName;
-	@FXML public  TextField recordName;
-	@FXML public  TextArea listOfSaves;
+	public Button play;
+	public Button record;
+	public TextField playName;
+	public TextField recordName;
+	public TextArea listOfSaves;
 	
 	public static String finame="";
 	public static Boolean pla = false;
@@ -182,7 +149,7 @@ public class XylophoneController {
 	
 	
 	private void playClip(String note) {
-		String name="/xyloNote/Mallet"+note+".wav";
+		String name="/xylo_wav/Mallet"+note+".wav";
 		 URL resource = getClass().getResource(name);
 		  AudioClip n = new AudioClip( resource.toString() );
 		n.play(3.0);

@@ -32,49 +32,49 @@ public class PianoController {
 	
 	public static boolean pla = false;
 	public TextArea listOfSaves;
-	public ImageView imgPianoC1; // 1
-	public ImageView imgPianoC2; // 2
-	public ImageView imgPianoC3; // 3
+	public ImageView imgPianoC1; // C1
+	public ImageView imgPianoC2; // C2
+	public ImageView imgPianoC3; // C3
 	
-	public ImageView imgPianoCD1;
-	public ImageView imgPianoCD2;
-	public ImageView imgPianoCD3;
+	public ImageView imgPianoCD1; // CD1
+	public ImageView imgPianoCD2; // CD2
+	public ImageView imgPianoCD3; // CD3
 	
-	public ImageView imgPianoD1; // 4
-	public ImageView imgPianoD2; // 5
-	public ImageView imgPianoD3; // 6
+	public ImageView imgPianoD1; // D1
+	public ImageView imgPianoD2; // D2
+	public ImageView imgPianoD3; // D3
 	
-	public ImageView imgPianoDE1;
-	public ImageView imgPianoDE2;
-	public ImageView imgPianoDE3;
+	public ImageView imgPianoDE1; // DE1
+	public ImageView imgPianoDE2; // DE2
+	public ImageView imgPianoDE3; // DE3
 	
-	public ImageView imgPianoE1; // 7
-	public ImageView imgPianoE2; // 8
-	public ImageView imgPianoE3; // 9
+	public ImageView imgPianoE1; // E1
+	public ImageView imgPianoE2; // E2
+	public ImageView imgPianoE3; // E3
 	
-	public ImageView imgPianoFG1;
-	public ImageView imgPianoFG2;
-	public ImageView imgPianoFG3;
+	public ImageView imgPianoFG1; // FG1
+	public ImageView imgPianoFG2; // FG2
+	public ImageView imgPianoFG3; // FG3
 	
-	public ImageView imgPianoF1; // 10
-	public ImageView imgPianoF2; // 11
-	public ImageView imgPianoF3; // 12
+	public ImageView imgPianoF1; // F1
+	public ImageView imgPianoF2; // F2
+	public ImageView imgPianoF3; // F3
 	
-	public ImageView imgPianoG1; // 13
-	public ImageView imgPianoG2; // 14
-	public ImageView imgPianoG3; // 15
+	public ImageView imgPianoG1; // G1
+	public ImageView imgPianoG2; // G2
+	public ImageView imgPianoG3; // G3
 	
-	public ImageView imgPianoGA1;
-	public ImageView imgPianoGA2;
+	public ImageView imgPianoGA1; // GA1
+	public ImageView imgPianoGA2; // GA2
 	
-	public ImageView imgPianoA1; // 16
-	public ImageView imgPianoA2; // 17
+	public ImageView imgPianoA1; // A1
+	public ImageView imgPianoA2; // A2
 	
-	public ImageView imgPianoAB1;
-	public ImageView imgPianoAB2;
+	public ImageView imgPianoAB1; //AB1
+	public ImageView imgPianoAB2; //AB2
 	
-	public ImageView imgPianoB1; // 18
-	public ImageView imgPianoB2; // 19
+	public ImageView imgPianoB1; // B1
+	public ImageView imgPianoB2; // B2
 	
 	public ImageView imgKeyboardA;
 	public ImageView imgKeyboardS;
@@ -95,6 +95,7 @@ public class PianoController {
 	public ImageView imgKeyboardI;
 	public ImageView imgKeyboardO;
 	public ImageView imgKeyboardP;
+	
 	public static boolean rec;
 	public Button record;
 	public Button play;
