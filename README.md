@@ -2,7 +2,7 @@
 Spring 2019 - Team 6
 
 
-Christopher Tyler [christophergtyler, MagicShmagic]
+Christopher Tyler [christophergtyler / MagicShmagic, tbl512]
 
 Alexander Mains [lkarvec, rta149]
 
