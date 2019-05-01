@@ -200,100 +200,100 @@ public class XylophoneController {
 	
 	
 	@FXML private void handleC() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleC1_entered() throws ClassNotFoundException { C.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleC1_entered() throws ClassNotFoundException { C.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleC1_exited() throws ClassNotFoundException { C.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleD() throws ClassNotFoundException { notesRec++; lastPressed = "D1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleD1_entered() throws ClassNotFoundException { D.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleD1_entered() throws ClassNotFoundException { D.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleD1_exited() throws ClassNotFoundException { D.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleE() throws ClassNotFoundException { notesRec++; lastPressed = "E1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleE1_entered() throws ClassNotFoundException { E.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleE1_entered() throws ClassNotFoundException { E.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleE1_exited() throws ClassNotFoundException { E.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleF() throws ClassNotFoundException { notesRec++; lastPressed = "F1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleF1_entered() throws ClassNotFoundException { F.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleF1_entered() throws ClassNotFoundException { F.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleF1_exited() throws ClassNotFoundException { F.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleG() throws ClassNotFoundException { notesRec++; lastPressed = "G1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleG1_entered() throws ClassNotFoundException { G.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleG1_entered() throws ClassNotFoundException { G.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleG1_exited() throws ClassNotFoundException { G.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleA() throws ClassNotFoundException { notesRec++; lastPressed = "A1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleA1_entered() throws ClassNotFoundException { A.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleA1_entered() throws ClassNotFoundException { A.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleA1_exited() throws ClassNotFoundException { A.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleB() throws ClassNotFoundException { notesRec++; lastPressed = "B1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleB1_entered() throws ClassNotFoundException { B.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleB1_entered() throws ClassNotFoundException { B.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleB1_exited() throws ClassNotFoundException { B.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleC1() throws ClassNotFoundException { notesRec++; lastPressed = "C2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleC2_entered() throws ClassNotFoundException { C1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleC2_entered() throws ClassNotFoundException { C1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleC2_exited() throws ClassNotFoundException { C1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleD1() throws ClassNotFoundException { notesRec++; lastPressed = "D2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleD2_entered() throws ClassNotFoundException { D1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleD2_entered() throws ClassNotFoundException { D1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleD2_exited() throws ClassNotFoundException { D1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleE1() throws ClassNotFoundException { notesRec++; lastPressed = "E2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleE2_entered() throws ClassNotFoundException { E1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleE2_entered() throws ClassNotFoundException { E1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleE2_exited() throws ClassNotFoundException { E1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleF1() throws ClassNotFoundException { notesRec++; lastPressed = "F2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleF2_entered() throws ClassNotFoundException { F1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleF2_entered() throws ClassNotFoundException { F1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleF2_exited() throws ClassNotFoundException { F1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleG1() throws ClassNotFoundException { notesRec++; lastPressed = "G2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleG2_entered() throws ClassNotFoundException { G1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleG2_entered() throws ClassNotFoundException { G1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleG2_exited() throws ClassNotFoundException { G1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleA1() throws ClassNotFoundException { notesRec++; lastPressed = "A2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleA2_entered() throws ClassNotFoundException { A1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleA2_entered() throws ClassNotFoundException { A1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleA2_exited() throws ClassNotFoundException { A1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleB1() throws ClassNotFoundException { notesRec++; lastPressed = "B2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleB2_entered() throws ClassNotFoundException { B1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleB2_entered() throws ClassNotFoundException { B1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleB2_exited() throws ClassNotFoundException { B1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleC2() throws ClassNotFoundException { notesRec++; lastPressed = "C3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleC3_entered() throws ClassNotFoundException { C2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleC3_entered() throws ClassNotFoundException { C2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleC3_exited() throws ClassNotFoundException { C2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleD2()throws ClassNotFoundException { notesRec++; lastPressed = "D3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleD3_entered() throws ClassNotFoundException { D2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleD3_entered() throws ClassNotFoundException { D2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleD3_exited() throws ClassNotFoundException { D2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleE2() throws ClassNotFoundException { notesRec++; lastPressed = "E3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleE3_entered() throws ClassNotFoundException { E2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleE3_entered() throws ClassNotFoundException { E2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleE3_exited() throws ClassNotFoundException { E2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleF2() throws ClassNotFoundException { notesRec++; lastPressed = "F3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleF3_entered() throws ClassNotFoundException { F2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleF3_entered() throws ClassNotFoundException { F2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleF3_exited() throws ClassNotFoundException { F2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleG2() throws ClassNotFoundException { notesRec++; lastPressed = "G3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleG3_entered() throws ClassNotFoundException { G2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleG3_entered() throws ClassNotFoundException { G2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleG3_exited() throws ClassNotFoundException { G2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleCs1() throws ClassNotFoundException { notesRec++; lastPressed = "C#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleCs2_entered() throws ClassNotFoundException { Cs1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleCs2_entered() throws ClassNotFoundException { Cs1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleCs2_exited() throws ClassNotFoundException { Cs1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleDs1() throws ClassNotFoundException { notesRec++; lastPressed = "D#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleDs2_entered() throws ClassNotFoundException { Ds1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleDs2_entered() throws ClassNotFoundException { Ds1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleDs2_exited() throws ClassNotFoundException { Ds1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleFs1() throws ClassNotFoundException { notesRec++; lastPressed = "F#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleFs2_entered() throws ClassNotFoundException { Fs1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleFs2_entered() throws ClassNotFoundException { Fs1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleFs2_exited() throws ClassNotFoundException { Fs1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleGs1() throws ClassNotFoundException { notesRec++;  lastPressed = "G#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleGs2_entered() throws ClassNotFoundException { Gs1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleGs2_entered() throws ClassNotFoundException { Gs1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleGs2_exited() throws ClassNotFoundException { Gs1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleAs1() throws ClassNotFoundException { notesRec++; lastPressed = "A#2"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleAs2_entered() throws ClassNotFoundException { As1.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleAs2_entered() throws ClassNotFoundException { As1.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleAs2_exited() throws ClassNotFoundException { As1.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleCs()throws ClassNotFoundException { notesRec++; lastPressed = "C#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleCs1_entered() throws ClassNotFoundException { Cs.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleCs1_entered() throws ClassNotFoundException { Cs.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleCs1_exited() throws ClassNotFoundException { Cs.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleDs()throws ClassNotFoundException { notesRec++; lastPressed = "D#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleDs1_entered() throws ClassNotFoundException { Ds.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleDs1_entered() throws ClassNotFoundException { Ds.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleDs1_exited() throws ClassNotFoundException { Ds.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleFs() throws ClassNotFoundException { notesRec++; lastPressed = "F#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleFs1_entered() throws ClassNotFoundException { Fs.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleFs1_entered() throws ClassNotFoundException { Fs.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleFs1_exited() throws ClassNotFoundException { Fs.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleGs() throws ClassNotFoundException { notesRec++; lastPressed = "G#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleGs1_entered() throws ClassNotFoundException { Gs.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleGs1_entered() throws ClassNotFoundException { Gs.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleGs1_exited() throws ClassNotFoundException { Gs.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleAs() throws ClassNotFoundException { notesRec++; lastPressed = "A#1"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleAs1_entered() throws ClassNotFoundException { As.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleAs1_entered() throws ClassNotFoundException { As.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleAs1_exited() throws ClassNotFoundException { As.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleCs2() throws ClassNotFoundException { notesRec++; lastPressed = "C#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleCs3_entered() throws ClassNotFoundException { Cs2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleCs3_entered() throws ClassNotFoundException { Cs2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleCs3_exited() throws ClassNotFoundException { Cs2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleDs2() throws ClassNotFoundException { notesRec++; lastPressed = "D#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }	
-	@FXML private void handleDs3_entered() throws ClassNotFoundException { Ds2.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleDs3_entered() throws ClassNotFoundException { Ds2.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleDs3_exited() throws ClassNotFoundException { Ds2.setImage(new Image("xylokeys/xylokeys.png"));  }
 	@FXML private void handleFs3() throws ClassNotFoundException { notesRec++; lastPressed = "F#3"; Thread object = new Thread(new Multithreadxylo()); object.start(); }
-	@FXML private void handleFs3_entered() throws ClassNotFoundException { Fs3.setImage(new Image("keys/piano_left2.png")); }
+	@FXML private void handleFs3_entered() throws ClassNotFoundException { Fs3.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleFs3_exited() throws ClassNotFoundException { Fs3.setImage(new Image("xylokeys/xylokeys.png"));  }
 	
 }
