@@ -14,7 +14,7 @@ public class PlayRecording implements Runnable {
 		long i = 0;
 		long tt = 0;
 		long maxTime = 0;
-		String fileName="saves/";
+		String fileName="data/xylo_saves/";
 		fileName+=XylophoneController.finame;
 		
 		try {

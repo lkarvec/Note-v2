@@ -9,7 +9,7 @@ import application.controller.PianoController;
 
 public class PianoRecord implements Runnable{
 	public void run(){
-		String fileName="pianoSaves/";
+		String fileName="data/piano_saves/";
 		 fileName+=PianoController.finame;
 		
 		 File file = new File(fileName);
@@ -67,5 +67,4 @@ public class PianoRecord implements Runnable{
 		}
 	
 	}
-
 }

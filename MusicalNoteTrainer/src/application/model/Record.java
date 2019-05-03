@@ -9,7 +9,7 @@ import application.controller.XylophoneController;
 public class Record implements Runnable{
 	
 	public void run(){
-		String fileName="saves/";
+		String fileName="data/xylo_saves/";
 		 fileName+=XylophoneController.finame;
 		
 		 File file = new File(fileName);
@@ -66,11 +66,5 @@ public class Record implements Runnable{
 			e.printStackTrace();
 		}
 	
-	}}
-		
-		  
-	
-	
-				
-	
-
+	}
+}
