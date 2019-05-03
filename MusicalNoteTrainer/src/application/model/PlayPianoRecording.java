@@ -32,7 +32,7 @@ public class PlayPianoRecording implements Runnable {
 				if(PianoController.pla==true) {
 				 
 				Thread.sleep(Long.parseLong(tokens[1])-start);
-				PianoController.lastPressed = tokens[0]; Thread play = new Thread(new MultithreadingInstance()); play.start();
+				PianoController.lastPressed = tokens[0]; Thread play = new Thread(new MultithreadingPiano()); play.start();
 				start=Long.parseLong(tokens[1]);
 				
 				}

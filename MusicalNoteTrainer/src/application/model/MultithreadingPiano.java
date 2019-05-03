@@ -5,7 +5,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import application.controller.PianoController;
 
-public class MultithreadingInstance implements Runnable { 
+public class MultithreadingPiano implements Runnable { 
 	
     public void run() { 
         

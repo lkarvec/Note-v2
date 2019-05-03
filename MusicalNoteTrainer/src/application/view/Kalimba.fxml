@@ -9,104 +9,104 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.KalimbaController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.KalimbaController">
   <children>
-    <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="79.0" layoutY="394.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="79.0" layoutY="371.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardS" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="125.0" layoutY="394.0" onMouseClicked="#handleS_clicked" onMouseEntered="#handleS_entered" onMouseExited="#handleS_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardS" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="125.0" layoutY="371.0" onMouseClicked="#handleS_clicked" onMouseEntered="#handleS_entered" onMouseExited="#handleS_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardD" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="172.0" layoutY="394.0" onMouseClicked="#handleD_clicked" onMouseEntered="#handleD_entered" onMouseExited="#handleD_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardD" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="172.0" layoutY="371.0" onMouseClicked="#handleD_clicked" onMouseEntered="#handleD_entered" onMouseExited="#handleD_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardF" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="218.0" layoutY="394.0" onMouseClicked="#handleF_clicked" onMouseEntered="#handleF_entered" onMouseExited="#handleF_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardF" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="218.0" layoutY="371.0" onMouseClicked="#handleF_clicked" onMouseEntered="#handleF_entered" onMouseExited="#handleF_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardG" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="265.0" layoutY="394.0" onMouseClicked="#handleG_clicked" onMouseEntered="#handleG_entered" onMouseExited="#handleG_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardG" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="265.0" layoutY="371.0" onMouseClicked="#handleG_clicked" onMouseEntered="#handleG_entered" onMouseExited="#handleG_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardH" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="312.0" layoutY="394.0" onMouseClicked="#handleH_clicked" onMouseEntered="#handleH_entered" onMouseExited="#handleH_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardH" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="312.0" layoutY="371.0" onMouseClicked="#handleH_clicked" onMouseEntered="#handleH_entered" onMouseExited="#handleH_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardJ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="358.0" layoutY="394.0" onMouseClicked="#handleJ_clicked" onMouseEntered="#handleJ_entered" onMouseExited="#handleJ_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardJ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="358.0" layoutY="371.0" onMouseClicked="#handleJ_clicked" onMouseEntered="#handleJ_entered" onMouseExited="#handleJ_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardK" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="404.0" layoutY="394.0" onMouseClicked="#handleK_clicked" onMouseEntered="#handleK_entered" onMouseExited="#handleK_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardK" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="404.0" layoutY="371.0" onMouseClicked="#handleK_clicked" onMouseEntered="#handleK_entered" onMouseExited="#handleK_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardL" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="451.0" layoutY="394.0" onMouseClicked="#handleL_clicked" onMouseEntered="#handleL_entered" onMouseExited="#handleL_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardL" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="451.0" layoutY="371.0" onMouseClicked="#handleL_clicked" onMouseEntered="#handleL_entered" onMouseExited="#handleL_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardQ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="66.0" layoutY="349.0" onMouseEntered="#handleQ_entered" onMouseExited="#handleQ_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardQ" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="66.0" layoutY="326.0" onMouseEntered="#handleQ_entered" onMouseExited="#handleQ_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardW" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="113.0" layoutY="349.0" onMouseClicked="#handleW_clicked" onMouseEntered="#handleW_entered" onMouseExited="#handleW_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardW" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="113.0" layoutY="326.0" onMouseClicked="#handleW_clicked" onMouseEntered="#handleW_entered" onMouseExited="#handleW_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardE" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="159.0" layoutY="349.0" onMouseClicked="#handleE_clicked" onMouseEntered="#handleE_entered" onMouseExited="#handleE_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardE" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="159.0" layoutY="326.0" onMouseClicked="#handleE_clicked" onMouseEntered="#handleE_entered" onMouseExited="#handleE_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardR" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="205.0" layoutY="349.0" onMouseClicked="#handleR_clicked" onMouseEntered="#handleR_entered" onMouseExited="#handleR_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardR" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="205.0" layoutY="326.0" onMouseClicked="#handleR_clicked" onMouseEntered="#handleR_entered" onMouseExited="#handleR_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardT" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="252.0" layoutY="349.0" onMouseClicked="#handleT_clicked" onMouseEntered="#handleT_entered" onMouseExited="#handleT_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardT" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="252.0" layoutY="326.0" onMouseClicked="#handleT_clicked" onMouseEntered="#handleT_entered" onMouseExited="#handleT_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardY" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="299.0" layoutY="349.0" onMouseClicked="#handleY_clicked" onMouseEntered="#handleY_entered" onMouseExited="#handleY_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardY" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="299.0" layoutY="326.0" onMouseClicked="#handleY_clicked" onMouseEntered="#handleY_entered" onMouseExited="#handleY_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardU" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="345.0" layoutY="349.0" onMouseClicked="#handleU_clicked" onMouseEntered="#handleU_entered" onMouseExited="#handleU_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardU" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="345.0" layoutY="326.0" onMouseClicked="#handleU_clicked" onMouseEntered="#handleU_entered" onMouseExited="#handleU_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardI" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="391.0" layoutY="349.0" onMouseClicked="#handleI_clicked" onMouseEntered="#handleI_entered" onMouseExited="#handleI_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardI" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="391.0" layoutY="326.0" onMouseClicked="#handleI_clicked" onMouseEntered="#handleI_entered" onMouseExited="#handleI_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardO" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="438.0" layoutY="349.0" onMouseClicked="#handleO_clicked" onMouseEntered="#handleO_entered" onMouseExited="#handleO_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardO" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="438.0" layoutY="326.0" onMouseClicked="#handleO_clicked" onMouseEntered="#handleO_entered" onMouseExited="#handleO_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <ImageView id="imgPianoE1" fx:id="imgKeyboardP" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="485.0" layoutY="349.0" onMouseEntered="#handleP_entered" onMouseExited="#handleP_exited" pickOnBounds="true" preserveRatio="true">
+    <ImageView id="imgPianoE1" fx:id="imgKeyboardP" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="485.0" layoutY="326.0" onMouseEntered="#handleP_entered" onMouseExited="#handleP_exited" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/color.PNG" />
       </image>
     </ImageView>
-    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="14.0" layoutY="536.0" strokeType="INSIDE" width="572.0">
+    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" height="50.0" layoutX="14.0" layoutY="14.0" strokeType="INSIDE" width="572.0">
       <fill>
         <Color blue="0.875" green="0.875" red="0.875" fx:id="x2" />
       </fill>
@@ -114,171 +114,157 @@
         <Color blue="0.749" green="0.749" red="0.749" fx:id="x3" />
       </stroke>
     </Rectangle>
-    <Button layoutX="194.0" layoutY="544.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="79.0" text="Upload File">
+    <Button layoutX="497.0" layoutY="22.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="35.0" prefWidth="79.0" text="Return">
       <font>
         <Font name="System Bold" size="11.0" fx:id="x4" />
       </font>
     </Button>
-    <TextField editable="false" layoutX="281.0" layoutY="544.0" prefHeight="35.0" prefWidth="295.0" />
-    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="$x2" height="50.0" layoutX="14.0" layoutY="14.0" stroke="$x3" strokeType="INSIDE" width="572.0" />
-    <Button font="$x4" layoutX="497.0" layoutY="22.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="35.0" prefWidth="79.0" text="Return" />
-    <Button layoutX="125.0" layoutY="544.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0" text="" />
-    <Button layoutX="74.0" layoutY="544.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0" text="" />
-    <Button layoutX="23.0" layoutY="544.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0" text="" />
-    <Label alignment="CENTER" contentDisplay="CENTER" disable="false" focusTraversable="true" layoutX="23.0" layoutY="533.0" minHeight="17.0" mouseTransparent="true" prefHeight="43.0" prefWidth="40.0" text="●">
-      <font>
-        <Font size="35.0" />
-      </font>
-    </Label>
-    <Label alignment="CENTER" focusTraversable="true" layoutX="74.0" layoutY="543.0" minHeight="17.0" mouseTransparent="true" prefHeight="34.999900000002526" prefWidth="40.0" text="■">
-      <font>
-        <Font name="System Bold" size="20.0" fx:id="x1" />
-      </font>
-    </Label>
-    <Label alignment="CENTER" focusTraversable="true" layoutX="125.0" layoutY="540.0" minHeight="17.0" mouseTransparent="true" prefHeight="34.999900000002526" prefWidth="40.0" text="▶" underline="false">
-      <font>
-        <Font name="System Bold" size="30.0" />
-      </font>
-    </Label>
-    <ImageView fx:id="imgKalimbaD6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="51.0" layoutY="108.0" onMouseClicked="#handleD6_clicked" onMouseEntered="#handleD6_entered" onMouseExited="#handleD6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
+    <ImageView fx:id="imgKalimbaD6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="53.0" layoutY="85.0" onMouseClicked="#handleD6_clicked" onMouseEntered="#handleD6_entered" onMouseExited="#handleD6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
       <image>
         <Image url="@../../kalim_keys/piano_left.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaB5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="80.0" layoutY="112.0" onMouseClicked="#handleB5_clicked" onMouseEntered="#handleB5_entered" onMouseExited="#handleB5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
+    <ImageView fx:id="imgKalimbaB5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="82.0" layoutY="89.0" onMouseClicked="#handleB5_clicked" onMouseEntered="#handleB5_entered" onMouseExited="#handleB5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaG5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="109.0" layoutY="115.0" onMouseClicked="#handleG5_clicked" onMouseEntered="#handleG5_entered" onMouseExited="#handleG5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
+    <ImageView fx:id="imgKalimbaG5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="111.0" layoutY="92.0" onMouseClicked="#handleG5_clicked" onMouseEntered="#handleG5_entered" onMouseExited="#handleG5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaE5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="138.0" layoutY="119.0" onMouseClicked="#handleE5_clicked" onMouseEntered="#handleE5_entered" onMouseExited="#handleE5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
+    <ImageView fx:id="imgKalimbaE5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="140.0" layoutY="96.0" onMouseClicked="#handleE5_clicked" onMouseEntered="#handleE5_entered" onMouseExited="#handleE5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaC5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="167.0" layoutY="122.0" onMouseClicked="#handleC5_clicked" onMouseEntered="#handleC5_entered" onMouseExited="#handleC5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
+    <ImageView fx:id="imgKalimbaC5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="169.0" layoutY="99.0" onMouseClicked="#handleC5_clicked" onMouseEntered="#handleC5_entered" onMouseExited="#handleC5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaA4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="197.0" layoutY="126.0" onMouseClicked="#handleA4_clicked" onMouseEntered="#handleA4_entered" onMouseExited="#handleA4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
+    <ImageView fx:id="imgKalimbaA4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="198.0" layoutY="103.0" onMouseClicked="#handleA4_clicked" onMouseEntered="#handleA4_entered" onMouseExited="#handleA4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaFS4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="226.0" layoutY="129.0" onMouseClicked="#handleFS4_clicked" onMouseEntered="#handleFS4_entered" onMouseExited="#handleFS4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
+    <ImageView fx:id="imgKalimbaFS4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="227.0" layoutY="106.0" onMouseClicked="#handleFS4_clicked" onMouseEntered="#handleFS4_entered" onMouseExited="#handleFS4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaD4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="253.0" layoutY="133.0" onMouseClicked="#handleD4_clicked" onMouseEntered="#handleD4_entered" onMouseExited="#handleD4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
+    <ImageView fx:id="imgKalimbaD4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="256.0" layoutY="110.0" onMouseClicked="#handleD4_clicked" onMouseEntered="#handleD4_entered" onMouseExited="#handleD4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaC4" fitHeight="142.0" fitWidth="30.0" layoutX="283.0" layoutY="136.0" onMouseClicked="#handleC4_clicked" onMouseEntered="#handleC4_entered" onMouseExited="#handleC4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.5" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="287.0" AnchorPane.topAnchor="136.0">
+    <ImageView fx:id="imgKalimbaC4" fitHeight="142.0" fitWidth="30.0" onMouseClicked="#handleC4_clicked" onMouseEntered="#handleC4_entered" onMouseExited="#handleC4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.5" AnchorPane.bottomAnchor="345.0" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="285.0" AnchorPane.topAnchor="113.0">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaE4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="313.0" layoutY="133.0" onMouseClicked="#handleE4_clicked" onMouseEntered="#handleE4_entered" onMouseExited="#handleE4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
+    <ImageView fx:id="imgKalimbaE4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="314.0" layoutY="110.0" onMouseClicked="#handleE4_clicked" onMouseEntered="#handleE4_entered" onMouseExited="#handleE4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.45">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaG4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="343.0" layoutY="129.0" onMouseClicked="#handleG4_clicked" onMouseEntered="#handleG4_entered" onMouseExited="#handleG4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
+    <ImageView fx:id="imgKalimbaG4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="343.0" layoutY="106.0" onMouseClicked="#handleG4_clicked" onMouseEntered="#handleG4_entered" onMouseExited="#handleG4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaB4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="373.0" layoutY="126.0" onMouseClicked="#handleB4_clicked" onMouseEntered="#handleB4_entered" onMouseExited="#handleB4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
+    <ImageView fx:id="imgKalimbaB4" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="372.0" layoutY="103.0" onMouseClicked="#handleB4_clicked" onMouseEntered="#handleB4_entered" onMouseExited="#handleB4_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.35">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaD5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="400.0" layoutY="122.0" onMouseClicked="#handleD5_clicked" onMouseEntered="#handleD5_entered" onMouseExited="#handleD5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
+    <ImageView fx:id="imgKalimbaD5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="401.0" layoutY="99.0" onMouseClicked="#handleD5_clicked" onMouseEntered="#handleD5_entered" onMouseExited="#handleD5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaFS5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="428.0" layoutY="119.0" onMouseClicked="#handleFS5_clicked" onMouseEntered="#handleFS5_entered" onMouseExited="#handleFS5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
+    <ImageView fx:id="imgKalimbaFS5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="430.0" layoutY="96.0" onMouseClicked="#handleFS5_clicked" onMouseEntered="#handleFS5_entered" onMouseExited="#handleFS5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.25">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaA5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="456.0" layoutY="115.0" onMouseClicked="#handleA5_clicked" onMouseEntered="#handleA5_entered" onMouseExited="#handleA5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
+    <ImageView fx:id="imgKalimbaA5" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="458.0" layoutY="92.0" onMouseClicked="#handleA5_clicked" onMouseEntered="#handleA5_entered" onMouseExited="#handleA5_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.2">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaC6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="485.0" layoutY="112.0" onMouseClicked="#handleC6_clicked" onMouseEntered="#handleC6_entered" onMouseExited="#handleC6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
+    <ImageView fx:id="imgKalimbaC6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="487.0" layoutY="89.0" onMouseClicked="#handleC6_clicked" onMouseEntered="#handleC6_entered" onMouseExited="#handleC6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.15">
       <image>
         <Image url="@../../kalim_keys/piano_middle.png" />
       </image>
     </ImageView>
-    <ImageView fx:id="imgKalimbaE6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="514.0" layoutY="108.0" onMouseClicked="#handleE6_clicked" onMouseEntered="#handleE6_entered" onMouseExited="#handleE6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
+    <ImageView fx:id="imgKalimbaE6" fitHeight="141.5157470703125" fitWidth="29.97841322476533" layoutX="516.0" layoutY="85.0" onMouseClicked="#handleE6_clicked" onMouseEntered="#handleE6_entered" onMouseExited="#handleE6_exited" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
       <image>
         <Image url="@../../kalim_keys/piano_right.png" />
       </image>
     </ImageView>
-    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="$x2" height="43.0" layoutX="14.0" layoutY="480.0" stroke="$x3" strokeType="INSIDE" width="100.0" />
-    <CheckBox layoutX="24.0" layoutY="485.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="87.9783935546875" text="Hide Keys">
+    <Label alignment="CENTER" focusTraversable="false" layoutX="48.0" layoutY="209.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6">
       <font>
         <Font name="System Bold" size="12.0" fx:id="x5" />
       </font>
-    </CheckBox>
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="47.0" layoutY="227.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D6" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="232.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="105.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="134.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="162.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="192.0" layoutY="261.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="222.0" layoutY="267.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="249.0" layoutY="276.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="279.0" layoutY="286.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="308.0" layoutY="277.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="339.0" layoutY="273.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="368.0" layoutY="264.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="396.0" layoutY="255.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="422.0" layoutY="246.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="451.0" layoutY="240.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="480.0" layoutY="233.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
-    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="510.0" layoutY="221.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E6" />
+    </Label>
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="76.0" layoutY="217.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="106.0" layoutY="223.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="135.0" layoutY="231.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="164.0" layoutY="237.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="193.0" layoutY="244.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="221.0" layoutY="251.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="251.0" layoutY="258.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="279.0" layoutY="266.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="309.0" layoutY="258.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="338.0" layoutY="251.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="367.0" layoutY="244.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="B4" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="395.0" layoutY="237.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="D5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="424.0" layoutY="230.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="F#5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="453.0" layoutY="223.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="A5" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="481.0" layoutY="215.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="C6" />
+    <Label alignment="CENTER" focusTraversable="false" font="$x5" layoutX="511.0" layoutY="209.0" mouseTransparent="false" prefHeight="24.0" prefWidth="40.0" text="E6" />
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="33.0" layoutX="23.0" layoutY="22.0" stroke="#9f9f9f" strokeType="INSIDE" width="200.0" />
     <Label layoutX="32.0" layoutY="29.0" prefWidth="178.0" text="Kalimba.view">
       <font>
-        <Font size="14.0" />
+        <Font size="14.0" fx:id="x6" />
       </font>
     </Label>
-    <ImageView fitHeight="139.26666973920192" fitWidth="522.25" layoutX="38.0" layoutY="325.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="139.26666973920192" fitWidth="522.25" layoutX="38.0" layoutY="302.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../kalim_keys/keyboard2.png" />
       </image>
     </ImageView>
-    <Label alignment="CENTER" layoutX="82.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="D6" />
-    <Label alignment="CENTER" layoutX="129.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="G5" />
-    <Label alignment="CENTER" layoutX="175.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="C5" />
-    <Label alignment="CENTER" layoutX="268.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="C4" />
-    <Label alignment="CENTER" layoutX="314.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="G4" />
-    <Label alignment="CENTER" layoutX="362.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="D5" />
-    <Label alignment="CENTER" layoutX="408.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="A5" />
-    <Label alignment="CENTER" layoutX="454.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="E6" />
-    <Label alignment="CENTER" layoutX="70.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="117.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="B5" />
-    <Label alignment="CENTER" layoutX="163.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="E5" />
-    <Label alignment="CENTER" layoutX="210.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="A4" />
-    <Label alignment="CENTER" layoutX="256.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="D4" />
-    <Label alignment="CENTER" layoutX="303.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="E4" />
-    <Label alignment="CENTER" layoutX="349.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="B4" />
-    <Label alignment="CENTER" layoutX="396.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="F#5" />
-    <Label alignment="CENTER" layoutX="443.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="C6" />
-    <Label alignment="CENTER" layoutX="490.0" layoutY="325.0" prefHeight="24.0" prefWidth="40.0" text="--" />
-    <Label alignment="CENTER" layoutX="222.0" layoutY="439.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
-    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="$x2" height="43.0" layoutX="130.0" layoutY="480.0" stroke="$x3" strokeType="INSIDE" width="457.0" />
-      <TextArea fx:id="listOfSaves" layoutX="127.0" layoutY="468.0" prefHeight="67.0" prefWidth="207.0" />
+    <Label alignment="CENTER" layoutX="82.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="D6" />
+    <Label alignment="CENTER" layoutX="129.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="G5" />
+    <Label alignment="CENTER" layoutX="175.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="C5" />
+    <Label alignment="CENTER" layoutX="268.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="C4" />
+    <Label alignment="CENTER" layoutX="314.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="G4" />
+    <Label alignment="CENTER" layoutX="362.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="D5" />
+    <Label alignment="CENTER" layoutX="408.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="A5" />
+    <Label alignment="CENTER" layoutX="454.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="E6" />
+    <Label alignment="CENTER" layoutX="70.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="--" />
+    <Label alignment="CENTER" layoutX="117.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="B5" />
+    <Label alignment="CENTER" layoutX="163.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="E5" />
+    <Label alignment="CENTER" layoutX="210.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="A4" />
+    <Label alignment="CENTER" layoutX="256.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="D4" />
+    <Label alignment="CENTER" layoutX="303.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="E4" />
+    <Label alignment="CENTER" layoutX="349.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="B4" />
+    <Label alignment="CENTER" layoutX="396.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="F#5" />
+    <Label alignment="CENTER" layoutX="443.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="C6" />
+    <Label alignment="CENTER" layoutX="490.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="--" />
+    <Label alignment="CENTER" layoutX="222.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
+    <TextArea fx:id="listOfSaves" layoutX="38.0" layoutY="453.0" prefHeight="71.0" prefWidth="260.0" />
+    <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="50.0" layoutX="14.0" layoutY="536.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
+    <Button id="record" layoutX="23.0" layoutY="544.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleRecord" prefHeight="35.0" prefWidth="80.0" text="Record">
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <TextField id="recordName" alignment="CENTER_LEFT" layoutX="112.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to record..." />
+    <Button id="play" font="$x1" layoutX="307.0" layoutY="544.0" minHeight="35.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="35.0" prefWidth="80.0" text="Play" />
+    <TextField id="playName" layoutX="396.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to play..." />
+    <Label alignment="CENTER" font="$x6" layoutX="314.0" layoutY="453.0" prefHeight="71.0" prefWidth="246.0" text="List of availiable audio files to play." wrapText="true" />
   </children>
 </AnchorPane>
