@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import application.controller.XylophoneController;
 
-public class PlayRecording implements Runnable {
+public class XyloPlay implements Runnable {
 	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {
 		long i = 0;

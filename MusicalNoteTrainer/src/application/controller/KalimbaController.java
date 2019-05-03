@@ -6,13 +6,12 @@
 package application.controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.URL;
-
 import application.Main;
+import application.model.KalimPlay;
+import application.model.KalimRecord;
 import application.model.MultithreadingKalimba;
-import application.model.PianoRecord;
-import application.model.PlayPianoRecording;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,7 +24,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.media.AudioClip;
 
 public class KalimbaController {
 
@@ -101,18 +99,20 @@ public class KalimbaController {
 	public ImageView imgKeyboardO;
 	@FXML
 	public ImageView imgKeyboardP;
-	@FXML public  Button play;
-	@FXML public Button record;
-	@FXML public  TextField playName;
-	@FXML public  TextField recordName;
-	@FXML public  TextArea listOfSaves;
+	
+	public Button play;
+	public Button record;
+	public TextField playName;
+	public TextField recordName;
+	public TextArea listOfSaves;
 	
 	public static String finame="";
 	public static Boolean pla = false;
 	public static Boolean rec = false;
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
-	public void initialize() {
+	
+	public void initialize() throws FileNotFoundException{
 		
 		
 		Main.currentStage= "Kalimba";
@@ -180,16 +180,6 @@ public class KalimbaController {
 		
 	}
 	
-	
-	
-	private void playClip(String note) {
-		String name="/xyloNote/Mallet"+note+".wav";
-		 URL resource = getClass().getResource(name);
-		  AudioClip n = new AudioClip( resource.toString() );
-		n.play(3.0);
-		
-	}
-	
     @FXML private void handleRecord() throws ClassNotFoundException {
 		notesRec=0;
 		 rec ^= true;
@@ -198,13 +188,13 @@ public class KalimbaController {
 		System.out.println(finame);
 		if(rec == true) {
 			finame = recordName.getText();
-			Thread re = new Thread(new PianoRecord()); re.start();
+			Thread re = new Thread(new KalimRecord()); re.start();
 			System.out.println("Rec start");
 			
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("data/piano_saves");
+			File folder = new File("data/kalim_saves");
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {
@@ -224,7 +214,7 @@ public class KalimbaController {
 		finame = playName.getText();
 		System.out.println("play");
 		play.setText("Stop");
-		Thread play = new Thread(new PlayPianoRecording()); play.start();
+		Thread play = new Thread(new KalimPlay()); play.start();
 			System.out.println("Play start");
 		}
 		else if(pla==false) {

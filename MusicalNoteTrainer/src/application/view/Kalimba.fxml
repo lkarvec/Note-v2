@@ -257,14 +257,14 @@
     <Label alignment="CENTER" layoutX="222.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
     <TextArea fx:id="listOfSaves" layoutX="38.0" layoutY="453.0" prefHeight="71.0" prefWidth="260.0" />
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="50.0" layoutX="14.0" layoutY="536.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
-    <Button id="record" layoutX="23.0" layoutY="544.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleRecord" prefHeight="35.0" prefWidth="80.0" text="Record">
+    <Button fx:id="record" layoutX="23.0" layoutY="544.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleRecord" prefHeight="35.0" prefWidth="80.0" text="Record">
       <font>
         <Font size="15.0" fx:id="x1" />
       </font>
     </Button>
-    <TextField id="recordName" alignment="CENTER_LEFT" layoutX="112.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to record..." />
-    <Button id="play" font="$x1" layoutX="307.0" layoutY="544.0" minHeight="35.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="35.0" prefWidth="80.0" text="Play" />
-    <TextField id="playName" layoutX="396.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to play..." />
+    <TextField fx:id="recordName" alignment="CENTER_LEFT" layoutX="112.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to record..." />
+    <Button fx:id="play" font="$x1" layoutX="307.0" layoutY="544.0" minHeight="35.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="35.0" prefWidth="80.0" text="Play" />
+    <TextField fx:id="playName" layoutX="396.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to play..." />
     <Label alignment="CENTER" font="$x6" layoutX="314.0" layoutY="453.0" prefHeight="71.0" prefWidth="246.0" text="List of availiable audio files to play." wrapText="true" />
   </children>
 </AnchorPane>

@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 import application.controller.PianoController;
 
-
-public class PlayPianoRecording implements Runnable {
+public class PianoPlay implements Runnable {
 	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {
 		long i = 0;

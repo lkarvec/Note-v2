@@ -3,13 +3,13 @@ package application.model;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import application.controller.PianoController;
+import application.controller.XylophoneController;
 
-public class PianoRecord implements Runnable{
+public class XyloRecord implements Runnable{
 	
 	public void run(){
-		String fileName="data/piano_saves/";
-		 fileName+=PianoController.finame;
+		String fileName="data/xylo_saves/";
+		 fileName+=XylophoneController.finame;
 		
 		 File file = new File(fileName);
 
@@ -37,19 +37,19 @@ public class PianoRecord implements Runnable{
 			long start= 0;
 			long keep=0;
 			// open the file for writing
-			System.out.println(count + " piano: " +PianoController.notesRec + PianoController.rec );
+			System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
 			String e = "";
-			while (PianoController.rec==true) {
+			while (XylophoneController.rec==true) {
 				if (i==0) {
 					start = System.currentTimeMillis();
 					i++;
 				}
-				System.out.println(count + " piano: " +PianoController.notesRec + PianoController.rec );
-				if (PianoController.notesRec == count+1 ) {
-					System.out.println(count + " piano: " +PianoController.notesRec );
+				System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
+				if (XylophoneController.notesRec == count+1 ) {
+					System.out.println(count + " xylo: " +XylophoneController.notesRec );
 				keep=System.currentTimeMillis()-start;
 					count++;
-			e+= PianoController.lastPressed + "," +keep +"\n";
+			e+= XylophoneController.lastPressed + "," +keep +"\n";
 				}}
 			start=keep;
 

@@ -3,14 +3,13 @@ package application.model;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import application.controller.KalimbaController;
 
-import application.controller.XylophoneController;
-
-public class Record implements Runnable{
+public class KalimRecord implements Runnable{
 	
 	public void run(){
-		String fileName="data/xylo_saves/";
-		 fileName+=XylophoneController.finame;
+		String fileName="data/kalim_saves/";
+		 fileName+=KalimbaController.finame;
 		
 		 File file = new File(fileName);
 
@@ -38,19 +37,19 @@ public class Record implements Runnable{
 			long start= 0;
 			long keep=0;
 			// open the file for writing
-			System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
+			System.out.println(count + " kalim: " +KalimbaController.notesRec + KalimbaController.rec );
 			String e = "";
-			while (XylophoneController.rec==true) {
+			while (KalimbaController.rec==true) {
 				if (i==0) {
 					start = System.currentTimeMillis();
 					i++;
 				}
-				System.out.println(count + " xylo: " +XylophoneController.notesRec + XylophoneController.rec );
-				if (XylophoneController.notesRec == count+1 ) {
-					System.out.println(count + " xylo: " +XylophoneController.notesRec );
+				System.out.println(count + " kalim: " +KalimbaController.notesRec + KalimbaController.rec );
+				if (KalimbaController.notesRec == count+1 ) {
+					System.out.println(count + " kalim: " +KalimbaController.notesRec );
 				keep=System.currentTimeMillis()-start;
 					count++;
-			e+= XylophoneController.lastPressed + "," +keep +"\n";
+			e+= KalimbaController.lastPressed + "," +keep +"\n";
 				}}
 			start=keep;
 

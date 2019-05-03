@@ -5,19 +5,13 @@
  */
 package application.controller;
 
-import java.applet.Applet;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-
 import application.Main;
-import application.model.MultithreadingPiano;
 import application.model.MultithreadingXylo;
-import application.model.PlayRecording;
-import application.model.Record;
+import application.model.XyloPlay;
+import application.model.XyloRecord;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -148,16 +142,6 @@ public class XylophoneController {
 		
 	}
 	
-	
-	
-	private void playClip(String note) {
-		String name="/xylo_wav/Mallet"+note+".wav";
-		 URL resource = getClass().getResource(name);
-		  AudioClip n = new AudioClip( resource.toString() );
-		n.play(3.0);
-		
-	}
-	
 	@FXML private void handleRec() throws ClassNotFoundException {
 		notesRec=0;
 		rec ^= true;
@@ -166,7 +150,7 @@ public class XylophoneController {
 		System.out.println(finame);
 		if(rec == true) {
 			finame = recordName.getText();
-			Thread re = new Thread(new Record()); re.start();
+			Thread re = new Thread(new XyloRecord()); re.start();
 			System.out.println("Rec start");
 			
 		}
@@ -192,7 +176,7 @@ public class XylophoneController {
 		finame = playName.getText();
 		System.out.println("play");
 		play.setText("Stop");
-		Thread play = new Thread(new PlayRecording()); play.start();
+		Thread play = new Thread(new XyloPlay()); play.start();
 			System.out.println("Play start");
 		}
 		else if(pla==false) {

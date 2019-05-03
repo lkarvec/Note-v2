@@ -24,13 +24,12 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import application.model.MultithreadingPiano;
 import application.model.PianoRecord;
-import application.model.PlayPianoRecording;
-import application.model.PlayRecording;
-import application.model.Record;
+import application.model.PianoPlay;
 
 public class PianoController {
 	
 	public static boolean pla = false;
+	
 	public TextArea listOfSaves;
 	public ImageView imgPianoC1; // C1
 	public ImageView imgPianoC2; // C2
@@ -237,7 +236,7 @@ public class PianoController {
 		finame = playName.getText();
 		System.out.println("play");
 		play.setText("Stop");
-		Thread play = new Thread(new PlayPianoRecording()); play.start();
+		Thread play = new Thread(new PianoPlay()); play.start();
 			System.out.println("Play start");
 		}
 		else if(pla==false) {
