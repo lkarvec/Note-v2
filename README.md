@@ -15,6 +15,8 @@ HOW TO USE THE NOTE APPLICATION
 
 2. In Eclipse, Hit 'File' > 'Import' > 'Git' > 'Projects from Git' > 'Clone URL' > Paste the link and enter your github login info
 
+3. Make sure the Master branch is checked and hit next.  Hit Finish.
+
 Functionality
 
 The three instruments play notes based on an input of either typing or clicks on the intrument
