@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="603.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.XylophoneController">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: grey;">
+      <AnchorPane prefHeight="600.0" prefWidth="600.0">
          <children>
             <ImageView id="C" fx:id="C" fitHeight="87.0" fitWidth="31.0" layoutX="11.0" layoutY="162.0" onMouseClicked="#handleC" onMouseEntered="#handleC1_entered" onMouseExited="#handleC1_exited" pickOnBounds="true">
                <image>
@@ -173,8 +173,8 @@
                   <Image url="@../../xylo_keys/xylokeys.png" />
                </image>
             </ImageView>
-            <Button fx:id="record" layoutX="19.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRec" style="-fx-background-color: #1e90ff; -fx-border-color: black; -fx-border-width: 3;" text="Record" textFill="WHITE" />
-            <Button fx:id="play" layoutX="37.0" layoutY="506.0" mnemonicParsing="false" onAction="#handlePlay" style="-fx-background-color: #1e90ff; -fx-border-color: black; -fx-border-width: 3;" text="Play" textFill="WHITE" />
+            <Button fx:id="record" layoutX="19.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRec" text="Record" />
+            <Button fx:id="play" layoutX="37.0" layoutY="506.0" mnemonicParsing="false" onAction="#handlePlay" text="Play" />
             <TextField fx:id="recordName" layoutX="137.0" layoutY="436.0" />
             <TextField fx:id="playName" layoutX="136.0" layoutY="506.0" />
             <TextArea fx:id="listOfSaves" layoutX="17.0" layoutY="300.0" prefHeight="123.0" prefWidth="329.0" />
@@ -501,7 +501,7 @@
             </Label>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f6f6f" height="51.0" layoutX="26.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="548.0" />
             <Label layoutX="33.0" layoutY="25.0" prefHeight="35.0" prefWidth="175.0" text="Xylophone.view" textFill="WHITE" />
-            <Button fx:id="ret" layoutX="474.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleReturn" style="-fx-background-color: #1e90ff; -fx-border-color: black; -fx-border-width: 3;" text="Return" textFill="WHITE" />
+            <Button fx:id="ret" layoutX="474.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
          </children>
       </AnchorPane>
    </children>
