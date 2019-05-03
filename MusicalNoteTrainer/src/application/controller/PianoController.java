@@ -1,5 +1,5 @@
 /**
- * 	@author Christopher Tyler (tbl512), Ali Salehi (abc123), Alexander Mains (rta149), Mark Dziuk (abc123)
+ * 	@author Christopher Tyler (tbl512), Alexander Mains (rta149), Mark Dziuk (kvf069)
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
  */

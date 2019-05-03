@@ -1,5 +1,7 @@
 /**
- * Include updated @author tag.
+ * 	@author Christopher Tyler (tbl512), Alexander Mains (rta149), Mark Dziuk (kvf069)
+ * 	UTSA CS 3443 - Final Project
+ * 	Spring 2019
  */
 package application.controller;
 
