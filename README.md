@@ -11,7 +11,7 @@ Mark Dziuk [mdziuk37,kvf069]
 
 HOW TO USE THE NOTE APPLICATION
 
-1.https://github.com/UTSA-CS-3443/Musical-Note-Trainer.git copy this link
+1. https://github.com/UTSA-CS-3443/Musical-Note-Trainer.git copy this link
 
 2. In Eclipse, Hit 'File' > 'Import' > 'Git' > 'Projects from Git' > 'Clone URL' > Paste the link and enter your github login info
 
