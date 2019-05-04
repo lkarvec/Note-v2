@@ -5,6 +5,11 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import application.controller.PianoController;
 
+/**
+ * Allows the Piano to be multithreaded so multiple notes can be played simultaneously
+ * @author Alex Mains
+ *
+ */
 public class MultithreadingPiano implements Runnable { 
 	
     public void run() { 

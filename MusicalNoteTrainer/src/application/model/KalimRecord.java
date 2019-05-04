@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import application.controller.KalimbaController;
 
+/**
+ * 
+ * @author Alex Mains
+ *
+ */
 public class KalimRecord implements Runnable{
 	
 	public void run(){

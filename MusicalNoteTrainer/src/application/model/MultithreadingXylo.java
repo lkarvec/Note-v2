@@ -5,6 +5,11 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import application.controller.XylophoneController;
 
+/**
+ * Allows the Xylophone to be multithreaded so multiple notes can be played simultaneously
+ * @author Alex Mains
+ *
+ */
 public class MultithreadingXylo implements Runnable { 
 	
     public void run() { 
