@@ -76,7 +76,7 @@ public class XylophoneController {
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
 	/**
-	 * when initialized the current stage is changed and the view is updated with a current list of files in the folder
+	 * When initialized the current stage is changed and the view is updated with a current list of files in the folder
 	 */
 	public void initialize() {
 		

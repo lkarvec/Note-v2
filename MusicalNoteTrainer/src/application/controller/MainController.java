@@ -15,6 +15,10 @@ import javafx.scene.Scene;
 
 public class MainController {
 	
+	/**
+	 * Handler for Piano selection, change the stage, open available saves and initialize Piano.fxml
+	 * @param event
+	 */
 	public void handlePiano(ActionEvent event) { //Initialize Piano.fxml
 		
 		try {
@@ -28,7 +32,11 @@ public class MainController {
 			e.printStackTrace();
 		}
 	}
-		
+	
+	/**
+	 * Handler for Xylophone selection, change the stage, open available saves and initialize Piano.fxml
+	 * @param event
+	 */
 	public void handleXylophone(ActionEvent event) { //Initialize Xylophone.fxml
 			
 			try {
@@ -44,6 +52,10 @@ public class MainController {
 		
 	}
 	
+	/**
+	 * Handler for Kalimba selection, change the stage, open available saves and initialize Piano.fxml
+	 * @param event
+	 */
 	public void handleKalimba(ActionEvent event) { //Initialize Kalimba.fxml
 		
 		try {
