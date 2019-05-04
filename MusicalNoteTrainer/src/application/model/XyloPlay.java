@@ -7,7 +7,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import application.controller.XylophoneController;
-
+/**
+ * 
+ * Reads in from the file selected by the user then plays the notes in time represented by the file 
+ *
+ */
 public class XyloPlay implements Runnable {
 	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {

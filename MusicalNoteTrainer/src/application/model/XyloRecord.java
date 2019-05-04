@@ -4,7 +4,12 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import application.controller.XylophoneController;
-
+/**
+ * 
+ * checks if there is a file with the name the user selected. if not create, if there is overwrite.
+ *when a note is played it is written to the file along with the time in milliseconds
+ *
+ */
 public class XyloRecord implements Runnable{
 	
 	public void run(){
