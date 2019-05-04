@@ -244,7 +244,6 @@
     <Label alignment="CENTER" layoutX="362.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="D5" />
     <Label alignment="CENTER" layoutX="408.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="A5" />
     <Label alignment="CENTER" layoutX="454.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="E6" />
-    <Label alignment="CENTER" layoutX="70.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="--" />
     <Label alignment="CENTER" layoutX="117.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="B5" />
     <Label alignment="CENTER" layoutX="163.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="E5" />
     <Label alignment="CENTER" layoutX="210.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="A4" />
@@ -253,7 +252,6 @@
     <Label alignment="CENTER" layoutX="349.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="B4" />
     <Label alignment="CENTER" layoutX="396.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="F#5" />
     <Label alignment="CENTER" layoutX="443.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="C6" />
-    <Label alignment="CENTER" layoutX="490.0" layoutY="302.0" prefHeight="24.0" prefWidth="40.0" text="--" />
     <Label alignment="CENTER" layoutX="222.0" layoutY="416.0" prefHeight="24.0" prefWidth="40.0" text="F#4" />
     <TextArea fx:id="listOfSaves" layoutX="38.0" layoutY="453.0" prefHeight="71.0" prefWidth="260.0" />
     <Rectangle id="textAddDinoType" arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="50.0" layoutX="14.0" layoutY="536.0" stroke="#bfbfbf" strokeType="INSIDE" width="572.0" />
