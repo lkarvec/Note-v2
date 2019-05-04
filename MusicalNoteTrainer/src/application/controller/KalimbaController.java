@@ -112,6 +112,9 @@ public class KalimbaController {
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
 	
+	/**
+	 * Initialize controller, set stage and load list of saves.
+	 */
 	public void initialize() throws FileNotFoundException{
 		
 		
@@ -127,7 +130,9 @@ public class KalimbaController {
 		  
 		}
 		
-		
+		/**
+        * Event handler dump for keyboard input.
+        */
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Kalimba") ) { System.out.println("D6"); lastPressed = "D6"; notesRec++; Thread object = new Thread(new MultithreadingKalimba()); object.start(); imgKeyboardA.setImage(new Image("piano_keys/color2.png")); imgKalimbaD6.setImage(new Image("piano_keys/piano_left2.png"));} }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Kalimba") ) { imgKalimbaD6.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardA.setImage(new Image("piano_keys/color.png")); } }); //C3
 		
@@ -181,10 +186,11 @@ public class KalimbaController {
 		
 	}
 	
+	/**
+	 * Handler for return button, change current stage and initiate main.fxml
+	 * @param event
+	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
-		
-		
-		
 		try {
 			
 			Parent root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
@@ -198,6 +204,10 @@ public class KalimbaController {
 		
 	}
 	
+	/**
+	 * Handler for record button, initiate text file based on user input.
+	 * @throws ClassNotFoundException
+	 */
     @FXML private void handleRecord() throws ClassNotFoundException {
 		notesRec=0;
 		 rec ^= true;
@@ -226,6 +236,10 @@ public class KalimbaController {
 		
 	}
 	
+	/**
+	 * Handler for play button, initiate text file based on user input, find given file.
+	 * @throws ClassNotFoundException
+	 */
     @FXML private void handlePlay() throws ClassNotFoundException {
 		pla ^= true;
 		if(pla==true) {
@@ -240,6 +254,9 @@ public class KalimbaController {
 		}
 	}
 	
+    /**
+     * Event handler dump for kalimba.
+     */
 	@FXML private void handleD6_entered() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("kalim_keys/color2.png")); imgKalimbaD6.setImage(new Image("kalim_keys/piano_left2.png")); }
 	@FXML private void handleD6_exited() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("kalim_keys/color.png")); imgKalimbaD6.setImage(new Image("kalim_keys/piano_left.png"));  }
 	@FXML private void handleD6_clicked() throws ClassNotFoundException { lastPressed = "D6"; notesRec++; Thread object = new Thread(new MultithreadingKalimba()); object.start(); }

@@ -93,6 +93,10 @@ public class PianoController {
 	public static String finame;
 	public TextField playName;
 	
+	/**
+	 * Handler for return button, change current stage and initiate main.fxml
+	 * @param event
+	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		
 		try {
@@ -112,7 +116,9 @@ public class PianoController {
 	
 	//If recording == true, then handle should add key to string to be saved to file later.
 	
-    @FXML
+	/**
+	 * Initialize controller, set stage and load list of saves.
+	 */
     public void initialize() throws FileNotFoundException{
     	
     	try {
@@ -129,6 +135,9 @@ public class PianoController {
     		  
     		}
 
+            /**
+             * Event handler dump for keyboard input.
+             */
     		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { System.out.println("C3"); notesRec++; lastPressed = "C3"; Thread object = new Thread(new MultithreadingPiano()); object.start(); imgKeyboardA.setImage(new Image("piano_keys/color2.png")); imgPianoC1.setImage(new Image("piano_keys/piano_left2.png")); } }); //C3
     		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Piano") ) { imgPianoC1.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardA.setImage(new Image("piano_keys/color.png")); } }); //C3
     		
@@ -192,6 +201,10 @@ public class PianoController {
         } 
     }
     
+	/**
+	 * Handler for record button, initiate text file based on user input.
+	 * @throws ClassNotFoundException
+	 */
     @FXML private void handleRecord() throws ClassNotFoundException {
 		notesRec=0;
 		 rec ^= true;
@@ -220,6 +233,10 @@ public class PianoController {
 		
 	}
 	
+	/**
+	 * Handler for play button, initiate text file based on user input, find given file.
+	 * @throws ClassNotFoundException
+	 */
     @FXML private void handlePlay() throws ClassNotFoundException {
 		pla ^= true;
 		if(pla==true) {
@@ -234,7 +251,9 @@ public class PianoController {
 		}
 	}
     
-    
+    /**
+     * Event handler dump for piano.
+     */
 	@FXML private void handleC3_entered() throws ClassNotFoundException { imgPianoC1.setImage(new Image("piano_keys/piano_left2.png")); imgKeyboardA.setImage(new Image("kalim_keys/color2.png"));}
 	@FXML private void handleC3_exited() throws ClassNotFoundException { imgPianoC1.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardA.setImage(new Image("kalim_keys/color.png"));}
 	@FXML private void handleC3_clicked() throws ClassNotFoundException { lastPressed = "C3";notesRec++;  Thread object = new Thread(new MultithreadingPiano()); object.start(); }
