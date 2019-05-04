@@ -27,7 +27,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.media.AudioClip;
 
 public class XylophoneController {
-	
+	/**
+	 * the image views for the keys of the xylophone
+	 */
 	public ImageView C; // C
 	public ImageView D; // D
 	public ImageView E; // E
@@ -62,7 +64,6 @@ public class XylophoneController {
 	public ImageView Cs2; // Cs2
 	public ImageView Ds2; // Df2
 	public ImageView Fs3; // Fs2
-	
 	public Button play;
 	public Button record;
 	public TextField playName;
@@ -74,6 +75,9 @@ public class XylophoneController {
 	public static Boolean rec = false;
 	public static String lastPressed= "A0";
 	public static int notesRec=0;
+	/**
+	 * when initialized the current stage is changed and the view is updated with a current list of files in the folder
+	 */
 	public void initialize() {
 		
 		
@@ -89,7 +93,9 @@ public class XylophoneController {
 		  
 		}
 		
-		
+		/**
+		 * these handlers checks for key presses and if the correct button is pressed the note plays.
+		 */
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Xylophone") ) { System.out.println("F2"); lastPressed = "F2"; notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Xylophone") ) { System.out.println("G2"); lastPressed = "G2"; notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.D && Main.currentStage.equals("Xylophone") ) { System.out.println("A2"); lastPressed = "A2"; notesRec++;Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 
@@ -194,7 +200,12 @@ public class XylophoneController {
 		}
 	}
 	
-	
+	/**
+	 * These are the handlers for mouse hover and click
+	 * when the mouse is on the key it changes the color to respond to the user. when clicked it plays the note.
+	 * 
+	 * @throws ClassNotFoundException
+	 */
 	@FXML private void handleC() throws ClassNotFoundException { notesRec++;  lastPressed = "C1"; Thread object = new Thread(new MultithreadingXylo()); object.start(); }
 	@FXML private void handleC1_entered() throws ClassNotFoundException { C.setImage(new Image("xylo_keys/piano_left2.png")); }
 	@FXML private void handleC1_exited() throws ClassNotFoundException { C.setImage(new Image("xylo_keys/xylokeys.png"));  }
