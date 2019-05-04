@@ -123,6 +123,7 @@
                   <Image url="@../../xylo_keys/xylokeys.png" />
                </image>
             </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dedede" height="59.0" layoutX="7.0" layoutY="524.0" stroke="#dedede" strokeType="INSIDE" width="575.0" />
             <ImageView fx:id="Ds" fitHeight="87.0" fitWidth="31.0" layoutX="56.0" layoutY="74.0" onMouseClicked="#handleDs" onMouseEntered="#handleDs1_entered" onMouseExited="#handleDs1_exited" pickOnBounds="true">
                <image>
                   <Image url="@../../xylo_keys/xylokeys.png" />
@@ -173,11 +174,11 @@
                   <Image url="@../../xylo_keys/xylokeys.png" />
                </image>
             </ImageView>
-            <Button fx:id="record" layoutX="19.0" layoutY="433.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRec" text="Record" />
-            <Button fx:id="play" layoutX="37.0" layoutY="506.0" mnemonicParsing="false" onAction="#handlePlay" text="Play" />
-            <TextField fx:id="recordName" layoutX="137.0" layoutY="436.0" />
-            <TextField fx:id="playName" layoutX="136.0" layoutY="506.0" />
-            <TextArea fx:id="listOfSaves" layoutX="17.0" layoutY="300.0" prefHeight="123.0" prefWidth="329.0" />
+            <Button fx:id="record" layoutX="29.0" layoutY="531.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRec" prefHeight="41.0" prefWidth="71.0" text="Record" />
+            <Button fx:id="play" layoutX="306.0" layoutY="533.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="41.0" prefWidth="58.0" text="Play" />
+            <TextField fx:id="recordName" layoutX="116.0" layoutY="533.0" prefHeight="41.0" prefWidth="175.0" promptText="Type audio file to record..." />
+            <TextField fx:id="playName" layoutX="379.0" layoutY="533.0" prefHeight="41.0" prefWidth="183.0" promptText="Type audio file to play..." />
+            <TextArea fx:id="listOfSaves" layoutX="17.0" layoutY="300.0" prefHeight="204.0" prefWidth="275.0" />
             <Label layoutX="474.0" layoutY="210.0" mouseTransparent="true" prefHeight="17.0" prefWidth="16.0" text="D3">
                <font>
                   <Font size="12.0" />
@@ -499,9 +500,10 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f6f6f" height="51.0" layoutX="26.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="548.0" />
-            <Label layoutX="33.0" layoutY="25.0" prefHeight="35.0" prefWidth="175.0" text="Xylophone.view" textFill="WHITE" />
-            <Button fx:id="ret" layoutX="474.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleReturn" text="Return" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dedede" height="51.0" layoutX="26.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="548.0" />
+            <Label layoutX="33.0" layoutY="25.0" prefHeight="35.0" prefWidth="175.0" text="Xylophone.view" />
+            <Button fx:id="ret" layoutX="462.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="35.0" prefWidth="94.0" text="Return" />
+            <Text layoutX="387.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </AnchorPane>
    </children>
