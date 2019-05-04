@@ -6,7 +6,8 @@ import java.io.IOException;
 import application.controller.KalimbaController;
 
 /**
- * 
+ * Modeled after the PianoRecord, This class allows a handle to create a file if it doesn't exist to write to while the boolean on the button is set to TRUE.
+ * It records last note pressed and time in ms to a file.
  * @author Alex Mains
  *
  */

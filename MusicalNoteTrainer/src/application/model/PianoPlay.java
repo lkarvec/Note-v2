@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 import application.controller.PianoController;
 
+/**
+ * Reading in from the PianoRecord files, PianoPlay uses hashmaps to split the strings in the file to recreate the rhythms and pitches used in the original playthrough
+ * @author Alex Mains
+ *
+ */
 public class PianoPlay implements Runnable {
 	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {

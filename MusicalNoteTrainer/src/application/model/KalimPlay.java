@@ -6,6 +6,12 @@ import java.util.HashMap;
 import java.util.Scanner;
 import application.controller.KalimbaController;
 
+/**
+ * Reading in from the KalimRecord files, KalimPlay uses hashmaps to split the strings in the file to recreate the rhythms and pitches used in the original playthrough
+ * @author Alex Mains
+ *
+ */
+
 public class KalimPlay implements Runnable {
 	public static HashMap<Long, String > map = new HashMap<>();
 	public void run() {
