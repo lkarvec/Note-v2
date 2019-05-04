@@ -3,11 +3,6 @@
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
  */
-
-/**
- *  Toss some names under the author tag, I'll get to posting other stuff. 
- * - Christopher
- */
 package application;
 
 import javafx.application.Application;
@@ -16,10 +11,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Initialize application, call in current stage and launch main.fxml
+ * @author Christopher
+ *
+ */
 public class Main extends Application { //Main stage execution
 	
 	public static Stage stage;
-	
 	public static String currentStage;
 	
 	/**

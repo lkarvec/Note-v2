@@ -31,47 +31,37 @@ public class PianoController {
 	public static boolean pla = false;
 	
 	public TextArea listOfSaves;
+	
 	public ImageView imgPianoC1; // C1
 	public ImageView imgPianoC2; // C2
 	public ImageView imgPianoC3; // C3
-	
 	public ImageView imgPianoCD1; // CD1
 	public ImageView imgPianoCD2; // CD2
 	public ImageView imgPianoCD3; // CD3
-	
 	public ImageView imgPianoD1; // D1
 	public ImageView imgPianoD2; // D2
 	public ImageView imgPianoD3; // D3
-	
 	public ImageView imgPianoDE1; // DE1
 	public ImageView imgPianoDE2; // DE2
 	public ImageView imgPianoDE3; // DE3
-	
 	public ImageView imgPianoE1; // E1
 	public ImageView imgPianoE2; // E2
 	public ImageView imgPianoE3; // E3
-	
 	public ImageView imgPianoFG1; // FG1
 	public ImageView imgPianoFG2; // FG2
 	public ImageView imgPianoFG3; // FG3
-	
 	public ImageView imgPianoF1; // F1
 	public ImageView imgPianoF2; // F2
 	public ImageView imgPianoF3; // F3
-	
 	public ImageView imgPianoG1; // G1
 	public ImageView imgPianoG2; // G2
 	public ImageView imgPianoG3; // G3
-	
 	public ImageView imgPianoGA1; // GA1
 	public ImageView imgPianoGA2; // GA2
-	
 	public ImageView imgPianoA1; // A1
 	public ImageView imgPianoA2; // A2
-	
 	public ImageView imgPianoAB1; //AB1
 	public ImageView imgPianoAB2; //AB2
-	
 	public ImageView imgPianoB1; // B1
 	public ImageView imgPianoB2; // B2
 	
