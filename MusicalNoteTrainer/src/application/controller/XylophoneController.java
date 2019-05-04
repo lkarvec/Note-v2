@@ -124,7 +124,10 @@ public class XylophoneController {
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.OPEN_BRACKET && Main.currentStage.equals("Xylophone") ) { System.out.println("F#3"); lastPressed = "F#3";notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 
 		
 	}
-	
+	/**
+	 * returns to the main controller when return button is pressed
+	 * @param event
+	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		
 		
@@ -141,7 +144,10 @@ public class XylophoneController {
 		}
 		
 	}
-	
+	/**
+	 * handles the record functionality of the Xylophone
+	 * @throws ClassNotFoundException
+	 */
 	@FXML private void handleRec() throws ClassNotFoundException {
 		notesRec=0;
 		rec ^= true;
@@ -169,7 +175,11 @@ public class XylophoneController {
 		}
 		
 	}
-	
+	/**
+	 * handles the play function of the Xylophone
+	 * callsMultilthreadingXylo
+	 * @throws ClassNotFoundException
+	 */
 	@FXML private void handlePlay() throws ClassNotFoundException {
 		pla ^= true;
 		if(pla==true) {
