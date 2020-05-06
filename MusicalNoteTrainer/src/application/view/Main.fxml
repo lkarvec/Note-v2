@@ -27,6 +27,11 @@
         <Font name="System Bold" size="25.0" fx:id="x1" />
       </font>
     </Label>
+    <Button layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleSettings" prefHeight="10.0" prefWidth="75.0" text="Settings">
+      <font>
+        <Font name="System Bold" size="10.0" fx:id="x4" />
+      </font>
+    </Button>
     <Button layoutX="229.0" layoutY="463.0" mnemonicParsing="false" onAction="#handleXylophone" prefHeight="99.0" prefWidth="143.0" text="Xylophone">
       <font>
         <Font name="System Bold" size="20.0" fx:id="x2" />
