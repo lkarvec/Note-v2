@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  */
 public class Main extends Application { //Main stage execution
 	
-	public static Stage stage;
+	public static Stage stage; // this si my comment
 	public static String currentStage;
 	
 	/**
