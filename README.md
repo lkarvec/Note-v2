@@ -1,4 +1,7 @@
 # Musical-Note-Trainer
+# ORIGINALLY A SPRING 2019 PROJECT CLEARED FOR UPGRADES FOR SPRING 2020 BY PROFESSOR ARAFAT
+# Changes for the 2020 semester are going to be at the bottom of the document
+
 Spring 2019 - Team 6
 
 
@@ -67,3 +70,22 @@ Kalimba
     You can hit return to go back to the main menu.
     
     
+###################################
+
+UPDATE LOG
+Updated by Alexander Mains (@lkarvec, rta149)
+and Zach 
+
+v1.1
+Added a settings button on the main menu for:
+    Volume Control Slider - allows the user to control the volume in the program
+    Save data Path setting - allows the user to change the save path to another file path by overwriting the given String and hitting the "change" button
+    Musical Staff Visibility - button that turns on the 
+    
+Added a Musical Staff function to the main three instruments.
+    The staff will show a visible representation of what your note is upon note hover or key press.
+
+Updated the code and bugfixed a few fatal errors.
+
+Updated the GUI to accomodate the new functions on all screens
+
