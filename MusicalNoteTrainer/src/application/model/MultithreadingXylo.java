@@ -3,6 +3,9 @@ package application.model;
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+
+import application.controller.SettingsController;
 import application.controller.XylophoneController;
 
 /**
@@ -20,7 +23,10 @@ public class MultithreadingXylo implements Runnable {
     		
     		Clip clip = AudioSystem.getClip();
     		clip.open(AudioSystem.getAudioInputStream(new File("src/xylo_wav/Mallet " + XylophoneController.lastPressed + ".wav")));
-    		clip.start();
+    		FloatControl gainControl = 
+	    		    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+	    		gainControl.setValue(SettingsController.getVolume()); // Reduce volume by 10 decibels.
+	    	clip.start();
     		
     		// Need to figure thread closing later.
         

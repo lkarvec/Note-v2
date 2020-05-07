@@ -3,7 +3,10 @@ package application.model;
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.FloatControl;
+
 import application.controller.PianoController;
+import application.controller.SettingsController;
 
 /**
  * Allows the Piano to be multithreaded so multiple notes can be played simultaneously
@@ -20,7 +23,10 @@ public class MultithreadingPiano implements Runnable {
     		
     		Clip clip = AudioSystem.getClip();
     		clip.open(AudioSystem.getAudioInputStream(new File("src/piano_wav/" + PianoController.lastPressed + ".wav")));
-    		clip.start();
+    		FloatControl gainControl = 
+	    		    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+	    		gainControl.setValue(SettingsController.getVolume()); // Reduce volume by 10 decibels.
+	    	clip.start();
     		
     		// Need to figure thread closing later.
         
