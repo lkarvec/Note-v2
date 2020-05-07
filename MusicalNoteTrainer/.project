@@ -20,5 +20,10 @@
 			<type>2</type>
 			<location>C:/Users/bigpu/git/Note-v2/MusicalNoteTrainer/bin/Notes</location>
 		</link>
+		<link>
+			<name>bin/Notes/NotesforProgram</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/OneDrive/Documents/NotesforProgram</locationURI>
+		</link>
 	</linkedResources>
 </projectDescription>
