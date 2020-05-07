@@ -27,7 +27,7 @@ public class SettingsController {
 	@FXML 
 	Slider volumeSlider;
 	
-	private static double volume;
+	private double volume;
 	@FXML public static float getVolume() throws ClassNotFoundException {
 	
 		return -20;
@@ -35,8 +35,8 @@ public class SettingsController {
 	public void handleVolume(ActionEvent event)
 	{
 		try {
-			this.volume = Slider.getValue();
-		}catch( IOException e ) {
+			volume = volumeSlider.getValue();
+		}catch( Exception e ) {
 			System.out.println( "Error returning to home screen." ); //output if file null
 			e.printStackTrace();
 		}

@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.PianoController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PianoController">
   <children>
     <ImageView fx:id="imgKeyboardA" fitHeight="45.97841262817383" fitWidth="45.97841262817383" layoutX="80.0" layoutY="304.0" onMouseClicked="#handleA_clicked" onMouseEntered="#handleA_entered" onMouseExited="#handleA_exited" pickOnBounds="true" preserveRatio="true">
       <image>
@@ -342,6 +342,11 @@
     <TextArea fx:id="listOfSaves" editable="false" focusTraversable="false" layoutX="39.0" layoutY="388.0" mouseTransparent="false" prefHeight="133.0" prefWidth="262.9783935546875" />
     <Button fx:id="play" font="$x1" layoutX="307.0" layoutY="544.0" minHeight="35.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="35.0" prefWidth="80.0" text="Play" />
     <TextField fx:id="playName" layoutX="396.0" layoutY="544.0" prefHeight="35.0" prefWidth="180.0" promptText="Type audio file to play..." />
-    <Label alignment="CENTER" font="$x6" layoutX="315.0" layoutY="388.0" prefHeight="133.0" prefWidth="246.0" text="List of availiable audio files to play." wrapText="true" />
+    <Label alignment="CENTER" font="$x6" layoutX="315.0" layoutY="388.0" prefHeight="133.0" prefWidth="109.0" text="List of availiable audio files to play." wrapText="true" />
+      <ImageView fx:id="base" fitHeight="103.0" fitWidth="165.0" layoutX="421.0" layoutY="406.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../bin/Notes/base.png" />
+         </image>
+      </ImageView>
   </children>
 </AnchorPane>
