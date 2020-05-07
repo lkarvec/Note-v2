@@ -5,7 +5,7 @@ import java.io.File;
 public class SettingsModel 
 {	
 	
-	public static String[] readConfig()throws Exception 
+	public static String[] readConfig()throws Exception //comment
 	  { 
 	  String[] config = new String[3];
 	  int i = 0;
