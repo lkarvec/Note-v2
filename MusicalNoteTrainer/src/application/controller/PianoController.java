@@ -124,7 +124,7 @@ public class PianoController {
     	try {
     		
     		Main.currentStage = "Piano";
-    		File folder = new File("data/piano_saves");
+    		File folder = new File("data/piano_saves");   //Change this to reflect the settings model changes
     		File[] list = folder.listFiles();
             String listf="";
     		for (int i = 0; i < list.length; i++) {
