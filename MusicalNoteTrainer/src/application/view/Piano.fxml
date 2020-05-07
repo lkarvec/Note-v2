@@ -345,7 +345,7 @@
     <Label alignment="CENTER" font="$x6" layoutX="315.0" layoutY="388.0" prefHeight="133.0" prefWidth="109.0" text="List of availiable audio files to play." wrapText="true" />
       <ImageView fx:id="staffPiano" fitHeight="103.0" fitWidth="165.0" layoutX="421.0" layoutY="406.0" preserveRatio="true">
          <image>
-            <Image url="@../../../bin/Notes/base.png" />
+            <Image url="@../../../src/Notes/base.png" />
          </image>
       </ImageView>
   </children>
