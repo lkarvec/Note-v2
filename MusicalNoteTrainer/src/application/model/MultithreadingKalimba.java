@@ -2,16 +2,16 @@ package application.model;
 
 import java.io.File;
 import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
+import javax.sound.sampled.*;
 import application.controller.KalimbaController;
-
+import application.controller.SettingsController;
 /**
  * Allows the Kalimba to be multithreaded so multiple notes can be played simultaneously
  * @author Alex Mains
  *
  */
 public class MultithreadingKalimba implements Runnable {
-
+	
 	public void run() { 
 	        
 		try { 
@@ -20,6 +20,9 @@ public class MultithreadingKalimba implements Runnable {
 	    		
 	    	Clip clip = AudioSystem.getClip();
 	    	clip.open(AudioSystem.getAudioInputStream(new File("src/kalim_wav/" + KalimbaController.lastPressed + ".wav")));
+	    	FloatControl gainControl = 
+	    		    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+	    		gainControl.setValue(SettingsController.getVolume()); // Reduce volume by 10 decibels.
 	    	clip.start();
 	    		
 	    	// Need to figure thread closing later.

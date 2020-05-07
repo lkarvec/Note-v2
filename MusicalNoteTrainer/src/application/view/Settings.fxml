@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.SettingsController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SettingsController">
   <children>
 	<Label alignment="TOP_LEFT" contentDisplay="CENTER" disable="false" layoutX="0.0" layoutY="3.0" prefHeight="40.0" prefWidth="600.0" text="SETTINGS" textAlignment="CENTER" underline="false" wrapText="false">
       <font>
@@ -21,6 +18,7 @@
         <Font name="System Bold" size="11.0" fx:id="x2" />
       </font>
     </Button>
+    <Slider fx:id="volumeSlider" blockIncrement="1.0" layoutX="230.0" layoutY="237.0" majorTickUnit="11.25" max="0.0" min="-45.0" showTickMarks="true" onAction="#handleVolume"/>
+     <Label alignment="CENTER" layoutX="260.0" layoutY="202.0" prefHeight="17.0" prefWidth="79.0" text="VOLUME" />
   </children>
 </AnchorPane>
-

@@ -21,8 +21,16 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
+
 public class SettingsController {
 	
+	@FXML 
+	public static Slider volumeSlider;
+	
+	@FXML public static float getVolume() throws ClassNotFoundException {
+	
+		return -20;
+	}
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		try {
 			
