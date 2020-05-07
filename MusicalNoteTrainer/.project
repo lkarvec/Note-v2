@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Notes</name>
+			<type>2</type>
+			<location>C:/Users/bigpu/git/Note-v2/MusicalNoteTrainer/bin/Notes</location>
+		</link>
+	</linkedResources>
 </projectDescription>
