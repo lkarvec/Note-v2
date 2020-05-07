@@ -25,11 +25,21 @@ import javafx.scene.input.KeyEvent;
 public class SettingsController {
 	
 	@FXML 
-	public static Slider volumeSlider;
+	Slider volumeSlider;
 	
+	private static double volume;
 	@FXML public static float getVolume() throws ClassNotFoundException {
 	
 		return -20;
+	}
+	public void handleVolume(ActionEvent event)
+	{
+		try {
+			this.volume = Slider.getValue();
+		}catch( IOException e ) {
+			System.out.println( "Error returning to home screen." ); //output if file null
+			e.printStackTrace();
+		}
 	}
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		try {
