@@ -2,6 +2,11 @@
  * 	@author Christopher Tyler (tbl512), Alexander Mains (rta149), Mark Dziuk (kvf069)
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
+ * 
+ * @author Alexander Mains (rta149)
+ * Spring 2020
+ * 
+ * Updates, added hard coding for music staff images, Adjusted the play functions to accommodate for more intricate chords
  */
 package application.controller;
 
@@ -71,6 +76,9 @@ public class XylophoneController {
 	public TextArea listOfSaves;
 	@FXML
 	public ImageView staffXylo;
+	// key hit/ hover staffXylo.setImage(new Image("Notes/A3Note.png"));
+	// key release staffXylo.setImage(new Image("Notes/base.png"));
+	
 	
 	public static String finame="";
 	public static Boolean pla = false;
@@ -96,7 +104,7 @@ public class XylophoneController {
 		}
 		
 		/**
-		 * these handlers checks for key presses and if the correct button is pressed the note plays.
+		 * these handlers checks for key presses and if the correct button is pressed the note plays.  Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed.
 		 */
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Xylophone") ) { System.out.println("F2"); lastPressed = "F2"; notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.S && Main.currentStage.equals("Xylophone") ) { System.out.println("G2"); lastPressed = "G2"; notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); } }); 

@@ -6,7 +6,7 @@
  * @author Alexander Mains (rta149)
  * Spring 2020
  * 
- * Updates, added hard coding for music staff images
+ * Updates, added hard coding for music staff images, Adjusted the play functions to accommodate for more intricate chords
  */
 package application.controller;
 
