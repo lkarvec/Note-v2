@@ -5,6 +5,7 @@
  */
 package application;
 
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -34,7 +35,6 @@ public class Main extends Application { //Main stage execution
 			Parent root = FXMLLoader.load(getClass().getResource("view/Main.fxml"));
 			primaryStage.setScene(new Scene(root, 600, 600));
 			primaryStage.show();
-			
 			stage = primaryStage;
 			
 		} catch(Exception e) {
