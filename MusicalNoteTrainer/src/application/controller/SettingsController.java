@@ -39,6 +39,7 @@ public class SettingsController {
 	private static String[] config;
 	public void initialize() throws Exception
 	{
+		SettingsModel.absolutePath();
 		config = SettingsModel.readConfig();
 		for(int i = 0; i < 3; i++)
 		{
@@ -55,6 +56,7 @@ public class SettingsController {
 		}
 		
 	}
+	
 	public void handleVolume(ActionEvent event)
 	{
 		volume = (float) volumeSlider.getValue();
@@ -62,6 +64,7 @@ public class SettingsController {
 		config[0] = vol;
 		//somehow write into the config file the new volume setting
 	}
+	
 	public static float getVolume()
 	{
 		if(config[1].contentEquals("True"))
@@ -71,6 +74,7 @@ public class SettingsController {
 		else
 		  return volume;
 	}
+	
 	public void handleMute(ActionEvent event)
 	{
 		if(config[1].contentEquals("False"))
@@ -84,11 +88,17 @@ public class SettingsController {
 			config[1] = "False";
 		}
 	}
+	
 	public void handleSaveFolder(ActionEvent event)
 	{
 		config[2] = saveFolder.getText();
 		saveFolder.clear();
 	}
+	public static String getSaveFolder()
+	{
+		return config[2];
+	}
+	
 	public void handleReturn(ActionEvent event)  { //Initialize Main.fxml
 		
 		try {

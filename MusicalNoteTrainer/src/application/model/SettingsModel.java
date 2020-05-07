@@ -1,7 +1,7 @@
 package application.model;
 
 import java.io.*; 
-
+import java.io.File;
 public class SettingsModel 
 {	
 	
@@ -19,8 +19,16 @@ public class SettingsModel
 	    config[i] = st;
 	  	i++;
 	  }
-	  
+	  br.close();
 	  return config;
 	  } 
+	
+	public static String absolutePath() throws Exception
+	{
+            File f = new File("data"); 
+            String absolute = f.getAbsolutePath(); 
+            return absolute;
+       
+	}
 	  
 }

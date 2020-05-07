@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 import application.controller.KalimbaController;
+import application.controller.SettingsController;
 
 /**
  * Reading in from the KalimRecord files, KalimPlay uses hashmaps to split the strings in the file to recreate the rhythms and pitches used in the original playthrough
@@ -50,6 +51,7 @@ public class KalimPlay implements Runnable {
 			
 		}catch( IOException | NumberFormatException | InterruptedException e ) {
 			e.printStackTrace();
+			
 		}
 		
 	}
