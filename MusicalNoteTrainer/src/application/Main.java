@@ -27,7 +27,7 @@ public class Main extends Application { //Main stage execution
 	@Override
 	public void start(Stage primaryStage) {
 		
-		primaryStage.setTitle("Musical Note Trainer FX");
+		primaryStage.setTitle("Note 1.2");
 		
 		try {
 			
