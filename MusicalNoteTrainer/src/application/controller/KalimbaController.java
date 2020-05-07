@@ -99,6 +99,8 @@ public class KalimbaController {
 	public ImageView imgKeyboardO;
 	@FXML
 	public ImageView imgKeyboardP;
+	@FXML
+	public ImageView staffKalim;
 	
 	public Button play;
 	public Button record;

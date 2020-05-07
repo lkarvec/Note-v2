@@ -504,6 +504,11 @@
             <Label layoutX="33.0" layoutY="25.0" prefHeight="35.0" prefWidth="175.0" text="Xylophone.view" />
             <Button fx:id="ret" layoutX="462.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="35.0" prefWidth="94.0" text="Return" />
             <Text layoutX="387.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fx:id="staffXylo" fitHeight="196.0" fitWidth="261.0" layoutX="320.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../bin/Notes/base.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

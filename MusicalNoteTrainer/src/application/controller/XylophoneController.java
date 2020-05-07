@@ -69,6 +69,8 @@ public class XylophoneController {
 	public TextField playName;
 	public TextField recordName;
 	public TextArea listOfSaves;
+	@FXML
+	public ImageView staffXylo;
 	
 	public static String finame="";
 	public static Boolean pla = false;
