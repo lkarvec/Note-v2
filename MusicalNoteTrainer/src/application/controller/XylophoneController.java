@@ -3,14 +3,16 @@
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
  * 
- * @author Alexander Mains (rta149)
- * Spring 2020
+ *  @author Alexander Mains (rta149), Zach Ross (bvf676)
+ *  UTSA CS 3443 - Final Project
+ *  Spring 2020
  * 
  * Updates, added hard coding for music staff images, Adjusted the play functions to accommodate for more intricate chords
  */
 package application.controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import application.Main;
@@ -88,8 +90,9 @@ public class XylophoneController {
 	public static int notesRec=0;
 	/**
 	 * When initialized the current stage is changed and the view is updated with a current list of files in the folder
+	 * @throws FileNotFoundException and Exception
 	 */
-	public void initialize() {
+	public void initialize() throws FileNotFoundException{
 		
 		
 		try {
@@ -145,12 +148,13 @@ public class XylophoneController {
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.OPEN_BRACKET && Main.currentStage.equals("Xylophone") ) { System.out.println("F#3"); lastPressed = "F#3";notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); staffXylo.setImage(new Image("Notes/G5FNote.png"));} }); 
 		
 		} catch (Exception e) { 
-            System.out.println ("Exception is caught"); 
+            System.out.println ("File not found/is corrupted"); 
         } 
 	}
 	/**
 	 * returns to the main controller when return button is pressed
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		

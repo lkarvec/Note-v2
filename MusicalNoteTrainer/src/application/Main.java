@@ -33,11 +33,12 @@ public class Main extends Application { //Main stage execution
 	
 	/**
 	 * [GUI Start, get frame information and read from Main.fxml, set scene.]
+	 * @throws Exception
 	 */
 	@Override
 	public void start(Stage primaryStage) {
 		
-		primaryStage.setTitle("Note 1.2");
+		primaryStage.setTitle("Note 1.1");
 		
 		try {
 			
@@ -53,6 +54,7 @@ public class Main extends Application { //Main stage execution
 	/**
 	 * [Main method, execute launch of GUI,  config file check and creation.]
 	 * @param args
+	 * @throws Exception
 	 */
 	public static void main(String[] args) {
 		File tmpFile = new File("data/config.txt");

@@ -126,6 +126,7 @@ public class KalimbaController {
 	
 	/**
 	 * Initialize controller, set stage and load list of saves.
+	 * @throws FileNotFoundException
 	 */
 	public void initialize() throws FileNotFoundException{
 		
@@ -148,6 +149,7 @@ public class KalimbaController {
 		
 		/**
         * Event handler dump for keyboard input. Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed.
+        * @param event
         */
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Kalimba") ) { System.out.println("D6"); lastPressed = "D6"; notesRec++; staffKalim.setImage(new Image("Notes/D5Note.png"));  Thread object = new Thread(new MultithreadingKalimba()); object.start(); imgKeyboardA.setImage(new Image("piano_keys/color2.png")); imgKalimbaD6.setImage(new Image("piano_keys/piano_left2.png"));} }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.A && Main.currentStage.equals("Kalimba") ) { imgKalimbaD6.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardA.setImage(new Image("piano_keys/color.png")); staffKalim.setImage(new Image("Notes/base.png"));} }); //C3
@@ -201,13 +203,15 @@ public class KalimbaController {
 		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Kalimba") ) { imgKalimbaC6.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardO.setImage(new Image("piano_keys/color.png")); staffKalim.setImage(new Image("Notes/base.png"));} }); //C3
 			
 			} catch (Exception e) { 
-	            System.out.println ("Exception is caught"); 
+	            System.out.println ("File not found/is corrupted"); 
+	            e.printStackTrace();
 	        } 
 	}
 	
 	/**
 	 * Handler for return button, change current stage and initiate main.fxml
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		try {
@@ -277,6 +281,8 @@ public class KalimbaController {
 	
     /**
      * Event handler dump for kalimba. Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed.
+     * @param event
+     * @throws ClassNotFoundException
      */
 	@FXML private void handleD6_entered() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("kalim_keys/color2.png")); imgKalimbaD6.setImage(new Image("kalim_keys/piano_left2.png")); staffKalim.setImage(new Image("Notes/D5Note.png"));  }
 	@FXML private void handleD6_exited() throws ClassNotFoundException { imgKeyboardA.setImage(new Image("kalim_keys/color.png")); imgKalimbaD6.setImage(new Image("kalim_keys/piano_left.png"));  staffKalim.setImage(new Image("Notes/base.png"));}

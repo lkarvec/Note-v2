@@ -21,6 +21,7 @@ public class MainController {
 	/**
 	 * Handler for Piano selection, change the stage, open available saves and initialize Piano.fxml
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handlePiano(ActionEvent event) { //Initialize Piano.fxml
 		
@@ -37,8 +38,9 @@ public class MainController {
 	}
 	
 	/**
-	 * Handler for Xylophone selection, change the stage, open available saves and initialize Piano.fxml
+	 * Handler for Xylophone selection, change the stage, open available saves and initialize Xylophone.fxml
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handleXylophone(ActionEvent event) { //Initialize Xylophone.fxml
 			
@@ -56,8 +58,9 @@ public class MainController {
 	}
 	
 	/**
-	 * Handler for Kalimba selection, change the stage, open available saves and initialize Piano.fxml
+	 * Handler for Kalimba selection, change the stage, open available saves and initialize Kalimba.fxml
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handleKalimba(ActionEvent event) { //Initialize Kalimba.fxml
 		
@@ -73,7 +76,12 @@ public class MainController {
 		}
 	
 	}
-	public void handleSettings(ActionEvent event) { //Initialize Kalimba.fxml
+	/**
+	 * Handler for Settings selection, change the stage, open Settings.fxml
+	 * @param event
+	 * @throws IOException
+	 */
+	public void handleSettings(ActionEvent event) { 
 		
 		try {
 			
@@ -87,6 +95,10 @@ public class MainController {
 		}
 	
 	}
+	/**
+	 * When initialized the current stage is changed and the view is updated with a current list of files in the folder
+	 * @throws Exception
+	 */
     @FXML
     public void initialize() {
     	try { Main.currentStage = "Main"; } 

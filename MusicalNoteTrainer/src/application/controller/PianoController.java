@@ -34,7 +34,9 @@ import application.model.SettingsModel;
 import application.model.PianoPlay;
 
 public class PianoController {
-	
+	/**
+	 * variable dump of image files, and interactive fxml buttons/fields
+	 */
 	public static boolean pla = false;
 	
 	public TextArea listOfSaves;
@@ -107,6 +109,7 @@ public class PianoController {
 	/**
 	 * Handler for return button, change current stage and initiate main.fxml
 	 * @param event
+	 * @throws IOException
 	 */
 	public void handleReturn(ActionEvent event) { //Initialize Main.fxml
 		
@@ -128,7 +131,8 @@ public class PianoController {
 	//If recording == true, then handle should add key to string to be saved to file later.
 	
 	/**
-	 * Initialize controller, set stage and load list of saves.
+	 * Initialize controller, set stage and load list of saves with users choice of save location or default location.
+	 * @throws FileNotFoundException and Exception
 	 */
     public void initialize() throws FileNotFoundException{
     	
@@ -210,7 +214,8 @@ public class PianoController {
     		
     		
     	} catch (Exception e) { 
-            System.out.println ("Exception is caught"); 
+            System.out.println ("File not found/is corrupted");
+            e.printStackTrace();
         } 
     }
     
@@ -268,6 +273,7 @@ public class PianoController {
     
     /**
      * Event handler dump for piano.  Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed. 
+     * @throws ClassNotFoundException
      */
 	@FXML private void handleC3_entered() throws ClassNotFoundException { staffPiano.setImage(new Image("Notes/C3Note.png"));  imgPianoC1.setImage(new Image("piano_keys/piano_left2.png")); imgKeyboardA.setImage(new Image("kalim_keys/color2.png"));}
 	@FXML private void handleC3_exited() throws ClassNotFoundException { staffPiano.setImage(new Image("Notes/base.png"));  imgPianoC1.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardA.setImage(new Image("kalim_keys/color.png"));}
