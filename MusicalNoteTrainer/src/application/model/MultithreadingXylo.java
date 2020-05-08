@@ -26,7 +26,7 @@ public class MultithreadingXylo implements Runnable {
     		clip.open(AudioSystem.getAudioInputStream(new File("src/xylo_wav/Mallet " + XylophoneController.lastPressed + ".wav")));
     		FloatControl gainControl = 
 	    		    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
-	    		gainControl.setValue(SettingsModel.getVolume()); // Reduce volume by 10 decibels.
+	    		gainControl.setValue(SettingsModel.getVolume() - 10.0f); // Reduce volume by 10 decibels.
 	    	clip.start();
     		
     		// Need to figure thread closing later.
