@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import application.controller.PianoController;
-
+import application.model.SettingsModel;
 /**
  * This class allows a handle to create a file if it doesn't exist to write to while the boolean on the button is set to TRUE.
  * It records last note pressed and time in ms to a file.
@@ -14,7 +14,15 @@ import application.controller.PianoController;
 public class PianoRecord implements Runnable{
 	
 	public void run(){
-		String fileName="data/piano_saves/";
+		String savefolder = null;
+		try {
+			savefolder = SettingsModel.getSaveFolder();
+		} catch (Exception e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} 
+		String fileName= savefolder + "/piano_saves/";
+		
 		 fileName+=PianoController.finame;
 		
 		 File file = new File(fileName);

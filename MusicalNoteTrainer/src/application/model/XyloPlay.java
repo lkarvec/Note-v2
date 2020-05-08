@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import application.controller.KalimbaController;
 import application.controller.XylophoneController;
 /**
  * 
@@ -18,11 +19,12 @@ public class XyloPlay implements Runnable {
 		long i = 0;
 		long tt = 0;
 		long maxTime = 0;
-		String fileName="data/xylo_saves/";
-		fileName+=XylophoneController.finame;
+		
 		
 		try {
-			// open the file for reading
+			String savefolder = SettingsModel.getSaveFolder();
+			String fileName= savefolder + "/xylo_saves/";
+			fileName+=XylophoneController.finame;
 			Scanner scan = new Scanner( new File(fileName) );
 			long start =0;
 			
@@ -49,6 +51,9 @@ public class XyloPlay implements Runnable {
 			scan.close();
 			
 		}catch( IOException | NumberFormatException | InterruptedException e ) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

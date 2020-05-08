@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.net.URL;
 import application.Main;
 import application.model.MultithreadingXylo;
+import application.model.SettingsModel;
 import application.model.XyloPlay;
 import application.model.XyloRecord;
 import javafx.event.ActionEvent;
@@ -91,17 +92,21 @@ public class XylophoneController {
 	public void initialize() {
 		
 		
-		Main.currentStage= "Xylophone";
-		File folder = new File("data/xylo_saves");
-		File[] list = folder.listFiles();
+		try {
+    		
+    	Main.currentStage = "Xylophone";
+    	String savefolder = SettingsModel.getSaveFolder(); 
+		String fileName= savefolder + "/xylo_saves/";
+    	File folder = new File(fileName);   //Change this to reflect the settings model changes
+    	File[] list = folder.listFiles();
         String listf="";
-		for (int i = 0; i < list.length; i++) {
-		  if (list[i].isFile()) {
-		    listf+=list[i].getName()+"\n";
-		  } 
-		listOfSaves.setText(listf);
-		  
-		}
+    	for (int i = 0; i < list.length; i++) {
+    		if (list[i].isFile()) {
+    			listf+=list[i].getName()+"\n";
+    		} 
+    	listOfSaves.setText(listf);
+    		  
+    	}
 		
 		/**
 		 * these handlers checks for key presses and if the correct button is pressed the note plays.  Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed.
@@ -139,6 +144,9 @@ public class XylophoneController {
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.QUOTE && Main.currentStage.equals("Xylophone") ) { System.out.println("D#3"); lastPressed = "D#3";notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); staffXylo.setImage(new Image("Notes/E5FNote.png"));} }); 
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.OPEN_BRACKET && Main.currentStage.equals("Xylophone") ) { System.out.println("F#3"); lastPressed = "F#3";notesRec++; Thread object = new Thread(new MultithreadingXylo()); object.start(); staffXylo.setImage(new Image("Notes/G5FNote.png"));} }); 
 		
+		} catch (Exception e) { 
+            System.out.println ("Exception is caught"); 
+        } 
 	}
 	/**
 	 * returns to the main controller when return button is pressed
@@ -162,9 +170,9 @@ public class XylophoneController {
 	}
 	/**
 	 * handles the record functionality of the Xylophone
-	 * @throws ClassNotFoundException
+	 * @throws Exception 
 	 */
-	@FXML private void handleRec() throws ClassNotFoundException {
+	@FXML private void handleRec() throws Exception {
 		notesRec=0;
 		rec ^= true;
 		record.setText("Stop");
@@ -178,7 +186,9 @@ public class XylophoneController {
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("data/xylo_saves");
+			String savefolder = SettingsModel.getSaveFolder(); 
+			String fileName= savefolder + "/xylo_saves/";
+			File folder = new File(fileName);
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {

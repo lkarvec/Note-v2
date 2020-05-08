@@ -29,6 +29,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import application.model.MultithreadingPiano;
 import application.model.PianoRecord;
+import application.model.SettingsModel;
 import application.model.PianoPlay;
 
 public class PianoController {
@@ -133,7 +134,9 @@ public class PianoController {
     	try {
     		
     		Main.currentStage = "Piano";
-    		File folder = new File("data/piano_saves");   //Change this to reflect the settings model changes
+    		String savefolder = SettingsModel.getSaveFolder(); 
+			String fileName= savefolder + "/piano_saves/";
+    		File folder = new File(fileName);   //Change this to reflect the settings model changes
     		File[] list = folder.listFiles();
             String listf="";
     		for (int i = 0; i < list.length; i++) {
@@ -212,9 +215,9 @@ public class PianoController {
     
 	/**
 	 * Handler for record button, initiate text file based on user input.
-	 * @throws ClassNotFoundException
+	 * @throws Exception 
 	 */
-    @FXML private void handleRecord() throws ClassNotFoundException {
+    @FXML private void handleRecord() throws Exception {
 		notesRec=0;
 		 rec ^= true;
 		record.setText("Stop");
@@ -228,7 +231,9 @@ public class PianoController {
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("data/piano_saves");
+			String savefolder = SettingsModel.getSaveFolder(); 
+			String fileName= savefolder + "/piano_saves/";
+			File folder = new File(fileName);
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {

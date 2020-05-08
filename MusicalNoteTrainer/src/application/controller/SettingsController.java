@@ -37,6 +37,7 @@ public class SettingsController {
 	TextField saveFolder;
 	private static float volume;
 	private static String[] config;
+	
 	public void initialize() throws Exception
 	{
 		Main.currentStage= "Settings";
@@ -55,7 +56,6 @@ public class SettingsController {
 		{
 			muteLabel.setText("ON");
 		}
-		
 	}
 	
 	public void handleVolume(ActionEvent event)
@@ -63,7 +63,6 @@ public class SettingsController {
 		volume = (float) volumeSlider.getValue();
 		String vol = "" + volume;
 		config[0] = vol;
-		//somehow write into the config file the new volume setting
 	}
 	
 	
@@ -85,8 +84,10 @@ public class SettingsController {
 	
 	public void handleSaveFolder(ActionEvent event)
 	{
-		config[2] = saveFolder.getText();
+		config[2] = SettingsModel.changeSlashes(saveFolder.getText());
+		SettingsModel.createNewHome(config[2]);
 		saveFolder.clear();
+		
 	}
 	
 	

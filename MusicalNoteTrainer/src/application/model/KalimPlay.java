@@ -5,8 +5,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 import application.controller.KalimbaController;
+import application.controller.PianoController;
 import application.controller.SettingsController;
-
+import application.model.SettingsModel;
 /**
  * Reading in from the KalimRecord files, KalimPlay uses hashmaps to split the strings in the file to recreate the rhythms and pitches used in the original playthrough
  * @author Alex Mains
@@ -19,11 +20,13 @@ public class KalimPlay implements Runnable {
 		long i = 0;
 		long tt = 0;
 		long maxTime = 0;
-		String fileName="data/kalim_saves/";
-		fileName+=KalimbaController.finame;
+		
+		
 		
 		try {
-			// open the file for reading
+			String savefolder = SettingsModel.getSaveFolder();
+			String fileName= savefolder + "/kalim_saves/";
+			fileName+=KalimbaController.finame;
 			Scanner scan = new Scanner( new File(fileName) );
 			long start =0;
 			
@@ -49,9 +52,11 @@ public class KalimPlay implements Runnable {
 			// close the file!
 			scan.close();
 			
-		}catch( IOException | NumberFormatException | InterruptedException e ) {
+		}catch( IOException | NumberFormatException | InterruptedException e) {
 			e.printStackTrace();
-			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 	}

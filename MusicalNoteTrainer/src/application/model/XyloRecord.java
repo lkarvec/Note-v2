@@ -3,6 +3,8 @@ package application.model;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+
+import application.controller.KalimbaController;
 import application.controller.XylophoneController;
 /**
  * 
@@ -13,9 +15,16 @@ import application.controller.XylophoneController;
 public class XyloRecord implements Runnable{
 	
 	public void run(){
-		String fileName="data/xylo_saves/";
-		 fileName+=XylophoneController.finame;
+		String savefolder = null;
+		try {
+			savefolder = SettingsModel.getSaveFolder();
+		} catch (Exception e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} 
+		String fileName= savefolder + "/Xylo_saves/";
 		
+		fileName+=XylophoneController.finame;
 		 File file = new File(fileName);
 
 	        try {

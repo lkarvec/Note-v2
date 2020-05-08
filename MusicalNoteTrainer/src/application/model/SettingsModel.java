@@ -54,5 +54,14 @@ public class SettingsModel
 		String replaceString = path.replace("\\","/");
 		return replaceString;
 	}
+	public static void createNewHome(String path)
+	{
+		System.out.println("this should be making directories");
+		new File(path + "/kalim_saves").mkdir();
+		new File(path + "/piano_saves").mkdir();
+		new File(path + "/xylo_saves").mkdir();
+		
+		
+	}
 	  
 }

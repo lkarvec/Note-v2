@@ -17,6 +17,7 @@ import application.Main;
 import application.model.KalimPlay;
 import application.model.KalimRecord;
 import application.model.MultithreadingKalimba;
+import application.model.SettingsModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -128,17 +129,21 @@ public class KalimbaController {
 	public void initialize() throws FileNotFoundException{
 		
 		
-		Main.currentStage= "Kalimba";
-		File folder = new File("data/kalim_saves");
-		File[] list = folder.listFiles();
-        String listf="";
-		for (int i = 0; i < list.length; i++) {
-		  if (list[i].isFile()) {
-		    listf+=list[i].getName()+"\n";
-		  } 
-		listOfSaves.setText(listf);
-		  
-		}
+			try {
+    		
+    		Main.currentStage = "Kalimba";
+    		String savefolder = SettingsModel.getSaveFolder(); 
+			String fileName= savefolder + "/kalim_saves/";
+    		File folder = new File(fileName);   //Change this to reflect the settings model changes
+    		File[] list = folder.listFiles();
+            String listf="";
+    		for (int i = 0; i < list.length; i++) {
+    		  if (list[i].isFile()) {
+    		    listf+=list[i].getName()+"\n";
+    		  } 
+    		listOfSaves.setText(listf);
+    		  
+    		}
 		
 		/**
         * Event handler dump for keyboard input. Loads in new images for the staff and instruments interaction keys, while sending the Multithreaded sound player the key pressed.
@@ -193,7 +198,10 @@ public class KalimbaController {
 		
 		Main.stage.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Kalimba") ) { System.out.println("C6"); lastPressed = "C6";notesRec++; staffKalim.setImage(new Image("Notes/C5Note.png"));  Thread object = new Thread(new MultithreadingKalimba()); object.start(); imgKeyboardO.setImage(new Image("piano_keys/color2.png")); imgKalimbaC6.setImage(new Image("piano_keys/piano_left2.png"));} });   
 		Main.stage.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> { if(key.getCode()==KeyCode.O && Main.currentStage.equals("Kalimba") ) { imgKalimbaC6.setImage(new Image("piano_keys/piano_left.png")); imgKeyboardO.setImage(new Image("piano_keys/color.png")); staffKalim.setImage(new Image("Notes/base.png"));} }); //C3
-		
+			
+			} catch (Exception e) { 
+	            System.out.println ("Exception is caught"); 
+	        } 
 	}
 	
 	/**
@@ -216,9 +224,9 @@ public class KalimbaController {
 	
 	/**
 	 * Handler for record button, initiate text file based on user input.
-	 * @throws ClassNotFoundException
+	 * @throws Exception 
 	 */
-    @FXML private void handleRecord() throws ClassNotFoundException {
+    @FXML private void handleRecord() throws Exception {
 		notesRec=0;
 		 rec ^= true;
 		record.setText("Stop");
@@ -232,7 +240,9 @@ public class KalimbaController {
 		}
 		else if (rec == false) {
 			record.setText("Record");
-			File folder = new File("data/kalim_saves");
+			String savefolder = SettingsModel.getSaveFolder(); 
+			String fileName= savefolder + "/kalim_saves/";
+			File folder = new File(fileName);
 			File[] list = folder.listFiles();
 	        String listf="";
 			for (int i = 0; i < list.length; i++) {

@@ -18,11 +18,13 @@ public class PianoPlay implements Runnable {
 		long i = 0;
 		long tt = 0;
 		long maxTime = 0;
-		String fileName="data/piano_saves/";
-		fileName+=PianoController.finame;
+		
 		
 		try {
-			// open the file for reading
+		
+			String savefolder = SettingsModel.getSaveFolder();
+			String fileName= savefolder + "/piano_saves/";
+			fileName+=PianoController.finame;
 			Scanner scan = new Scanner( new File(fileName) );
 			long start =0;
 			
@@ -48,7 +50,10 @@ public class PianoPlay implements Runnable {
 			// close the file!
 			scan.close();
 			
-		}catch( IOException | NumberFormatException | InterruptedException e ) {
+		}catch( IOException | NumberFormatException | InterruptedException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
