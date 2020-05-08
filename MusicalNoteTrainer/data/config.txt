@@ -1,3 +1,3 @@
 0.0
 False
-C:\Users\bigpu\git\Note-v2\MusicalNoteTrainer\data
+C:/Users/bigpu/git/Note-v2/MusicalNoteTrainer/data
