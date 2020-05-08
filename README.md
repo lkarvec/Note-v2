@@ -2,7 +2,7 @@
 # ORIGINALLY A SPRING 2019 PROJECT CLEARED FOR UPGRADES FOR SPRING 2020 BY PROFESSOR ARAFAT
 # Changes for the 2020 semester are going to be at the bottom of the document
 
-Spring 2019 - Team 6
+## Spring 2019 - Team 6
 
 
 Christopher Tyler [christophergtyler / MagicShmagic, tbl512]
@@ -12,7 +12,7 @@ Alexander Mains [lkarvec, rta149]
 Mark Dziuk [mdziuk37,kvf069]
 
 
-Spring 2020 - PEPE ALWAYS WINS
+## Spring 2020 - PEPE ALWAYS WINS
 
 Alexander Mains [lkarvec, rta149]
 
@@ -88,17 +88,19 @@ Kalimba
     
 ###################################
 
-UPDATE LOG
+### UPDATE LOG
 Updated by Alexander Mains (@lkarvec, rta149)
 and Zach Ross (@zachross2000, bvf676)
 
 v1.1
 Added a settings button on the main menu for:
+    
     Volume Control Slider 
     Muting
     Save data Path setting 
 
 Added a Musical Staff function to the main three instruments.
+    
     The staff will show a visible representation of what your note is upon note hover or key press.
 
 Updated the code and bugfixed a few fatal errors.
