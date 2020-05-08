@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="603.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.XylophoneController">
+<AnchorPane prefHeight="603.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.XylophoneController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="600.0">
          <children>
@@ -189,7 +191,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="61.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleDs" prefHeight="17.0" prefWidth="28.0" text="D#1">
+            <Label layoutX="61.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleDs" prefHeight="17.0" prefWidth="28.0" text="Eb1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -205,7 +207,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="364.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="G#2">
+            <Label layoutX="364.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="Ab2">
                <font>
                   <Font size="12.0" />
                </font>
@@ -220,7 +222,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="395.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="A#2">
+            <Label layoutX="395.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="Bb2">
                <font>
                   <Font size="12.0" />
                </font>
@@ -240,12 +242,12 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="242.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleCs1" prefHeight="17.0" prefWidth="22.0" text="C#2">
+            <Label layoutX="242.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleCs1" prefHeight="17.0" prefWidth="22.0" text="Db2">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="185.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleAs" prefHeight="17.0" prefWidth="22.0" text="A#1">
+            <Label layoutX="185.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleAs" prefHeight="17.0" prefWidth="22.0" text="Bb1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -260,12 +262,12 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="273.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleDs1" prefHeight="17.0" prefWidth="22.0" text="D#2">
+            <Label layoutX="273.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleDs1" prefHeight="17.0" prefWidth="22.0" text="Eb2">
                <font>
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="154.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleGs" prefHeight="17.0" prefWidth="22.0" text="G#1">
+            <Label layoutX="154.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleGs" prefHeight="17.0" prefWidth="22.0" text="Ab1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -305,7 +307,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="487.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="D#3">
+            <Label layoutX="487.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="Eb2">
                <font>
                   <Font size="12.0" />
                </font>
@@ -370,7 +372,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="31.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleCs" prefHeight="17.0" prefWidth="28.0" text="C#1">
+            <Label layoutX="31.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleCs" prefHeight="17.0" prefWidth="28.0" text="Db1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -390,7 +392,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="550.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="F#3">
+            <Label layoutX="550.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="Gb3">
                <font>
                   <Font size="12.0" />
                </font>
@@ -410,7 +412,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="123.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleFs" prefHeight="17.0" prefWidth="21.0" text="F#1">
+            <Label layoutX="122.0" layoutY="124.0" mouseTransparent="true" onMouseClicked="#handleFs" prefHeight="17.0" prefWidth="28.0" text="Gb1">
                <font>
                   <Font size="12.0" />
                </font>
@@ -420,7 +422,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="335.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="20.0" text="F#2">
+            <Label layoutX="332.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="28.0" text="Gb2">
                <font>
                   <Font size="12.0" />
                </font>
@@ -455,7 +457,7 @@
                   <Font size="12.0" />
                </font>
             </Label>
-            <Label layoutX="454.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="C#3">
+            <Label layoutX="454.0" layoutY="124.0" mouseTransparent="true" prefHeight="17.0" prefWidth="22.0" text="Db2">
                <font>
                   <Font size="12.0" />
                </font>
