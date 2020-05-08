@@ -54,6 +54,7 @@ public class SettingsModel
 		String replaceString = path.replace("\\","/");
 		return replaceString;
 	}
+	
 	public static void createNewHome(String path)
 	{
 		System.out.println("this should be making directories");
