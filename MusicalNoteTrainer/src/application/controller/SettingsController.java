@@ -39,6 +39,7 @@ public class SettingsController {
 	private static String[] config;
 	public void initialize() throws Exception
 	{
+		Main.currentStage= "Settings";
 		SettingsModel.absolutePath();
 		config = SettingsModel.readConfig();
 		for(int i = 0; i < 3; i++)

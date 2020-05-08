@@ -44,9 +44,15 @@ public class SettingsModel
 	public static String absolutePath() throws Exception
 	{
             File f = new File("data"); 
-            String absolute = f.getAbsolutePath(); 
+            String absolute = f.getCanonicalPath(); 
             return absolute;
        
+	}
+	
+	public static String changeSlashes(String path)
+	{
+		String replaceString = path.replace("\\","/");
+		return replaceString;
 	}
 	  
 }
