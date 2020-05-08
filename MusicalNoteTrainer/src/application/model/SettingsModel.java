@@ -6,7 +6,7 @@ public class SettingsModel
 {	
 	
 	public static String[] readConfig()throws Exception //comment
-	  { 
+	{ 
 	  String[] config = new String[3];
 	  int i = 0;
 	  File file = new File("data/config.txt"); 
@@ -21,7 +21,25 @@ public class SettingsModel
 	  }
 	  br.close();
 	  return config;
-	  } 
+	} 
+	
+	public static float getVolume() throws Exception
+	{
+		String[] config = readConfig();
+		float volume = Float.parseFloat(config[0]);
+		if(config[1].contentEquals("True"))
+		{
+			return (float) -60.0;
+		}
+		else
+		  return volume;
+	}
+	
+	public static String getSaveFolder() throws Exception
+	{
+		String[] config = readConfig();
+		return config[2];
+	}
 	
 	public static String absolutePath() throws Exception
 	{

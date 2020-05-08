@@ -17,6 +17,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import application.model.SettingsModel;
+import application.controller.SettingsController;
 /**
  * Initialize application, call in current stage and launch main.fxml
  * @author Christopher
@@ -53,6 +54,7 @@ public class Main extends Application { //Main stage execution
 	 */
 	public static void main(String[] args) {
 		File tmpFile = new File("data/config.txt");
+		
 		boolean exists = tmpFile.exists();
 		if(!exists)
 		{

@@ -65,15 +65,7 @@ public class SettingsController {
 		//somehow write into the config file the new volume setting
 	}
 	
-	public static float getVolume()
-	{
-		if(config[1].contentEquals("True"))
-		{
-			return (float) -45.0;
-		}
-		else
-		  return volume;
-	}
+	
 	
 	public void handleMute(ActionEvent event)
 	{
@@ -89,15 +81,14 @@ public class SettingsController {
 		}
 	}
 	
+	
 	public void handleSaveFolder(ActionEvent event)
 	{
 		config[2] = saveFolder.getText();
 		saveFolder.clear();
 	}
-	public static String getSaveFolder()
-	{
-		return config[2];
-	}
+	
+	
 	
 	public void handleReturn(ActionEvent event)  { //Initialize Main.fxml
 		
