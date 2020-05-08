@@ -16,7 +16,7 @@ Spring 2020 - PEPE ALWAYS WINS
 
 Alexander Mains [lkarvec, rta149]
 
-Zach Ross [zachross2000, ]
+Zach Ross [zachross2000, bvf676]
 
 HOW TO USE THE NOTE APPLICATION
 
@@ -90,7 +90,7 @@ Kalimba
 
 UPDATE LOG
 Updated by Alexander Mains (@lkarvec, rta149)
-and Zach 
+and Zach Ross (@zachross2000, bvf676)
 
 v1.1
 Added a settings button on the main menu for:
@@ -98,7 +98,6 @@ Added a settings button on the main menu for:
     Muting
     Save data Path setting 
 
-    
 Added a Musical Staff function to the main three instruments.
     The staff will show a visible representation of what your note is upon note hover or key press.
 
