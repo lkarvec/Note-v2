@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry excluding="Notes/" kind="src" path="src"/>
-	<classpathentry kind="src" path="src/Notes"/>
+	<classpathentry including="A3FNote.png|A3Note.png|A4FNote.png|A4Note.png|B3FNote.png|B3Note.png|B4FNote.png|B4Note.png|C3Note.png|C4Note.png|C5Note.png|D3FNote.png|D3Note.png|D4FNote.png|D4Note.png|D5FNote.png|D5Note.png|E3Note.png|E4FNote.png|E4Note.png|E5FNote.png|E5Note.png|F3Note.png|F4Note.png|F5Note.png|FS3Note.png|FS4Note.png|G3FNote.png|G3Note.png|G4FNote.png|G4Note.png|G5FNote.png|G5Note.png|base.png" kind="src" path="src/Notes"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

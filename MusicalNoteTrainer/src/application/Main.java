@@ -48,7 +48,7 @@ public class Main extends Application { //Main stage execution
 	}
 	
 	/**
-	 * [Main method, execute launch of GUI.]
+	 * [Main method, execute launch of GUI,  config file check.]
 	 * @param args
 	 */
 	public static void main(String[] args) {
