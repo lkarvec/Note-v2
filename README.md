@@ -12,6 +12,12 @@ Alexander Mains [lkarvec, rta149]
 Mark Dziuk [mdziuk37,kvf069]
 
 
+Spring 2020 - PEPE ALWAYS WINS
+
+Alexander Mains [lkarvec, rta149]
+
+Zach Ross [zachross2000, ]
+
 HOW TO USE THE NOTE APPLICATION
 
 1. https://github.com/UTSA-CS-3443/Musical-Note-Trainer.git copy this link
@@ -22,11 +28,21 @@ HOW TO USE THE NOTE APPLICATION
 
 Functionality
 
-The three instruments play notes based on an input of either typing or clicks on the intrument
+The three instruments play notes based on an input of either typing or clicks on the intrument and will show a musical note's visual representation on the staff.
 
 Main Menu
     
-    The main menu has three clickable buttons for the three different instruments.
+    The main menu has three clickable buttons for the three different instruments.  There is also a settings button in the top left.
+    
+Settings
+    
+    The settings menu has a volume slider.  Hit the button next to it to apply.
+    
+    There is also a mute toggle
+    
+    You can also change the data path to your saved recordings by inputting an absolute path (Example "C:/Users/UserName/Documents/Folder" ) into the text field and hitting the apply button next to it.
+    
+    These settings can be found in the config file included with your installation in the data folder.  If anything doesn't work, it's usually a configuration file error.  Delete the configuration file and restart the program to get a pregenerated one.
 
 Piano
     
@@ -78,9 +94,10 @@ and Zach
 
 v1.1
 Added a settings button on the main menu for:
-    Volume Control Slider - allows the user to control the volume in the program
-    Save data Path setting - allows the user to change the save path to another file path by overwriting the given String and hitting the "change" button
-    Musical Staff Visibility - button that turns on the 
+    Volume Control Slider 
+    Muting
+    Save data Path setting 
+
     
 Added a Musical Staff function to the main three instruments.
     The staff will show a visible representation of what your note is upon note hover or key press.

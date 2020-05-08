@@ -61,7 +61,7 @@ public class Main extends Application { //Main stage execution
 			try {
 				tmpFile.createNewFile();
 				FileWriter fw = new FileWriter("data/config.txt");
-				String defaultConfig = "0.0\nFalse\n" + SettingsModel.absolutePath();
+				String defaultConfig = "0.0\nFalse\n" + SettingsModel.changeSlashes(SettingsModel.absolutePath());
 				fw.write(defaultConfig);
 				fw.close();
 			}catch( Exception e ) {
