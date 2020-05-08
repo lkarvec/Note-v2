@@ -3,8 +3,9 @@
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
  * 
- * @author Alexander Mains (rta149)
- * Spring 2020
+ *  @author Alexander Mains (rta149), Zach Ross (bvf676)
+ *  UTSA CS 3443 - Final Project
+ *  Spring 2020
  * 
  * Updates, added hard coding for music staff images, Adjusted the play functions to accommodate for more intricate chords
  */

@@ -2,6 +2,9 @@
  * 	@author Christopher Tyler (tbl512), Alexander Mains (rta149), Mark Dziuk (kvf069)
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
+ *  @author Alexander Mains (rta149), Zach Ross (bvf676)
+ *  UTSA CS 3443 - Final Project
+ *  Spring 2020
  */
 package application.controller;
 

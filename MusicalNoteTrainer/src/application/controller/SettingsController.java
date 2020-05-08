@@ -1,3 +1,7 @@
+/**  @author Zach Ross (bvf676)
+ *  UTSA CS 3443 - Final Project
+ *  Spring 2020
+*/
 package application.controller;
 
 import java.io.File;

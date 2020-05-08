@@ -2,6 +2,9 @@
  * 	@author Christopher Tyler (tbl512), Alexander Mains (rta149), Mark Dziuk (kvf069)
  * 	UTSA CS 3443 - Final Project
  * 	Spring 2019
+ *  @author Alexander Mains (rta149), Zach Ross (bvf676)
+ *  UTSA CS 3443 - Final Project
+ *  Spring 2020
  */
 package application;
 
@@ -47,9 +50,8 @@ public class Main extends Application { //Main stage execution
 			e.printStackTrace();
 		}
 	}
-	
 	/**
-	 * [Main method, execute launch of GUI,  config file check.]
+	 * [Main method, execute launch of GUI,  config file check and creation.]
 	 * @param args
 	 */
 	public static void main(String[] args) {
