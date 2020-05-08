@@ -30,7 +30,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import application.model.SettingsModel;
 
-
 public class SettingsController {
 	
 	@FXML 
@@ -41,7 +40,10 @@ public class SettingsController {
 	TextField saveFolder;
 	private static float volume;
 	private static String[] config;
-	
+	/**
+	 * When initialized the current stage is changed and the view is updated with a current list of files in the folder
+	 * @throws Exception
+	 */
 	public void initialize() throws Exception
 	{
 		Main.currentStage= "Settings";
@@ -61,7 +63,10 @@ public class SettingsController {
 			muteLabel.setText("ON");
 		}
 	}
-	
+	/**
+	 * Handler for applying volume, takes current value of volume slider and sets the config volume value to current
+	 * @param event
+	 */
 	public void handleVolume(ActionEvent event)
 	{
 		volume = (float) volumeSlider.getValue();
@@ -70,7 +75,10 @@ public class SettingsController {
 	}
 	
 	
-	
+	/**
+	 * Handler for Mute selection, sets config mute value to true or false
+	 * @param event
+	 */
 	public void handleMute(ActionEvent event)
 	{
 		if(config[1].contentEquals("False"))
@@ -85,7 +93,11 @@ public class SettingsController {
 		}
 	}
 	
-	
+	/**
+	 * Handler for changing the save folder, makes sure that the input has forward slashes instead of back slashes,
+	 * calls the create home function and sets the config save folder value to the users input
+	 * @param event
+	 */
 	public void handleSaveFolder(ActionEvent event)
 	{
 		config[2] = SettingsModel.changeSlashes(saveFolder.getText());
@@ -94,7 +106,11 @@ public class SettingsController {
 		
 	}
 	
-	
+	/**
+	 * returns to the main controller when return button is pressed, also update the config
+	 * with all of the changes made in the settings tab
+	 * @param event
+	 */
 	
 	public void handleReturn(ActionEvent event)  { //Initialize Main.fxml
 		
